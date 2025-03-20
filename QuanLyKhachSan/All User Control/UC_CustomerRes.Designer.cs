@@ -33,7 +33,7 @@
             this.label2 = new System.Windows.Forms.Label();
             this.txtFullName = new Guna.UI2.WinForms.Guna2TextBox();
             this.label3 = new System.Windows.Forms.Label();
-            this.txtPhoneNo = new Guna.UI2.WinForms.Guna2TextBox();
+            this.txtContact = new Guna.UI2.WinForms.Guna2TextBox();
             this.label4 = new System.Windows.Forms.Label();
             this.txtNationality = new Guna.UI2.WinForms.Guna2TextBox();
             this.label5 = new System.Windows.Forms.Label();
@@ -47,9 +47,9 @@
             this.label9 = new System.Windows.Forms.Label();
             this.txtCheckin = new Guna.UI2.WinForms.Guna2DateTimePicker();
             this.label10 = new System.Windows.Forms.Label();
-            this.txtBedType = new Guna.UI2.WinForms.Guna2ComboBox();
+            this.txtBed = new Guna.UI2.WinForms.Guna2ComboBox();
             this.label11 = new System.Windows.Forms.Label();
-            this.txtRoomType = new Guna.UI2.WinForms.Guna2ComboBox();
+            this.txtRoom = new Guna.UI2.WinForms.Guna2ComboBox();
             this.label12 = new System.Windows.Forms.Label();
             this.txtRoomNo = new Guna.UI2.WinForms.Guna2ComboBox();
             this.label13 = new System.Windows.Forms.Label();
@@ -109,26 +109,26 @@
             this.label3.TabIndex = 1;
             this.label3.Text = "Số Điện Thoại";
             // 
-            // txtPhoneNo
+            // txtContact
             // 
-            this.txtPhoneNo.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txtPhoneNo.DefaultText = "";
-            this.txtPhoneNo.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.txtPhoneNo.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.txtPhoneNo.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txtPhoneNo.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txtPhoneNo.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtPhoneNo.Font = new System.Drawing.Font("Segoe UI", 10F);
-            this.txtPhoneNo.ForeColor = System.Drawing.Color.Black;
-            this.txtPhoneNo.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtPhoneNo.Location = new System.Drawing.Point(86, 332);
-            this.txtPhoneNo.Name = "txtPhoneNo";
-            this.txtPhoneNo.PasswordChar = '\0';
-            this.txtPhoneNo.PlaceholderText = "Enter Phone Number";
-            this.txtPhoneNo.SelectedText = "";
-            this.txtPhoneNo.Size = new System.Drawing.Size(504, 72);
-            this.txtPhoneNo.Style = Guna.UI2.WinForms.Enums.TextBoxStyle.Material;
-            this.txtPhoneNo.TabIndex = 2;
+            this.txtContact.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtContact.DefaultText = "";
+            this.txtContact.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.txtContact.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.txtContact.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtContact.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtContact.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtContact.Font = new System.Drawing.Font("Segoe UI", 10F);
+            this.txtContact.ForeColor = System.Drawing.Color.Black;
+            this.txtContact.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtContact.Location = new System.Drawing.Point(86, 332);
+            this.txtContact.Name = "txtContact";
+            this.txtContact.PasswordChar = '\0';
+            this.txtContact.PlaceholderText = "Enter Phone Number";
+            this.txtContact.SelectedText = "";
+            this.txtContact.Size = new System.Drawing.Size(504, 72);
+            this.txtContact.Style = Guna.UI2.WinForms.Enums.TextBoxStyle.Material;
+            this.txtContact.TabIndex = 2;
             // 
             // label4
             // 
@@ -312,25 +312,26 @@
             this.label10.TabIndex = 1;
             this.label10.Text = "Loại Giường";
             // 
-            // txtBedType
+            // txtBed
             // 
-            this.txtBedType.BackColor = System.Drawing.Color.Transparent;
-            this.txtBedType.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
-            this.txtBedType.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.txtBedType.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtBedType.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtBedType.Font = new System.Drawing.Font("Segoe UI", 10F);
-            this.txtBedType.ForeColor = System.Drawing.Color.Black;
-            this.txtBedType.ItemHeight = 30;
-            this.txtBedType.Items.AddRange(new object[] {
+            this.txtBed.BackColor = System.Drawing.Color.Transparent;
+            this.txtBed.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
+            this.txtBed.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.txtBed.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtBed.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtBed.Font = new System.Drawing.Font("Segoe UI", 10F);
+            this.txtBed.ForeColor = System.Drawing.Color.Black;
+            this.txtBed.ItemHeight = 30;
+            this.txtBed.Items.AddRange(new object[] {
             "Single",
             "Double",
             "Triple"});
-            this.txtBedType.Location = new System.Drawing.Point(1295, 173);
-            this.txtBedType.Name = "txtBedType";
-            this.txtBedType.Size = new System.Drawing.Size(504, 36);
-            this.txtBedType.Style = Guna.UI2.WinForms.Enums.TextBoxStyle.Material;
-            this.txtBedType.TabIndex = 3;
+            this.txtBed.Location = new System.Drawing.Point(1295, 173);
+            this.txtBed.Name = "txtBed";
+            this.txtBed.Size = new System.Drawing.Size(504, 36);
+            this.txtBed.Style = Guna.UI2.WinForms.Enums.TextBoxStyle.Material;
+            this.txtBed.TabIndex = 3;
+            this.txtBed.SelectedIndexChanged += new System.EventHandler(this.txtBedType_SelectedIndexChanged);
             // 
             // label11
             // 
@@ -342,24 +343,25 @@
             this.label11.TabIndex = 1;
             this.label11.Text = "Loại Phòng";
             // 
-            // txtRoomType
+            // txtRoom
             // 
-            this.txtRoomType.BackColor = System.Drawing.Color.Transparent;
-            this.txtRoomType.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
-            this.txtRoomType.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.txtRoomType.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtRoomType.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtRoomType.Font = new System.Drawing.Font("Segoe UI", 10F);
-            this.txtRoomType.ForeColor = System.Drawing.Color.Black;
-            this.txtRoomType.ItemHeight = 30;
-            this.txtRoomType.Items.AddRange(new object[] {
+            this.txtRoom.BackColor = System.Drawing.Color.Transparent;
+            this.txtRoom.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
+            this.txtRoom.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.txtRoom.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtRoom.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtRoom.Font = new System.Drawing.Font("Segoe UI", 10F);
+            this.txtRoom.ForeColor = System.Drawing.Color.Black;
+            this.txtRoom.ItemHeight = 30;
+            this.txtRoom.Items.AddRange(new object[] {
             "AC",
             "non-AC"});
-            this.txtRoomType.Location = new System.Drawing.Point(1295, 295);
-            this.txtRoomType.Name = "txtRoomType";
-            this.txtRoomType.Size = new System.Drawing.Size(504, 36);
-            this.txtRoomType.Style = Guna.UI2.WinForms.Enums.TextBoxStyle.Material;
-            this.txtRoomType.TabIndex = 3;
+            this.txtRoom.Location = new System.Drawing.Point(1295, 295);
+            this.txtRoom.Name = "txtRoom";
+            this.txtRoom.Size = new System.Drawing.Size(504, 36);
+            this.txtRoom.Style = Guna.UI2.WinForms.Enums.TextBoxStyle.Material;
+            this.txtRoom.TabIndex = 3;
+            this.txtRoom.SelectedIndexChanged += new System.EventHandler(this.txtRoom_SelectedIndexChanged);
             // 
             // label12
             // 
@@ -386,6 +388,7 @@
             this.txtRoomNo.Size = new System.Drawing.Size(504, 36);
             this.txtRoomNo.Style = Guna.UI2.WinForms.Enums.TextBoxStyle.Material;
             this.txtRoomNo.TabIndex = 3;
+            this.txtRoomNo.SelectedIndexChanged += new System.EventHandler(this.txtRoomNo_SelectedIndexChanged);
             // 
             // label13
             // 
@@ -438,6 +441,8 @@
             this.btnAllotCustomer.Size = new System.Drawing.Size(228, 87);
             this.btnAllotCustomer.TabIndex = 5;
             this.btnAllotCustomer.Text = "Thêm Khách hàng";
+            this.btnAllotCustomer.Click += new System.EventHandler(this.btnAllotCustomer_Click);
+            this.btnAllotCustomer.Leave += new System.EventHandler(this.btnAllotCustomer_Leave);
             // 
             // guna2Elipse1
             // 
@@ -452,8 +457,8 @@
             this.Controls.Add(this.txtCheckin);
             this.Controls.Add(this.txtDob);
             this.Controls.Add(this.txtRoomNo);
-            this.Controls.Add(this.txtRoomType);
-            this.Controls.Add(this.txtBedType);
+            this.Controls.Add(this.txtRoom);
+            this.Controls.Add(this.txtBed);
             this.Controls.Add(this.txtGender);
             this.Controls.Add(this.label12);
             this.Controls.Add(this.label9);
@@ -466,7 +471,7 @@
             this.Controls.Add(this.txtPrice);
             this.Controls.Add(this.txtAddress);
             this.Controls.Add(this.label13);
-            this.Controls.Add(this.txtPhoneNo);
+            this.Controls.Add(this.txtContact);
             this.Controls.Add(this.label8);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.txtIDProof);
@@ -476,6 +481,7 @@
             this.Controls.Add(this.label1);
             this.Name = "UC_CustomerRes";
             this.Size = new System.Drawing.Size(1882, 852);
+            this.Load += new System.EventHandler(this.UC_CustomerRes_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -487,7 +493,7 @@
         private System.Windows.Forms.Label label2;
         private Guna.UI2.WinForms.Guna2TextBox txtFullName;
         private System.Windows.Forms.Label label3;
-        private Guna.UI2.WinForms.Guna2TextBox txtPhoneNo;
+        private Guna.UI2.WinForms.Guna2TextBox txtContact;
         private System.Windows.Forms.Label label4;
         private Guna.UI2.WinForms.Guna2TextBox txtNationality;
         private System.Windows.Forms.Label label5;
@@ -501,9 +507,9 @@
         private System.Windows.Forms.Label label9;
         private Guna.UI2.WinForms.Guna2DateTimePicker txtCheckin;
         private System.Windows.Forms.Label label10;
-        private Guna.UI2.WinForms.Guna2ComboBox txtBedType;
+        private Guna.UI2.WinForms.Guna2ComboBox txtBed;
         private System.Windows.Forms.Label label11;
-        private Guna.UI2.WinForms.Guna2ComboBox txtRoomType;
+        private Guna.UI2.WinForms.Guna2ComboBox txtRoom;
         private System.Windows.Forms.Label label12;
         private Guna.UI2.WinForms.Guna2ComboBox txtRoomNo;
         private System.Windows.Forms.Label label13;
