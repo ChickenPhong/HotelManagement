@@ -26,6 +26,7 @@ namespace QuanLyKhachSan
         {
             uC_AddRoom1.Visible = false;
             uC_CustomerRes1.Visible = false;
+            uC_CheckOut1.Visible = false;
             btnAddRoom.PerformClick();
         }
 
@@ -41,6 +42,13 @@ namespace QuanLyKhachSan
             PanelMoving.Left = btnCustomerRes.Left + 60;
             uC_CustomerRes1.Visible = true;
             uC_CustomerRes1.BringToFront();
+        }
+
+        private void btnCheckOut_Click(object sender, EventArgs e)
+        {
+            PanelMoving.Left = btnCheckOut.Left + 60;
+            uC_CheckOut1.Visible = true;
+            uC_CheckOut1.BringToFront();
         }
     }
 }
