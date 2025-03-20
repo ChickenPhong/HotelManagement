@@ -22,6 +22,13 @@ namespace QuanLyKhachSan
             Application.Exit();
         }
 
+        private void Dashboard_Load(object sender, EventArgs e)
+        {
+            uC_AddRoom1.Visible = false;
+            uC_CustomerRes1.Visible = false;
+            btnAddRoom.PerformClick();
+        }
+
         private void btnAddRoom_Click(object sender, EventArgs e)
         {
             PanelMoving.Left = btnAddRoom.Left + 50;
@@ -29,11 +36,11 @@ namespace QuanLyKhachSan
             uC_AddRoom1.BringToFront();
         }
 
-        private void Dashboard_Load(object sender, EventArgs e)
+        private void btnCustomerRes_Click(object sender, EventArgs e)
         {
-            uC_AddRoom1.Visible = false;
-            //uC_CustomerRes1.Visible = false;
-            btnAddRoom.PerformClick();
+            PanelMoving.Left = btnCustomerRes.Left + 60;
+            uC_CustomerRes1.Visible = true;
+            uC_CustomerRes1.BringToFront();
         }
     }
 }
