@@ -21,5 +21,19 @@ namespace QuanLyKhachSan
         {
             Application.Exit();
         }
+
+        private void btnAddRoom_Click(object sender, EventArgs e)
+        {
+            PanelMoving.Left = btnAddRoom.Left + 50;
+            uC_AddRoom1.Visible = true;
+            uC_AddRoom1.BringToFront();
+        }
+
+        private void Dashboard_Load(object sender, EventArgs e)
+        {
+            uC_AddRoom1.Visible = false;
+            //uC_CustomerRes1.Visible = false;
+            btnAddRoom.PerformClick();
+        }
     }
 }
