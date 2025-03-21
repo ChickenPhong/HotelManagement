@@ -204,7 +204,7 @@
             // 
             this.txtDob.Checked = true;
             this.txtDob.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            this.txtDob.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtDob.Font = new System.Drawing.Font("Segoe UI", 10F);
             this.txtDob.ForeColor = System.Drawing.Color.Black;
             this.txtDob.Format = System.Windows.Forms.DateTimePickerFormat.Short;
             this.txtDob.Location = new System.Drawing.Point(86, 769);

@@ -74,7 +74,7 @@ namespace QuanLyKhachSan.All_User_Control
                 String address = txtAddress.Text;
                 String checkin = txtCheckin.Text;
 
-                query = "insert into customer (cname, mobile, nationality, gender, dob, idproof, address, checkin, roomid) values ('" + name + "'," + mobile + ",'" + national + "','" + gender + "','" + dob + "','" + idproof + "','" + address + "','" + checkin + "'," + rid + ") update rooms set booked = 'Yes' where roomNo = '" + txtRoomNo + "'";
+                query = "insert into customer (cname, mobile, nationality, gender, dob, idproof, address, checkin, roomid) values ('" + name + "'," + mobile + ",'" + national + "','" + gender + "','" + dob + "','" + idproof + "','" + address + "','" + checkin + "'," + rid + ") update rooms set booked = 'YES' where roomNo = '" + txtRoomNo.Text + "'";
                 fn.setData(query, "Số Phòng " + txtRoomNo.Text + " Đăng ký khách hàng thành công.");
                 clearAll();
             } else
