@@ -66,26 +66,5 @@ namespace QuanLyKhachSan.All_User_Control
         {
             UC_AddRoom_Load(this, null);
         }
-
-        private void btnAddRoom_Click_1(object sender, EventArgs e)
-        {
-            if (txtRoomNo.Text != "" && txtRoomType.Text != "" && txtBed.Text != "" && txtPrice.Text != "")
-            {
-                String roomno = txtRoomNo.Text;
-                String type = txtRoomType.Text;
-                String bed = txtBed.Text;
-                Int64 price = Int64.Parse(txtPrice.Text);
-
-                query = "insert into rooms (roomNo, roomType, bed, price) values ('" + roomno + "','" + type + "','" + bed + "'," + price + ")";
-                fn.setData(query, "Đã thêm phòng");
-
-                UC_AddRoom_Load(this, null);
-                clearAll();
-            }
-            else
-            {
-                MessageBox.Show("Vui lòng điền đầy đủ thông tin", "Warning !", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-            }
-        }
     }
 }

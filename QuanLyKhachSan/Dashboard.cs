@@ -62,7 +62,7 @@ namespace QuanLyKhachSan
 
         private void btnEmployee_Click(object sender, EventArgs e)
         {
-            PanelMoving.Left = btnCustomerDetail.Left + 60;
+            PanelMoving.Left = btnEmployee.Left + 60;
             uC_Employee1.Visible = true;
             uC_Employee1.BringToFront();
         }

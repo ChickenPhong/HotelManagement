@@ -12,6 +12,8 @@ namespace QuanLyKhachSan
 {
     public partial class Form1: Form
     {
+        function fn = new function();
+        String query;
         public Form1()
         {
             InitializeComponent();
@@ -24,12 +26,14 @@ namespace QuanLyKhachSan
 
         private void btnLogin_Click(object sender, EventArgs e)
         {
-            if (txtUsername.Text == "gay" && txtPassword.Text == "123")
+            query = "select username, pass from employee where username = '" + txtUsername.Text + "' and pass = '" + txtPassword.Text + "'";
+            DataSet ds = fn.getData(query);
+            if (ds.Tables[0].Rows.Count != 0)
             {
                 labelError.Visible = false;
-                Dashboard ds = new Dashboard();
+                Dashboard dash = new Dashboard();
                 this.Hide();
-                ds.Show();
+                dash.Show();
             }
             else
             {

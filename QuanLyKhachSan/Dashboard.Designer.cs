@@ -41,17 +41,17 @@
             this.btnCustomerRes = new Guna.UI2.WinForms.Guna2Button();
             this.btnAddRoom = new Guna.UI2.WinForms.Guna2Button();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.uC_Employee1 = new QuanLyKhachSan.All_User_Control.UC_Employee();
+            this.uC_CustomerDetails1 = new QuanLyKhachSan.All_User_Control.UC_CustomerDetails();
+            this.uC_CheckOut1 = new QuanLyKhachSan.All_User_Control.UC_CheckOut();
+            this.uC_CustomerRes1 = new QuanLyKhachSan.All_User_Control.UC_CustomerRes();
+            this.uC_AddRoom1 = new QuanLyKhachSan.All_User_Control.UC_AddRoom();
             this.PanelMoving = new Guna.UI2.WinForms.Guna2Panel();
             this.guna2Elipse1 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
             this.guna2Elipse2 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
             this.guna2Elipse3 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
             this.guna2Elipse4 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
             this.guna2Elipse5 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
-            this.uC_CustomerDetails1 = new QuanLyKhachSan.All_User_Control.UC_CustomerDetails();
-            this.uC_CheckOut1 = new QuanLyKhachSan.All_User_Control.UC_CheckOut();
-            this.uC_CustomerRes1 = new QuanLyKhachSan.All_User_Control.UC_CustomerRes();
-            this.uC_AddRoom1 = new QuanLyKhachSan.All_User_Control.UC_AddRoom();
-            this.uC_Employee1 = new QuanLyKhachSan.All_User_Control.UC_Employee();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.SuspendLayout();
@@ -241,33 +241,13 @@
             this.panel2.Size = new System.Drawing.Size(1882, 852);
             this.panel2.TabIndex = 2;
             // 
-            // PanelMoving
+            // uC_Employee1
             // 
-            this.PanelMoving.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            this.PanelMoving.Location = new System.Drawing.Point(112, 157);
-            this.PanelMoving.Name = "PanelMoving";
-            this.PanelMoving.Size = new System.Drawing.Size(200, 8);
-            this.PanelMoving.TabIndex = 3;
-            // 
-            // guna2Elipse1
-            // 
-            this.guna2Elipse1.TargetControl = this;
-            // 
-            // guna2Elipse2
-            // 
-            this.guna2Elipse2.TargetControl = this;
-            // 
-            // guna2Elipse3
-            // 
-            this.guna2Elipse3.TargetControl = this;
-            // 
-            // guna2Elipse4
-            // 
-            this.guna2Elipse4.TargetControl = this;
-            // 
-            // guna2Elipse5
-            // 
-            this.guna2Elipse5.TargetControl = this;
+            this.uC_Employee1.BackColor = System.Drawing.Color.White;
+            this.uC_Employee1.Location = new System.Drawing.Point(-1, -1);
+            this.uC_Employee1.Name = "uC_Employee1";
+            this.uC_Employee1.Size = new System.Drawing.Size(1882, 852);
+            this.uC_Employee1.TabIndex = 4;
             // 
             // uC_CustomerDetails1
             // 
@@ -301,13 +281,33 @@
             this.uC_AddRoom1.Size = new System.Drawing.Size(1882, 852);
             this.uC_AddRoom1.TabIndex = 0;
             // 
-            // uC_Employee1
+            // PanelMoving
             // 
-            this.uC_Employee1.BackColor = System.Drawing.Color.White;
-            this.uC_Employee1.Location = new System.Drawing.Point(-1, -1);
-            this.uC_Employee1.Name = "uC_Employee1";
-            this.uC_Employee1.Size = new System.Drawing.Size(1882, 852);
-            this.uC_Employee1.TabIndex = 4;
+            this.PanelMoving.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.PanelMoving.Location = new System.Drawing.Point(112, 157);
+            this.PanelMoving.Name = "PanelMoving";
+            this.PanelMoving.Size = new System.Drawing.Size(200, 8);
+            this.PanelMoving.TabIndex = 3;
+            // 
+            // guna2Elipse1
+            // 
+            this.guna2Elipse1.TargetControl = this;
+            // 
+            // guna2Elipse2
+            // 
+            this.guna2Elipse2.TargetControl = this;
+            // 
+            // guna2Elipse3
+            // 
+            this.guna2Elipse3.TargetControl = this;
+            // 
+            // guna2Elipse4
+            // 
+            this.guna2Elipse4.TargetControl = this;
+            // 
+            // guna2Elipse5
+            // 
+            this.guna2Elipse5.TargetControl = this;
             // 
             // Dashboard
             // 
