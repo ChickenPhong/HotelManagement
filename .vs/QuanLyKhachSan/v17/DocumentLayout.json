@@ -3,36 +3,88 @@
   "WorkspaceRootPath": "D:\\HotelManagement\\HotelManagement\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{C07156DE-CB19-4EAF-9F77-7128E2D05351}|QuanLyKhachSan\\QuanLyKhachSan.csproj|d:\\hotelmanagement\\hotelmanagement\\quanlykhachsan\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C07156DE-CB19-4EAF-9F77-7128E2D05351}|QuanLyKhachSan\\QuanLyKhachSan.csproj|solutionrelative:quanlykhachsan\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{C07156DE-CB19-4EAF-9F77-7128E2D05351}|PresentationLayer\\PresentationLayer.csproj|d:\\hotelmanagement\\hotelmanagement\\presentationlayer\\dashboard.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{C07156DE-CB19-4EAF-9F77-7128E2D05351}|PresentationLayer\\PresentationLayer.csproj|solutionrelative:presentationlayer\\dashboard.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{C07156DE-CB19-4EAF-9F77-7128E2D05351}|QuanLyKhachSan\\QuanLyKhachSan.csproj|d:\\hotelmanagement\\hotelmanagement\\quanlykhachsan\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{C07156DE-CB19-4EAF-9F77-7128E2D05351}|QuanLyKhachSan\\QuanLyKhachSan.csproj|solutionrelative:quanlykhachsan\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{C07156DE-CB19-4EAF-9F77-7128E2D05351}|PresentationLayer\\PresentationLayer.csproj|d:\\hotelmanagement\\hotelmanagement\\presentationlayer\\dashboard.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C07156DE-CB19-4EAF-9F77-7128E2D05351}|PresentationLayer\\PresentationLayer.csproj|solutionrelative:presentationlayer\\dashboard.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{C07156DE-CB19-4EAF-9F77-7128E2D05351}|QuanLyKhachSan\\QuanLyKhachSan.csproj|d:\\hotelmanagement\\hotelmanagement\\quanlykhachsan\\all user control\\uc_employee.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C07156DE-CB19-4EAF-9F77-7128E2D05351}|QuanLyKhachSan\\QuanLyKhachSan.csproj|solutionrelative:quanlykhachsan\\all user control\\uc_employee.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{C07156DE-CB19-4EAF-9F77-7128E2D05351}|PresentationLayer\\PresentationLayer.csproj|D:\\HotelManagement\\HotelManagement\\presentationlayer\\all user control\\uc_employee.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C07156DE-CB19-4EAF-9F77-7128E2D05351}|PresentationLayer\\PresentationLayer.csproj|solutionrelative:presentationlayer\\all user control\\uc_employee.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{C07156DE-CB19-4EAF-9F77-7128E2D05351}|QuanLyKhachSan\\QuanLyKhachSan.csproj|d:\\hotelmanagement\\hotelmanagement\\quanlykhachsan\\all user control\\uc_employee.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{C07156DE-CB19-4EAF-9F77-7128E2D05351}|QuanLyKhachSan\\QuanLyKhachSan.csproj|solutionrelative:quanlykhachsan\\all user control\\uc_employee.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{C07156DE-CB19-4EAF-9F77-7128E2D05351}|PresentationLayer\\PresentationLayer.csproj|D:\\HotelManagement\\HotelManagement\\presentationlayer\\all user control\\uc_employee.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{C07156DE-CB19-4EAF-9F77-7128E2D05351}|PresentationLayer\\PresentationLayer.csproj|solutionrelative:presentationlayer\\all user control\\uc_employee.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{C07156DE-CB19-4EAF-9F77-7128E2D05351}|QuanLyKhachSan\\QuanLyKhachSan.csproj|D:\\HotelManagement\\HotelManagement\\quanlykhachsan\\all user control\\uc_customerres.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C07156DE-CB19-4EAF-9F77-7128E2D05351}|QuanLyKhachSan\\QuanLyKhachSan.csproj|solutionrelative:quanlykhachsan\\all user control\\uc_customerres.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{C07156DE-CB19-4EAF-9F77-7128E2D05351}|PresentationLayer\\PresentationLayer.csproj|d:\\hotelmanagement\\hotelmanagement\\presentationlayer\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C07156DE-CB19-4EAF-9F77-7128E2D05351}|PresentationLayer\\PresentationLayer.csproj|solutionrelative:presentationlayer\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{C07156DE-CB19-4EAF-9F77-7128E2D05351}|QuanLyKhachSan\\QuanLyKhachSan.csproj|D:\\HotelManagement\\HotelManagement\\quanlykhachsan\\dashboard.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{C07156DE-CB19-4EAF-9F77-7128E2D05351}|QuanLyKhachSan\\QuanLyKhachSan.csproj|solutionrelative:quanlykhachsan\\dashboard.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{C07156DE-CB19-4EAF-9F77-7128E2D05351}|PresentationLayer\\PresentationLayer.csproj|d:\\hotelmanagement\\hotelmanagement\\presentationlayer\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C07156DE-CB19-4EAF-9F77-7128E2D05351}|PresentationLayer\\PresentationLayer.csproj|solutionrelative:presentationlayer\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{C07156DE-CB19-4EAF-9F77-7128E2D05351}|QuanLyKhachSan\\QuanLyKhachSan.csproj|D:\\HotelManagement\\HotelManagement\\quanlykhachsan\\dashboard.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C07156DE-CB19-4EAF-9F77-7128E2D05351}|QuanLyKhachSan\\QuanLyKhachSan.csproj|solutionrelative:quanlykhachsan\\dashboard.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{C07156DE-CB19-4EAF-9F77-7128E2D05351}|PresentationLayer\\PresentationLayer.csproj|D:\\HotelManagement\\HotelManagement\\presentationlayer\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{C07156DE-CB19-4EAF-9F77-7128E2D05351}|PresentationLayer\\PresentationLayer.csproj|solutionrelative:presentationlayer\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{C07156DE-CB19-4EAF-9F77-7128E2D05351}|QuanLyKhachSan\\QuanLyKhachSan.csproj|D:\\HotelManagement\\HotelManagement\\quanlykhachsan\\all user control\\uc_customerdetails.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C07156DE-CB19-4EAF-9F77-7128E2D05351}|QuanLyKhachSan\\QuanLyKhachSan.csproj|solutionrelative:quanlykhachsan\\all user control\\uc_customerdetails.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{8668F4CE-E0F6-4153-BE2E-0BD2A1F9E2D9}|BusinessLayer\\BusinessLayer.csproj|d:\\hotelmanagement\\hotelmanagement\\businesslayer\\employeeservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8668F4CE-E0F6-4153-BE2E-0BD2A1F9E2D9}|BusinessLayer\\BusinessLayer.csproj|solutionrelative:businesslayer\\employeeservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8668F4CE-E0F6-4153-BE2E-0BD2A1F9E2D9}|BusinessLayer\\BusinessLayer.csproj|D:\\HotelManagement\\HotelManagement\\businesslayer\\roomservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8668F4CE-E0F6-4153-BE2E-0BD2A1F9E2D9}|BusinessLayer\\BusinessLayer.csproj|solutionrelative:businesslayer\\roomservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C07156DE-CB19-4EAF-9F77-7128E2D05351}|PresentationLayer\\PresentationLayer.csproj|D:\\HotelManagement\\HotelManagement\\presentationlayer\\all user control\\uc_checkout.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C07156DE-CB19-4EAF-9F77-7128E2D05351}|PresentationLayer\\PresentationLayer.csproj|solutionrelative:presentationlayer\\all user control\\uc_checkout.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C07156DE-CB19-4EAF-9F77-7128E2D05351}|PresentationLayer\\PresentationLayer.csproj|D:\\HotelManagement\\HotelManagement\\presentationlayer\\all user control\\uc_checkout.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{C07156DE-CB19-4EAF-9F77-7128E2D05351}|PresentationLayer\\PresentationLayer.csproj|solutionrelative:presentationlayer\\all user control\\uc_checkout.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C07156DE-CB19-4EAF-9F77-7128E2D05351}|PresentationLayer\\PresentationLayer.csproj|D:\\HotelManagement\\HotelManagement\\presentationlayer\\all user control\\uc_customerres.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{C07156DE-CB19-4EAF-9F77-7128E2D05351}|PresentationLayer\\PresentationLayer.csproj|solutionrelative:presentationlayer\\all user control\\uc_customerres.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8668F4CE-E0F6-4153-BE2E-0BD2A1F9E2D9}|BusinessLayer\\BusinessLayer.csproj|D:\\HotelManagement\\HotelManagement\\businesslayer\\customerservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8668F4CE-E0F6-4153-BE2E-0BD2A1F9E2D9}|BusinessLayer\\BusinessLayer.csproj|solutionrelative:businesslayer\\customerservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A65E10DD-0C4B-4758-B72C-6CF28F6E55B8}|DataLayer\\DataLayer.csproj|d:\\hotelmanagement\\hotelmanagement\\datalayer\\function.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A65E10DD-0C4B-4758-B72C-6CF28F6E55B8}|DataLayer\\DataLayer.csproj|solutionrelative:datalayer\\function.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C07156DE-CB19-4EAF-9F77-7128E2D05351}|PresentationLayer\\PresentationLayer.csproj|D:\\HotelManagement\\HotelManagement\\presentationlayer\\all user control\\uc_customerdetails.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C07156DE-CB19-4EAF-9F77-7128E2D05351}|PresentationLayer\\PresentationLayer.csproj|solutionrelative:presentationlayer\\all user control\\uc_customerdetails.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C07156DE-CB19-4EAF-9F77-7128E2D05351}|PresentationLayer\\PresentationLayer.csproj|D:\\HotelManagement\\HotelManagement\\presentationlayer\\all user control\\uc_customerdetails.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{C07156DE-CB19-4EAF-9F77-7128E2D05351}|PresentationLayer\\PresentationLayer.csproj|solutionrelative:presentationlayer\\all user control\\uc_customerdetails.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C07156DE-CB19-4EAF-9F77-7128E2D05351}|PresentationLayer\\PresentationLayer.csproj|D:\\HotelManagement\\HotelManagement\\presentationlayer\\all user control\\uc_customerres.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C07156DE-CB19-4EAF-9F77-7128E2D05351}|PresentationLayer\\PresentationLayer.csproj|solutionrelative:presentationlayer\\all user control\\uc_customerres.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B3A4F7F0-7020-47FD-9A5A-87AA43676BB1}|TransferObject\\TransferObject.csproj|D:\\HotelManagement\\HotelManagement\\transferobject\\room.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B3A4F7F0-7020-47FD-9A5A-87AA43676BB1}|TransferObject\\TransferObject.csproj|solutionrelative:transferobject\\room.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\HotelManagement\\HotelManagement\\QuanLyKhachSan\\Form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:QuanLyKhachSan\\Form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\HotelManagement\\HotelManagement\\quanlykhachsan\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:quanlykhachsan\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\HotelManagement\\HotelManagement\\QuanLyKhachSan\\All User Control\\UC_Employee.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:QuanLyKhachSan\\All User Control\\UC_Employee.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -42,108 +94,267 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "Form1.cs",
-              "DocumentMoniker": "D:\\HotelManagement\\HotelManagement\\QuanLyKhachSan\\Form1.cs",
-              "RelativeDocumentMoniker": "QuanLyKhachSan\\Form1.cs",
-              "ToolTip": "D:\\HotelManagement\\HotelManagement\\QuanLyKhachSan\\Form1.cs",
-              "RelativeToolTip": "QuanLyKhachSan\\Form1.cs",
-              "ViewState": "AgIAABkAAAAAAAAAAAAQwCEAAAAxAAAAAAAAAA==",
+              "DocumentIndex": 1,
+              "Title": "Dashboard.Designer.cs",
+              "DocumentMoniker": "D:\\HotelManagement\\HotelManagement\\PresentationLayer\\Dashboard.Designer.cs",
+              "RelativeDocumentMoniker": "PresentationLayer\\Dashboard.Designer.cs",
+              "ToolTip": "D:\\HotelManagement\\HotelManagement\\PresentationLayer\\Dashboard.Designer.cs",
+              "RelativeToolTip": "PresentationLayer\\Dashboard.Designer.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-30T08:17:49.45Z",
+              "WhenOpened": "2025-03-31T03:50:29.961Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "Form1.cs [Design]",
-              "DocumentMoniker": "D:\\HotelManagement\\HotelManagement\\QuanLyKhachSan\\Form1.cs",
-              "RelativeDocumentMoniker": "QuanLyKhachSan\\Form1.cs",
-              "ToolTip": "D:\\HotelManagement\\HotelManagement\\QuanLyKhachSan\\Form1.cs [Design]",
-              "RelativeToolTip": "QuanLyKhachSan\\Form1.cs [Design]",
+              "DocumentIndex": 4,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\HotelManagement\\HotelManagement\\PresentationLayer\\Program.cs",
+              "RelativeDocumentMoniker": "PresentationLayer\\Program.cs",
+              "ToolTip": "D:\\HotelManagement\\HotelManagement\\PresentationLayer\\Program.cs",
+              "RelativeToolTip": "PresentationLayer\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-30T08:17:48.487Z",
+              "WhenOpened": "2025-03-31T03:46:43.327Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Dashboard.cs [Design]",
+              "DocumentMoniker": "D:\\HotelManagement\\HotelManagement\\PresentationLayer\\Dashboard.cs",
+              "RelativeDocumentMoniker": "PresentationLayer\\Dashboard.cs",
+              "ToolTip": "D:\\HotelManagement\\HotelManagement\\PresentationLayer\\Dashboard.cs [Design]",
+              "RelativeToolTip": "PresentationLayer\\Dashboard.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-31T03:42:05.863Z",
               "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "EmployeeService.cs",
+              "DocumentMoniker": "D:\\HotelManagement\\HotelManagement\\BusinessLayer\\EmployeeService.cs",
+              "RelativeDocumentMoniker": "BusinessLayer\\EmployeeService.cs",
+              "ToolTip": "D:\\HotelManagement\\HotelManagement\\BusinessLayer\\EmployeeService.cs",
+              "RelativeToolTip": "BusinessLayer\\EmployeeService.cs",
+              "ViewState": "AgIAACIAAAAAAAAAAAAYwCYAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-31T03:37:53.2Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "Function.cs",
+              "DocumentMoniker": "D:\\HotelManagement\\HotelManagement\\DataLayer\\Function.cs",
+              "RelativeDocumentMoniker": "DataLayer\\Function.cs",
+              "ToolTip": "D:\\HotelManagement\\HotelManagement\\DataLayer\\Function.cs",
+              "RelativeToolTip": "DataLayer\\Function.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAZAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-31T03:03:52.47Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Form1.cs",
+              "DocumentMoniker": "D:\\HotelManagement\\HotelManagement\\PresentationLayer\\Form1.cs",
+              "RelativeDocumentMoniker": "PresentationLayer\\Form1.cs",
+              "ToolTip": "D:\\HotelManagement\\HotelManagement\\PresentationLayer\\Form1.cs",
+              "RelativeToolTip": "PresentationLayer\\Form1.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAAB4AAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-30T22:49:55.174Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
               "Title": "UC_Employee.cs",
-              "DocumentMoniker": "D:\\HotelManagement\\HotelManagement\\QuanLyKhachSan\\All User Control\\UC_Employee.cs",
-              "RelativeDocumentMoniker": "QuanLyKhachSan\\All User Control\\UC_Employee.cs",
-              "ToolTip": "D:\\HotelManagement\\HotelManagement\\QuanLyKhachSan\\All User Control\\UC_Employee.cs",
-              "RelativeToolTip": "QuanLyKhachSan\\All User Control\\UC_Employee.cs",
-              "ViewState": "AgIAAF4AAAAAAAAAAAAQwGYAAAAXAAAAAAAAAA==",
+              "DocumentMoniker": "D:\\HotelManagement\\HotelManagement\\PresentationLayer\\All User Control\\UC_Employee.cs",
+              "RelativeDocumentMoniker": "PresentationLayer\\All User Control\\UC_Employee.cs",
+              "ToolTip": "D:\\HotelManagement\\HotelManagement\\PresentationLayer\\All User Control\\UC_Employee.cs",
+              "RelativeToolTip": "PresentationLayer\\All User Control\\UC_Employee.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABcAAAAMAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-30T06:30:46.982Z",
+              "WhenOpened": "2025-03-30T22:49:29.878Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 3,
               "Title": "UC_Employee.cs [Design]",
-              "DocumentMoniker": "D:\\HotelManagement\\HotelManagement\\QuanLyKhachSan\\All User Control\\UC_Employee.cs",
-              "RelativeDocumentMoniker": "QuanLyKhachSan\\All User Control\\UC_Employee.cs",
-              "ToolTip": "D:\\HotelManagement\\HotelManagement\\QuanLyKhachSan\\All User Control\\UC_Employee.cs [Design]",
-              "RelativeToolTip": "QuanLyKhachSan\\All User Control\\UC_Employee.cs [Design]",
+              "DocumentMoniker": "D:\\HotelManagement\\HotelManagement\\PresentationLayer\\All User Control\\UC_Employee.cs",
+              "RelativeDocumentMoniker": "PresentationLayer\\All User Control\\UC_Employee.cs",
+              "ToolTip": "D:\\HotelManagement\\HotelManagement\\PresentationLayer\\All User Control\\UC_Employee.cs [Design]",
+              "RelativeToolTip": "PresentationLayer\\All User Control\\UC_Employee.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-29T11:52:33.126Z",
+              "WhenOpened": "2025-03-30T22:49:27.946Z",
               "EditorCaption": " [Design]"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "UC_CustomerDetails.cs",
-              "DocumentMoniker": "D:\\HotelManagement\\HotelManagement\\QuanLyKhachSan\\All User Control\\UC_CustomerDetails.cs",
-              "RelativeDocumentMoniker": "QuanLyKhachSan\\All User Control\\UC_CustomerDetails.cs",
-              "ToolTip": "D:\\HotelManagement\\HotelManagement\\QuanLyKhachSan\\All User Control\\UC_CustomerDetails.cs",
-              "RelativeToolTip": "QuanLyKhachSan\\All User Control\\UC_CustomerDetails.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAACQAAAA6AQAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-23T22:14:07.635Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 16,
               "Title": "UC_CustomerRes.cs",
-              "DocumentMoniker": "D:\\HotelManagement\\HotelManagement\\QuanLyKhachSan\\All User Control\\UC_CustomerRes.cs",
-              "RelativeDocumentMoniker": "QuanLyKhachSan\\All User Control\\UC_CustomerRes.cs",
-              "ToolTip": "D:\\HotelManagement\\HotelManagement\\QuanLyKhachSan\\All User Control\\UC_CustomerRes.cs",
-              "RelativeToolTip": "QuanLyKhachSan\\All User Control\\UC_CustomerRes.cs",
-              "ViewState": "AgIAAFEAAAAAAAAAAAAqwEEAAAAMAAAAAAAAAA==",
+              "DocumentMoniker": "D:\\HotelManagement\\HotelManagement\\PresentationLayer\\All User Control\\UC_CustomerRes.cs",
+              "RelativeDocumentMoniker": "PresentationLayer\\All User Control\\UC_CustomerRes.cs",
+              "ToolTip": "D:\\HotelManagement\\HotelManagement\\PresentationLayer\\All User Control\\UC_CustomerRes.cs",
+              "RelativeToolTip": "PresentationLayer\\All User Control\\UC_CustomerRes.cs",
+              "ViewState": "AgIAAD8AAAAAAAAAAAAowEMAAACDAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-21T06:07:27.984Z",
+              "WhenOpened": "2025-03-30T22:49:19.553Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "Dashboard.cs [Design]",
-              "DocumentMoniker": "D:\\HotelManagement\\HotelManagement\\QuanLyKhachSan\\Dashboard.cs",
-              "RelativeDocumentMoniker": "QuanLyKhachSan\\Dashboard.cs",
-              "ToolTip": "D:\\HotelManagement\\HotelManagement\\QuanLyKhachSan\\Dashboard.cs [Design]",
-              "RelativeToolTip": "QuanLyKhachSan\\Dashboard.cs [Design]",
+              "DocumentIndex": 11,
+              "Title": "UC_CustomerRes.cs [Design]",
+              "DocumentMoniker": "D:\\HotelManagement\\HotelManagement\\PresentationLayer\\All User Control\\UC_CustomerRes.cs",
+              "RelativeDocumentMoniker": "PresentationLayer\\All User Control\\UC_CustomerRes.cs",
+              "ToolTip": "D:\\HotelManagement\\HotelManagement\\PresentationLayer\\All User Control\\UC_CustomerRes.cs [Design]",
+              "RelativeToolTip": "PresentationLayer\\All User Control\\UC_CustomerRes.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-20T03:00:51.304Z",
+              "WhenOpened": "2025-03-30T22:49:16.176Z",
               "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "UC_CustomerDetails.cs",
+              "DocumentMoniker": "D:\\HotelManagement\\HotelManagement\\PresentationLayer\\All User Control\\UC_CustomerDetails.cs",
+              "RelativeDocumentMoniker": "PresentationLayer\\All User Control\\UC_CustomerDetails.cs",
+              "ToolTip": "D:\\HotelManagement\\HotelManagement\\PresentationLayer\\All User Control\\UC_CustomerDetails.cs",
+              "RelativeToolTip": "PresentationLayer\\All User Control\\UC_CustomerDetails.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACUAAAAuAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-30T22:49:09.801Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "UC_CustomerDetails.cs [Design]",
+              "DocumentMoniker": "D:\\HotelManagement\\HotelManagement\\PresentationLayer\\All User Control\\UC_CustomerDetails.cs",
+              "RelativeDocumentMoniker": "PresentationLayer\\All User Control\\UC_CustomerDetails.cs",
+              "ToolTip": "D:\\HotelManagement\\HotelManagement\\PresentationLayer\\All User Control\\UC_CustomerDetails.cs [Design]",
+              "RelativeToolTip": "PresentationLayer\\All User Control\\UC_CustomerDetails.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-30T22:49:08.471Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "UC_CheckOut.cs",
+              "DocumentMoniker": "D:\\HotelManagement\\HotelManagement\\PresentationLayer\\All User Control\\UC_CheckOut.cs",
+              "RelativeDocumentMoniker": "PresentationLayer\\All User Control\\UC_CheckOut.cs",
+              "ToolTip": "D:\\HotelManagement\\HotelManagement\\PresentationLayer\\All User Control\\UC_CheckOut.cs",
+              "RelativeToolTip": "PresentationLayer\\All User Control\\UC_CheckOut.cs",
+              "ViewState": "AgIAAEYAAAAAAAAAAAAAABwAAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-30T22:49:03.807Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "UC_CheckOut.cs [Design]",
+              "DocumentMoniker": "D:\\HotelManagement\\HotelManagement\\PresentationLayer\\All User Control\\UC_CheckOut.cs",
+              "RelativeDocumentMoniker": "PresentationLayer\\All User Control\\UC_CheckOut.cs",
+              "ToolTip": "D:\\HotelManagement\\HotelManagement\\PresentationLayer\\All User Control\\UC_CheckOut.cs [Design]",
+              "RelativeToolTip": "PresentationLayer\\All User Control\\UC_CheckOut.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-30T22:49:02.411Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "Room.cs",
+              "DocumentMoniker": "D:\\HotelManagement\\HotelManagement\\TransferObject\\Room.cs",
+              "RelativeDocumentMoniker": "TransferObject\\Room.cs",
+              "ToolTip": "D:\\HotelManagement\\HotelManagement\\TransferObject\\Room.cs",
+              "RelativeToolTip": "TransferObject\\Room.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAAAkAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-30T22:43:46.952Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "CustomerService.cs",
+              "DocumentMoniker": "D:\\HotelManagement\\HotelManagement\\BusinessLayer\\CustomerService.cs",
+              "RelativeDocumentMoniker": "BusinessLayer\\CustomerService.cs",
+              "ToolTip": "D:\\HotelManagement\\HotelManagement\\BusinessLayer\\CustomerService.cs",
+              "RelativeToolTip": "BusinessLayer\\CustomerService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAQAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-30T22:42:25.564Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "RoomService.cs",
+              "DocumentMoniker": "D:\\HotelManagement\\HotelManagement\\BusinessLayer\\RoomService.cs",
+              "RelativeDocumentMoniker": "BusinessLayer\\RoomService.cs",
+              "ToolTip": "D:\\HotelManagement\\HotelManagement\\BusinessLayer\\RoomService.cs",
+              "RelativeToolTip": "BusinessLayer\\RoomService.cs",
+              "ViewState": "AgIAAAUAAAAAAAAAAAAAACYAAAA1AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-30T22:42:10.536Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 6,
-              "Title": "Dashboard.cs",
-              "DocumentMoniker": "D:\\HotelManagement\\HotelManagement\\QuanLyKhachSan\\Dashboard.cs",
-              "RelativeDocumentMoniker": "QuanLyKhachSan\\Dashboard.cs",
-              "ToolTip": "D:\\HotelManagement\\HotelManagement\\QuanLyKhachSan\\Dashboard.cs",
-              "RelativeToolTip": "QuanLyKhachSan\\Dashboard.cs",
-              "ViewState": "AgIAADIAAAAAAAAAAAAvwEAAAAAqAAAAAAAAAA==",
+              "Title": "Form1.cs [Design]",
+              "DocumentMoniker": "D:\\HotelManagement\\HotelManagement\\PresentationLayer\\Form1.cs",
+              "RelativeDocumentMoniker": "PresentationLayer\\Form1.cs",
+              "ToolTip": "D:\\HotelManagement\\HotelManagement\\PresentationLayer\\Form1.cs [Design]",
+              "RelativeToolTip": "PresentationLayer\\Form1.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-20T03:49:27.604Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-30T22:37:12.039Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "Form1.cs",
+              "DocumentMoniker": "D:\\HotelManagement\\HotelManagement\\QuanLyKhachSan\\Form1.cs",
+              "RelativeDocumentMoniker": "QuanLyKhachSan\\Form1.cs",
+              "ToolTip": "D:\\HotelManagement\\HotelManagement\\QuanLyKhachSan\\Form1.cs",
+              "RelativeToolTip": "QuanLyKhachSan\\Form1.cs",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-30T08:17:49.45Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "Form1.cs [Design]",
+              "DocumentMoniker": "D:\\HotelManagement\\HotelManagement\\QuanLyKhachSan\\Form1.cs",
+              "RelativeDocumentMoniker": "QuanLyKhachSan\\Form1.cs",
+              "ToolTip": "D:\\HotelManagement\\HotelManagement\\QuanLyKhachSan\\Form1.cs [Design]",
+              "RelativeToolTip": "QuanLyKhachSan\\Form1.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-30T08:17:48.487Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "UC_Employee.cs",
+              "DocumentMoniker": "D:\\HotelManagement\\HotelManagement\\QuanLyKhachSan\\All User Control\\UC_Employee.cs",
+              "RelativeDocumentMoniker": "QuanLyKhachSan\\All User Control\\UC_Employee.cs",
+              "ToolTip": "D:\\HotelManagement\\HotelManagement\\QuanLyKhachSan\\All User Control\\UC_Employee.cs",
+              "RelativeToolTip": "QuanLyKhachSan\\All User Control\\UC_Employee.cs",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-30T06:30:46.982Z"
             }
           ]
         }
