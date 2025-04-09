@@ -66,5 +66,12 @@ namespace PresentationLayer
             uC_Employee1.Visible = true;
             uC_Employee1.BringToFront();
         }
+
+        private void btnCustomerRequest_Click(object sender, EventArgs e)
+        {
+            PanelMoving.Left = btnCustomerRequest.Left + 60;
+            uC_CustomerRequest1.Visible = true;
+            uC_CustomerRequest1.BringToFront();
+        }
     }
 }

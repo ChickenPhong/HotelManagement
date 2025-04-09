@@ -43,17 +43,19 @@ namespace PresentationLayer
             this.btnCustomerRes = new Guna.UI2.WinForms.Guna2Button();
             this.btnAddRoom = new Guna.UI2.WinForms.Guna2Button();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.uC_Employee1 = new PresentationLayer.All_User_Control.UC_Employee();
-            this.uC_CustomerDetails1 = new PresentationLayer.All_User_Control.UC_CustomerDetails();
-            this.uC_CheckOut1 = new PresentationLayer.All_User_Control.UC_CheckOut();
-            this.uC_CustomerRes1 = new PresentationLayer.All_User_Control.UC_CustomerRes();
-            this.uC_AddRoom1 = new PresentationLayer.All_User_Control.UC_AddRoom();
             this.PanelMoving = new Guna.UI2.WinForms.Guna2Panel();
             this.guna2Elipse1 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
             this.guna2Elipse2 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
             this.guna2Elipse3 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
             this.guna2Elipse4 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
             this.guna2Elipse5 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
+            this.guna2Elipse6 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
+            this.uC_CustomerRequest1 = new QuanLyKhachSan.All_User_Control.UC_CustomerRequest();
+            this.uC_Employee1 = new PresentationLayer.All_User_Control.UC_Employee();
+            this.uC_CustomerDetails1 = new PresentationLayer.All_User_Control.UC_CustomerDetails();
+            this.uC_CheckOut1 = new PresentationLayer.All_User_Control.UC_CheckOut();
+            this.uC_CustomerRes1 = new PresentationLayer.All_User_Control.UC_CustomerRes();
+            this.uC_AddRoom1 = new PresentationLayer.All_User_Control.UC_AddRoom();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.SuspendLayout();
@@ -157,6 +159,7 @@ namespace PresentationLayer
             this.btnCustomerRequest.Size = new System.Drawing.Size(200, 116);
             this.btnCustomerRequest.TabIndex = 0;
             this.btnCustomerRequest.Text = "Yêu Cầu Khách Hàng";
+            this.btnCustomerRequest.Click += new System.EventHandler(this.btnCustomerRequest_Click);
             // 
             // btnCustomerDetail
             // 
@@ -233,6 +236,7 @@ namespace PresentationLayer
             // panel2
             // 
             this.panel2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel2.Controls.Add(this.uC_CustomerRequest1);
             this.panel2.Controls.Add(this.uC_Employee1);
             this.panel2.Controls.Add(this.uC_CustomerDetails1);
             this.panel2.Controls.Add(this.uC_CheckOut1);
@@ -242,46 +246,6 @@ namespace PresentationLayer
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(1882, 852);
             this.panel2.TabIndex = 2;
-            // 
-            // uC_Employee1
-            // 
-            this.uC_Employee1.BackColor = System.Drawing.Color.White;
-            this.uC_Employee1.Location = new System.Drawing.Point(-1, -1);
-            this.uC_Employee1.Name = "uC_Employee1";
-            this.uC_Employee1.Size = new System.Drawing.Size(1882, 852);
-            this.uC_Employee1.TabIndex = 4;
-            // 
-            // uC_CustomerDetails1
-            // 
-            this.uC_CustomerDetails1.BackColor = System.Drawing.Color.White;
-            this.uC_CustomerDetails1.Location = new System.Drawing.Point(-2, -2);
-            this.uC_CustomerDetails1.Name = "uC_CustomerDetails1";
-            this.uC_CustomerDetails1.Size = new System.Drawing.Size(1882, 852);
-            this.uC_CustomerDetails1.TabIndex = 3;
-            // 
-            // uC_CheckOut1
-            // 
-            this.uC_CheckOut1.BackColor = System.Drawing.Color.White;
-            this.uC_CheckOut1.Location = new System.Drawing.Point(-1, -2);
-            this.uC_CheckOut1.Name = "uC_CheckOut1";
-            this.uC_CheckOut1.Size = new System.Drawing.Size(1882, 852);
-            this.uC_CheckOut1.TabIndex = 2;
-            // 
-            // uC_CustomerRes1
-            // 
-            this.uC_CustomerRes1.BackColor = System.Drawing.Color.White;
-            this.uC_CustomerRes1.Location = new System.Drawing.Point(-1, -2);
-            this.uC_CustomerRes1.Name = "uC_CustomerRes1";
-            this.uC_CustomerRes1.Size = new System.Drawing.Size(1882, 852);
-            this.uC_CustomerRes1.TabIndex = 1;
-            // 
-            // uC_AddRoom1
-            // 
-            this.uC_AddRoom1.BackColor = System.Drawing.Color.White;
-            this.uC_AddRoom1.Location = new System.Drawing.Point(-2, -2);
-            this.uC_AddRoom1.Name = "uC_AddRoom1";
-            this.uC_AddRoom1.Size = new System.Drawing.Size(1882, 852);
-            this.uC_AddRoom1.TabIndex = 0;
             // 
             // PanelMoving
             // 
@@ -310,6 +274,58 @@ namespace PresentationLayer
             // guna2Elipse5
             // 
             this.guna2Elipse5.TargetControl = this;
+            // 
+            // guna2Elipse6
+            // 
+            this.guna2Elipse6.TargetControl = this;
+            // 
+            // uC_CustomerRequest1
+            // 
+            this.uC_CustomerRequest1.BackColor = System.Drawing.Color.White;
+            this.uC_CustomerRequest1.Location = new System.Drawing.Point(-1, -1);
+            this.uC_CustomerRequest1.Name = "uC_CustomerRequest1";
+            this.uC_CustomerRequest1.Size = new System.Drawing.Size(1882, 852);
+            this.uC_CustomerRequest1.TabIndex = 5;
+            // 
+            // uC_Employee1
+            // 
+            this.uC_Employee1.BackColor = System.Drawing.Color.White;
+            this.uC_Employee1.Location = new System.Drawing.Point(-1, -2);
+            this.uC_Employee1.Name = "uC_Employee1";
+            this.uC_Employee1.Size = new System.Drawing.Size(1882, 852);
+            this.uC_Employee1.TabIndex = 4;
+            // 
+            // uC_CustomerDetails1
+            // 
+            this.uC_CustomerDetails1.BackColor = System.Drawing.Color.White;
+            this.uC_CustomerDetails1.Location = new System.Drawing.Point(-1, -1);
+            this.uC_CustomerDetails1.Name = "uC_CustomerDetails1";
+            this.uC_CustomerDetails1.Size = new System.Drawing.Size(1882, 852);
+            this.uC_CustomerDetails1.TabIndex = 3;
+            // 
+            // uC_CheckOut1
+            // 
+            this.uC_CheckOut1.BackColor = System.Drawing.Color.White;
+            this.uC_CheckOut1.Location = new System.Drawing.Point(-1, -1);
+            this.uC_CheckOut1.Name = "uC_CheckOut1";
+            this.uC_CheckOut1.Size = new System.Drawing.Size(1882, 852);
+            this.uC_CheckOut1.TabIndex = 2;
+            // 
+            // uC_CustomerRes1
+            // 
+            this.uC_CustomerRes1.BackColor = System.Drawing.Color.White;
+            this.uC_CustomerRes1.Location = new System.Drawing.Point(3, 3);
+            this.uC_CustomerRes1.Name = "uC_CustomerRes1";
+            this.uC_CustomerRes1.Size = new System.Drawing.Size(1882, 852);
+            this.uC_CustomerRes1.TabIndex = 1;
+            // 
+            // uC_AddRoom1
+            // 
+            this.uC_AddRoom1.BackColor = System.Drawing.Color.White;
+            this.uC_AddRoom1.Location = new System.Drawing.Point(-2, -2);
+            this.uC_AddRoom1.Name = "uC_AddRoom1";
+            this.uC_AddRoom1.Size = new System.Drawing.Size(1882, 852);
+            this.uC_AddRoom1.TabIndex = 0;
             // 
             // Dashboard
             // 
@@ -358,5 +374,7 @@ namespace PresentationLayer
         private All_User_Control.UC_CustomerDetails uC_CustomerDetails1;
         private Guna.UI2.WinForms.Guna2Elipse guna2Elipse5;
         private All_User_Control.UC_Employee uC_Employee1;
+        private QuanLyKhachSan.All_User_Control.UC_CustomerRequest uC_CustomerRequest1;
+        private Guna.UI2.WinForms.Guna2Elipse guna2Elipse6;
     }
 }

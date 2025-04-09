@@ -22,3 +22,4 @@ D:\HotelManagement\HotelManagement\PresentationLayer\bin\Debug\TransferObject.pd
 D:\HotelManagement\HotelManagement\PresentationLayer\obj\Debug\Presenta.9C561136.Up2Date
 D:\HotelManagement\HotelManagement\PresentationLayer\obj\Debug\QuanLyKhachSan.exe
 D:\HotelManagement\HotelManagement\PresentationLayer\obj\Debug\QuanLyKhachSan.pdb
+D:\HotelManagement\HotelManagement\PresentationLayer\obj\Debug\QuanLyKhachSan.All_User_Control.UC_CustomerRequest.resources
