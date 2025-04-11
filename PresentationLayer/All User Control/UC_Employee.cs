@@ -13,7 +13,7 @@ namespace PresentationLayer.All_User_Control
 {
     public partial class UC_Employee: UserControl
     {
-        EmployeeService employeeService = new EmployeeService();
+        EmployeeServiceBL employeeService = new EmployeeServiceBL();
         public UC_Employee()
         {
             InitializeComponent();

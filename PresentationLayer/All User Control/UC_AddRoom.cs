@@ -15,7 +15,7 @@ namespace PresentationLayer.All_User_Control
 {
     public partial class UC_AddRoom: UserControl
     {
-        RoomService roomService = new RoomService();
+        RoomServiceBL roomService = new RoomServiceBL();
 
         public UC_AddRoom()
         {

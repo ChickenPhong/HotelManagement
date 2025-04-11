@@ -8,9 +8,18 @@ using DataLayer;
 
 namespace BusinessLayer
 {
-    public class EmployeeService
+    public class EmployeeServiceBL
     {
         Function fn = new Function();
+
+        EmployeeServiceDL employeeServiceDL = new EmployeeServiceDL();
+
+        public bool CheckLogin(string username, string password)
+        {
+            string query = $"SELECT username, pass FROM employee WHERE username = '{username}' AND pass = '{password}'";
+            DataSet ds = employeeServiceDL.CheckLogin(query);
+            return ds.Tables[0].Rows.Count > 0;
+        }
 
         public int GetNextEmployeeId()
         {

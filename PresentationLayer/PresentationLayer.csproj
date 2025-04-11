@@ -151,10 +151,6 @@
       <Project>{8668f4ce-e0f6-4153-be2e-0bd2a1f9e2d9}</Project>
       <Name>BusinessLayer</Name>
     </ProjectReference>
-    <ProjectReference Include="..\DataLayer\DataLayer.csproj">
-      <Project>{a65e10dd-0c4b-4758-b72c-6cf28f6e55b8}</Project>
-      <Name>DataLayer</Name>
-    </ProjectReference>
     <ProjectReference Include="..\TransferObject\TransferObject.csproj">
       <Project>{b3a4f7f0-7020-47fd-9a5a-87aa43676bb1}</Project>
       <Name>TransferObject</Name>

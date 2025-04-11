@@ -14,7 +14,7 @@ namespace PresentationLayer.All_User_Control
 {
     public partial class UC_CustomerRes: UserControl
     {
-        CustomerService customerService = new CustomerService();
+        CustomerServiceBL customerService = new CustomerServiceBL();
 
         public UC_CustomerRes()
         {

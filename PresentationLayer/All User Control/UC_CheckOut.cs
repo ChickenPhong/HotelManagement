@@ -13,7 +13,7 @@ namespace PresentationLayer.All_User_Control
 {
     public partial class UC_CheckOut: UserControl
     {
-        CustomerService customerService = new CustomerService();
+        CustomerServiceBL customerService = new CustomerServiceBL();
         public UC_CheckOut()
         {
             InitializeComponent();

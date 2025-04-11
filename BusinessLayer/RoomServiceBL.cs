@@ -9,7 +9,7 @@ using DataLayer;
 
 namespace BusinessLayer
 {
-    public class RoomService
+    public class RoomServiceBL
     {
         Function fn = new Function();
 

@@ -42,10 +42,10 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Class1.cs" />
-    <Compile Include="CustomerService.cs" />
-    <Compile Include="EmployeeService.cs" />
+    <Compile Include="CustomerServiceBL.cs" />
+    <Compile Include="EmployeeServiceBL.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="RoomService.cs" />
+    <Compile Include="RoomServiceBL.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\DataLayer\DataLayer.csproj">

@@ -8,8 +8,9 @@ using DataLayer;
 
 namespace BusinessLayer
 {
-    public class CustomerService
+    public class CustomerServiceBL
     {
+        CustomerServiceDL dataAccessCustomer = new CustomerServiceDL();
         Function fn = new Function();
 
         // Lấy toàn bộ danh sách khách hàng
@@ -32,13 +33,6 @@ namespace BusinessLayer
             string query = "SELECT * FROM customer WHERE checkout IS NOT NULL";
             return fn.getData(query).Tables[0];
         }
-
-        //// Tìm kiếm khách hàng đang ở
-        //public DataTable SearchCustomerByName(string name)
-        //{
-        //    string query = $"SELECT * FROM customer WHERE cname LIKE '{name}%' AND chekout = 'NO'";
-        //    return fn.getData(query).Tables[0];
-        //}
 
         // Trả phòng (checkout)
         public void CheckOutCustomer(int cid, string checkoutDate, string roomNo)
@@ -70,9 +64,17 @@ namespace BusinessLayer
         {
             string query = $"SELECT price, roomid FROM rooms WHERE roomNo = '{roomNo}'";
             DataSet ds = fn.getData(query);
-            int price = Convert.ToInt32(ds.Tables[0].Rows[0][0]);
-            int roomId = Convert.ToInt32(ds.Tables[0].Rows[0][1]);
-            return (price, roomId);
+            if (ds.Tables[0].Rows.Count > 0)
+            {
+                int price = Convert.ToInt32(ds.Tables[0].Rows[0][0]);
+                int roomId = Convert.ToInt32(ds.Tables[0].Rows[0][1]);
+                return (price, roomId);
+            }
+            else
+            {
+                // Nếu không tìm thấy phòng trả về giá trị mặc định
+                return (0, 0);
+            }
         }
 
         public DataTable GetCustomerDetails(string filterOption)
@@ -116,6 +118,29 @@ namespace BusinessLayer
         {
             string query = $"UPDATE customer SET chekout = 'YES', checkout = '{checkoutDate}' WHERE cid = {customerId}; UPDATE rooms SET booked = 'NO' WHERE roomNo = '{roomNo}'";
             fn.setData(query, "Thanh toán thành công");
+        }
+
+        public void AddCustomerRequest(string roomNo, string request, string employee, string status)
+        {
+            string query = $"INSERT INTO customerRequest (RoomNo, Request, EmployeeName, Status) VALUES ('{roomNo}', '{request}', '{employee}', '{status}')";
+            fn.setData(query, "Yêu cầu đã được thêm vào.");
+        }
+
+        //public DataTable GetAllCustomerRequest()
+        //{
+        //    string query = "SELECT * FROM customerRequest";
+        //    return fn.getData(query).Tables[0];
+        //}
+        public DataTable GetAllCustomerRequest()
+        {
+            return dataAccessCustomer.GetAllCustomerRequest();
+        }
+
+        // Tìm kiếm phòng khách yêu cầu
+        public DataTable SearchCustomerRequest()
+        {
+            string query = "SELECT * FROM rooms WHERE booked = 'YES'";
+            return fn.getData(query).Tables[0];
         }
     }
 }

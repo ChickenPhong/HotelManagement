@@ -7,13 +7,14 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using DataLayer;
+using BusinessLayer;
+using BusinessLayer;
 
 namespace PresentationLayer
 {
     public partial class Form1: Form
     {
-        Function fn = new Function();
+        EmployeeServiceBL cs = new EmployeeServiceBL();
         String query;
         
         public Form1()
@@ -28,11 +29,8 @@ namespace PresentationLayer
 
         private void btnLogin_Click(object sender, EventArgs e)
         {
-            query = "select username, pass from employee where username = '" + txtUsername.Text + "' and pass = '" + txtPassword.Text + "'";
-            DataSet ds = fn.getData(query);
-            if (ds.Tables[0].Rows.Count != 0)
+            if (cs.CheckLogin(txtUsername.Text, txtPassword.Text))
             {
-                labelError.Visible = false;
                 Dashboard dash = new Dashboard();
                 this.Hide();
                 dash.Show();
