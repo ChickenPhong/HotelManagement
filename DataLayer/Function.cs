@@ -13,7 +13,7 @@ namespace DataLayer
         protected SqlConnection GetConnection()
         {
             SqlConnection con = new SqlConnection();
-            con.ConnectionString = "Server=PHONGTRAN;Database=hoteldb;Trusted_Connection=True;TrustServerCertificate=Yes;MultipleActiveResultSets=true";
+            con.ConnectionString = "Server=LAPTOP-ACJGUGIJ\\SQLEXPRESS01;Database=hoteldb;Trusted_Connection=True;TrustServerCertificate=Yes;MultipleActiveResultSets=true";
             return con;
         }
         public DataSet getData(String query)

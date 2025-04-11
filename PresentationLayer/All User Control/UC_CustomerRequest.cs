@@ -29,7 +29,7 @@ namespace QuanLyKhachSan.All_User_Control
 
             foreach (DataRow row in dt.Rows)
             {
-                txtRoomNo.Items.Add(row["roomid"].ToString());
+                txtRoomNo.Items.Add(row["roomNo"].ToString());
             }
         }
 

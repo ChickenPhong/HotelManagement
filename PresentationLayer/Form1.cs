@@ -9,6 +9,8 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using BusinessLayer;
 using BusinessLayer;
+using QuanLyKhachSan;
+using QuanLyKhachSan.All_User_Control;
 
 namespace PresentationLayer
 {
@@ -22,6 +24,9 @@ namespace PresentationLayer
             InitializeComponent();
         }
 
+        public static string targetPage = "";
+
+
         private void btnExit_Click(object sender, EventArgs e)
         {
             Application.Exit();
@@ -31,9 +36,20 @@ namespace PresentationLayer
         {
             if (cs.CheckLogin(txtUsername.Text, txtPassword.Text))
             {
-                Dashboard dash = new Dashboard();
                 this.Hide();
-                dash.Show();
+
+                if (targetPage == "Dashboard")
+                {
+                    Dashboard dash = new Dashboard();
+                    this.Hide();
+                    dash.Show();
+                }
+                else if (targetPage == "ThongKe")
+                {
+                    ThongKe tk = new ThongKe(); // Form Thống Kê
+                    this.Hide();
+                    tk.Show();
+                }
             }
             else
             {

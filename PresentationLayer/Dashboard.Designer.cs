@@ -72,8 +72,9 @@ namespace PresentationLayer
             this.btnExit.Image = ((System.Drawing.Image)(resources.GetObject("btnExit.Image")));
             this.btnExit.ImageSize = new System.Drawing.Size(35, 35);
             this.btnExit.Location = new System.Drawing.Point(1, 1);
+            this.btnExit.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnExit.Name = "btnExit";
-            this.btnExit.Size = new System.Drawing.Size(51, 45);
+            this.btnExit.Size = new System.Drawing.Size(34, 29);
             this.btnExit.TabIndex = 0;
             this.btnExit.Click += new System.EventHandler(this.btnExit_Click);
             // 
@@ -88,9 +89,10 @@ namespace PresentationLayer
             this.btnMinisize.ForeColor = System.Drawing.Color.White;
             this.btnMinisize.Image = ((System.Drawing.Image)(resources.GetObject("btnMinisize.Image")));
             this.btnMinisize.ImageSize = new System.Drawing.Size(35, 35);
-            this.btnMinisize.Location = new System.Drawing.Point(1, 52);
+            this.btnMinisize.Location = new System.Drawing.Point(1, 34);
+            this.btnMinisize.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnMinisize.Name = "btnMinisize";
-            this.btnMinisize.Size = new System.Drawing.Size(51, 45);
+            this.btnMinisize.Size = new System.Drawing.Size(34, 29);
             this.btnMinisize.TabIndex = 0;
             // 
             // panel1
@@ -103,9 +105,10 @@ namespace PresentationLayer
             this.panel1.Controls.Add(this.btnCheckOut);
             this.panel1.Controls.Add(this.btnCustomerRes);
             this.panel1.Controls.Add(this.btnAddRoom);
-            this.panel1.Location = new System.Drawing.Point(90, 12);
+            this.panel1.Location = new System.Drawing.Point(60, 8);
+            this.panel1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1765, 130);
+            this.panel1.Size = new System.Drawing.Size(1178, 86);
             this.panel1.TabIndex = 1;
             // 
             // btnHotelMana
@@ -119,9 +122,10 @@ namespace PresentationLayer
             this.btnHotelMana.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
             this.btnHotelMana.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnHotelMana.ForeColor = System.Drawing.Color.White;
-            this.btnHotelMana.Location = new System.Drawing.Point(1546, 3);
+            this.btnHotelMana.Location = new System.Drawing.Point(1031, 2);
+            this.btnHotelMana.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnHotelMana.Name = "btnHotelMana";
-            this.btnHotelMana.Size = new System.Drawing.Size(200, 116);
+            this.btnHotelMana.Size = new System.Drawing.Size(133, 75);
             this.btnHotelMana.TabIndex = 0;
             this.btnHotelMana.Text = "Quản Lý Khách Sạn";
             // 
@@ -136,9 +140,10 @@ namespace PresentationLayer
             this.btnEmployee.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
             this.btnEmployee.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnEmployee.ForeColor = System.Drawing.Color.White;
-            this.btnEmployee.Location = new System.Drawing.Point(1296, 3);
+            this.btnEmployee.Location = new System.Drawing.Point(864, 2);
+            this.btnEmployee.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnEmployee.Name = "btnEmployee";
-            this.btnEmployee.Size = new System.Drawing.Size(200, 116);
+            this.btnEmployee.Size = new System.Drawing.Size(133, 75);
             this.btnEmployee.TabIndex = 0;
             this.btnEmployee.Text = "Nhân Viên";
             this.btnEmployee.Click += new System.EventHandler(this.btnEmployee_Click);
@@ -154,9 +159,10 @@ namespace PresentationLayer
             this.btnCustomerRequest.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
             this.btnCustomerRequest.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnCustomerRequest.ForeColor = System.Drawing.Color.White;
-            this.btnCustomerRequest.Location = new System.Drawing.Point(1038, 3);
+            this.btnCustomerRequest.Location = new System.Drawing.Point(692, 2);
+            this.btnCustomerRequest.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnCustomerRequest.Name = "btnCustomerRequest";
-            this.btnCustomerRequest.Size = new System.Drawing.Size(200, 116);
+            this.btnCustomerRequest.Size = new System.Drawing.Size(133, 75);
             this.btnCustomerRequest.TabIndex = 0;
             this.btnCustomerRequest.Text = "Yêu Cầu Khách Hàng";
             this.btnCustomerRequest.Click += new System.EventHandler(this.btnCustomerRequest_Click);
@@ -172,9 +178,10 @@ namespace PresentationLayer
             this.btnCustomerDetail.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
             this.btnCustomerDetail.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnCustomerDetail.ForeColor = System.Drawing.Color.White;
-            this.btnCustomerDetail.Location = new System.Drawing.Point(791, 3);
+            this.btnCustomerDetail.Location = new System.Drawing.Point(527, 2);
+            this.btnCustomerDetail.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnCustomerDetail.Name = "btnCustomerDetail";
-            this.btnCustomerDetail.Size = new System.Drawing.Size(200, 116);
+            this.btnCustomerDetail.Size = new System.Drawing.Size(133, 75);
             this.btnCustomerDetail.TabIndex = 0;
             this.btnCustomerDetail.Text = "Chi Tiết Khách Hàng";
             this.btnCustomerDetail.Click += new System.EventHandler(this.btnCustomerDetail_Click);
@@ -190,9 +197,10 @@ namespace PresentationLayer
             this.btnCheckOut.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
             this.btnCheckOut.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnCheckOut.ForeColor = System.Drawing.Color.White;
-            this.btnCheckOut.Location = new System.Drawing.Point(533, 3);
+            this.btnCheckOut.Location = new System.Drawing.Point(355, 2);
+            this.btnCheckOut.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnCheckOut.Name = "btnCheckOut";
-            this.btnCheckOut.Size = new System.Drawing.Size(200, 116);
+            this.btnCheckOut.Size = new System.Drawing.Size(133, 75);
             this.btnCheckOut.TabIndex = 0;
             this.btnCheckOut.Text = "Thanh Toán";
             this.btnCheckOut.Click += new System.EventHandler(this.btnCheckOut_Click);
@@ -208,9 +216,10 @@ namespace PresentationLayer
             this.btnCustomerRes.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
             this.btnCustomerRes.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnCustomerRes.ForeColor = System.Drawing.Color.White;
-            this.btnCustomerRes.Location = new System.Drawing.Point(269, 3);
+            this.btnCustomerRes.Location = new System.Drawing.Point(179, 2);
+            this.btnCustomerRes.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnCustomerRes.Name = "btnCustomerRes";
-            this.btnCustomerRes.Size = new System.Drawing.Size(200, 116);
+            this.btnCustomerRes.Size = new System.Drawing.Size(133, 75);
             this.btnCustomerRes.TabIndex = 0;
             this.btnCustomerRes.Text = "Đăng Ký Khách Hàng";
             this.btnCustomerRes.Click += new System.EventHandler(this.btnCustomerRes_Click);
@@ -226,9 +235,10 @@ namespace PresentationLayer
             this.btnAddRoom.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
             this.btnAddRoom.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnAddRoom.ForeColor = System.Drawing.Color.White;
-            this.btnAddRoom.Location = new System.Drawing.Point(20, 3);
+            this.btnAddRoom.Location = new System.Drawing.Point(13, 2);
+            this.btnAddRoom.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnAddRoom.Name = "btnAddRoom";
-            this.btnAddRoom.Size = new System.Drawing.Size(200, 116);
+            this.btnAddRoom.Size = new System.Drawing.Size(133, 75);
             this.btnAddRoom.TabIndex = 0;
             this.btnAddRoom.Text = "Thêm Phòng";
             this.btnAddRoom.Click += new System.EventHandler(this.btnAddRoom_Click);
@@ -242,17 +252,19 @@ namespace PresentationLayer
             this.panel2.Controls.Add(this.uC_CheckOut1);
             this.panel2.Controls.Add(this.uC_CustomerRes1);
             this.panel2.Controls.Add(this.uC_AddRoom1);
-            this.panel2.Location = new System.Drawing.Point(12, 183);
+            this.panel2.Location = new System.Drawing.Point(8, 119);
+            this.panel2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(1882, 852);
+            this.panel2.Size = new System.Drawing.Size(1255, 554);
             this.panel2.TabIndex = 2;
             // 
             // PanelMoving
             // 
             this.PanelMoving.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            this.PanelMoving.Location = new System.Drawing.Point(112, 157);
+            this.PanelMoving.Location = new System.Drawing.Point(75, 102);
+            this.PanelMoving.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.PanelMoving.Name = "PanelMoving";
-            this.PanelMoving.Size = new System.Drawing.Size(200, 8);
+            this.PanelMoving.Size = new System.Drawing.Size(133, 5);
             this.PanelMoving.TabIndex = 3;
             // 
             // guna2Elipse1
@@ -283,62 +295,69 @@ namespace PresentationLayer
             // 
             this.uC_CustomerRequest1.BackColor = System.Drawing.Color.White;
             this.uC_CustomerRequest1.Location = new System.Drawing.Point(-1, -1);
+            this.uC_CustomerRequest1.Margin = new System.Windows.Forms.Padding(1);
             this.uC_CustomerRequest1.Name = "uC_CustomerRequest1";
-            this.uC_CustomerRequest1.Size = new System.Drawing.Size(1882, 852);
+            this.uC_CustomerRequest1.Size = new System.Drawing.Size(1255, 554);
             this.uC_CustomerRequest1.TabIndex = 5;
             // 
             // uC_Employee1
             // 
             this.uC_Employee1.BackColor = System.Drawing.Color.White;
-            this.uC_Employee1.Location = new System.Drawing.Point(-1, -2);
+            this.uC_Employee1.Location = new System.Drawing.Point(-1, -1);
+            this.uC_Employee1.Margin = new System.Windows.Forms.Padding(1);
             this.uC_Employee1.Name = "uC_Employee1";
-            this.uC_Employee1.Size = new System.Drawing.Size(1882, 852);
+            this.uC_Employee1.Size = new System.Drawing.Size(1255, 554);
             this.uC_Employee1.TabIndex = 4;
             // 
             // uC_CustomerDetails1
             // 
             this.uC_CustomerDetails1.BackColor = System.Drawing.Color.White;
             this.uC_CustomerDetails1.Location = new System.Drawing.Point(-1, -1);
+            this.uC_CustomerDetails1.Margin = new System.Windows.Forms.Padding(1);
             this.uC_CustomerDetails1.Name = "uC_CustomerDetails1";
-            this.uC_CustomerDetails1.Size = new System.Drawing.Size(1882, 852);
+            this.uC_CustomerDetails1.Size = new System.Drawing.Size(1255, 554);
             this.uC_CustomerDetails1.TabIndex = 3;
             // 
             // uC_CheckOut1
             // 
             this.uC_CheckOut1.BackColor = System.Drawing.Color.White;
             this.uC_CheckOut1.Location = new System.Drawing.Point(-1, -1);
+            this.uC_CheckOut1.Margin = new System.Windows.Forms.Padding(1);
             this.uC_CheckOut1.Name = "uC_CheckOut1";
-            this.uC_CheckOut1.Size = new System.Drawing.Size(1882, 852);
+            this.uC_CheckOut1.Size = new System.Drawing.Size(1255, 554);
             this.uC_CheckOut1.TabIndex = 2;
             // 
             // uC_CustomerRes1
             // 
             this.uC_CustomerRes1.BackColor = System.Drawing.Color.White;
-            this.uC_CustomerRes1.Location = new System.Drawing.Point(3, 3);
+            this.uC_CustomerRes1.Location = new System.Drawing.Point(2, 2);
+            this.uC_CustomerRes1.Margin = new System.Windows.Forms.Padding(1);
             this.uC_CustomerRes1.Name = "uC_CustomerRes1";
-            this.uC_CustomerRes1.Size = new System.Drawing.Size(1882, 852);
+            this.uC_CustomerRes1.Size = new System.Drawing.Size(1255, 554);
             this.uC_CustomerRes1.TabIndex = 1;
             // 
             // uC_AddRoom1
             // 
             this.uC_AddRoom1.BackColor = System.Drawing.Color.White;
-            this.uC_AddRoom1.Location = new System.Drawing.Point(-2, -2);
+            this.uC_AddRoom1.Location = new System.Drawing.Point(-1, -1);
+            this.uC_AddRoom1.Margin = new System.Windows.Forms.Padding(1);
             this.uC_AddRoom1.Name = "uC_AddRoom1";
-            this.uC_AddRoom1.Size = new System.Drawing.Size(1882, 852);
+            this.uC_AddRoom1.Size = new System.Drawing.Size(1255, 554);
             this.uC_AddRoom1.TabIndex = 0;
             // 
             // Dashboard
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.SlateBlue;
-            this.ClientSize = new System.Drawing.Size(1946, 1106);
+            this.ClientSize = new System.Drawing.Size(1351, 715);
             this.Controls.Add(this.PanelMoving);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.btnMinisize);
             this.Controls.Add(this.btnExit);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "Dashboard";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Dashboard";
