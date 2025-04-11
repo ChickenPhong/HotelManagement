@@ -23,11 +23,11 @@
       "RelativeMoniker": "D:0:0:{A65E10DD-0C4B-4758-B72C-6CF28F6E55B8}|DataLayer\\DataLayer.csproj|solutionrelative:datalayer\\function.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{C07156DE-CB19-4EAF-9F77-7128E2D05351}|PresentationLayer\\PresentationLayer.csproj|d:\\githubcode\\gay\\hotelmanagement\\presentationlayer\\thongke.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{C07156DE-CB19-4EAF-9F77-7128E2D05351}|PresentationLayer\\PresentationLayer.csproj|D:\\GitHubCode\\gay\\HotelManagement\\presentationlayer\\thongke.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{C07156DE-CB19-4EAF-9F77-7128E2D05351}|PresentationLayer\\PresentationLayer.csproj|solutionrelative:presentationlayer\\thongke.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{C07156DE-CB19-4EAF-9F77-7128E2D05351}|PresentationLayer\\PresentationLayer.csproj|d:\\githubcode\\gay\\hotelmanagement\\presentationlayer\\thongke.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{C07156DE-CB19-4EAF-9F77-7128E2D05351}|PresentationLayer\\PresentationLayer.csproj|D:\\GitHubCode\\gay\\HotelManagement\\presentationlayer\\thongke.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{C07156DE-CB19-4EAF-9F77-7128E2D05351}|PresentationLayer\\PresentationLayer.csproj|solutionrelative:presentationlayer\\thongke.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
@@ -130,8 +130,7 @@
               "RelativeToolTip": "PresentationLayer\\DieuHuong.cs",
               "ViewState": "AgIAAAwAAAAAAAAAAADgvyAAAAAMAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-11T11:35:00.72Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-11T11:35:00.72Z"
             },
             {
               "$type": "Document",
@@ -142,8 +141,7 @@
               "ToolTip": "D:\\GitHubCode\\gay\\HotelManagement\\PresentationLayer\\DieuHuong.cs [Design]",
               "RelativeToolTip": "PresentationLayer\\DieuHuong.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-11T10:44:31.435Z",
-              "EditorCaption": " [Design]"
+              "WhenOpened": "2025-04-11T10:44:31.435Z"
             },
             {
               "$type": "Document",
@@ -167,8 +165,7 @@
               "RelativeToolTip": "PresentationLayer\\Form1.cs",
               "ViewState": "AgIAABsAAAAAAAAAAAAAAB0AAAA+AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-11T05:58:26.503Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-11T05:58:26.503Z"
             },
             {
               "$type": "Document",
@@ -179,8 +176,7 @@
               "ToolTip": "D:\\GitHubCode\\gay\\HotelManagement\\PresentationLayer\\Form1.cs [Design]",
               "RelativeToolTip": "PresentationLayer\\Form1.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-11T05:58:25.295Z",
-              "EditorCaption": " [Design]"
+              "WhenOpened": "2025-04-11T05:58:25.295Z"
             },
             {
               "$type": "Document",
@@ -215,8 +211,7 @@
               "ToolTip": "D:\\GitHubCode\\gay\\HotelManagement\\PresentationLayer\\All User Control\\UC_CustomerRequest.cs [Design]",
               "RelativeToolTip": "PresentationLayer\\All User Control\\UC_CustomerRequest.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-09T12:35:35.938Z",
-              "EditorCaption": " [Design]"
+              "WhenOpened": "2025-04-09T12:35:35.938Z"
             },
             {
               "$type": "Document",
@@ -228,8 +223,7 @@
               "RelativeToolTip": "PresentationLayer\\All User Control\\UC_CustomerRequest.cs",
               "ViewState": "AgIAABMAAAAAAAAAAAASwB8AAAA+AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-10T11:54:22.07Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-10T11:54:22.07Z"
             },
             {
               "$type": "Document",
@@ -241,8 +235,7 @@
               "RelativeToolTip": "DataLayer\\Function.cs",
               "ViewState": "AgIAAAEAAAAAAAAAAAAUwBIAAAAsAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-11T11:44:33.661Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-11T11:44:33.661Z"
             },
             {
               "$type": "Document",
@@ -254,8 +247,7 @@
               "RelativeToolTip": "PresentationLayer\\ThongKe.Designer.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAB0BAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-11T12:47:55.675Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-11T12:47:55.675Z"
             },
             {
               "$type": "Document",
@@ -267,8 +259,7 @@
               "RelativeToolTip": "PresentationLayer\\ThongKe.cs",
               "ViewState": "AgIAAAEAAAAAAAAAAAApwBYAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-11T12:53:52.417Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-11T12:53:52.417Z"
             },
             {
               "$type": "Document",
@@ -362,8 +353,7 @@
               "RelativeToolTip": "PresentationLayer\\All User Control\\UC_CustomerRequest.Designer.cs",
               "ViewState": "AgIAAPwAAAAAAAAAAAAAABYAAAAIAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-10T12:24:33.938Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-10T12:24:33.938Z"
             },
             {
               "$type": "Document",
