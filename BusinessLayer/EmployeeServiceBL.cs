@@ -16,19 +16,13 @@ namespace BusinessLayer
 
         public bool CheckLogin(string username, string password)
         {
-            string query = $"SELECT username, pass FROM employee " +
-                   $"WHERE username IS NOT NULL AND pass IS NOT NULL " +
-                   $"AND username != '' AND pass != '' " +
-                   $"AND username = '{username}' AND pass = '{password}'";
-
-            DataSet ds = employeeServiceDL.CheckLogin(query);
+            DataSet ds = employeeServiceDL.CheckLogin(username, password);
             return ds.Tables[0].Rows.Count > 0;
         }
 
         public int GetNextEmployeeId()
         {
-            string query = "SELECT MAX(eid) FROM employee";
-            DataSet ds = fn.getData(query);
+            DataSet ds = employeeServiceDL.GetNextEmployeeId();
 
             if (ds.Tables[0].Rows[0][0].ToString() != "")
             {
@@ -38,22 +32,35 @@ namespace BusinessLayer
             return 1;
         }
 
+        //public void RegisterEmployee(string name, long mobile, string gender, string email, string username, string pass)
+        //{
+        //    string query = $"INSERT INTO employee (ename, mobile, gender, emailid, username, pass) VALUES ('{name}', {mobile}, '{gender}', '{email}', '{username}', '{pass}')";
+        //    fn.setData(query, "Đăng ký nhân viên thành công!!");
+        //}
         public void RegisterEmployee(string name, long mobile, string gender, string email, string username, string pass)
         {
-            string query = $"INSERT INTO employee (ename, mobile, gender, emailid, username, pass) VALUES ('{name}', {mobile}, '{gender}', '{email}', '{username}', '{pass}')";
-            fn.setData(query, "Đăng ký nhân viên thành công!!");
+            employeeServiceDL.RegisterEmployee(name, mobile, gender, email, username, pass);
         }
 
+        //public DataTable GetAllEmployees()
+        //{
+        //    string query = "SELECT * FROM employee";
+        //    return fn.getData(query).Tables[0];
+        //}
         public DataTable GetAllEmployees()
         {
-            string query = "SELECT * FROM employee";
-            return fn.getData(query).Tables[0];
+            return employeeServiceDL.GetAllEmployees();
         }
+
+        //public void DeleteEmployee(int id)
+        //{
+        //    string query = $"DELETE FROM employee WHERE eid = {id}";
+        //    fn.setData(query, "Nhân viên đã được xóa!!");
+        //}
 
         public void DeleteEmployee(int id)
         {
-            string query = $"DELETE FROM employee WHERE eid = {id}";
-            fn.setData(query, "Nhân viên đã được xóa!!");
+            employeeServiceDL.DeleteEmployee(id);
         }
     }
 }
