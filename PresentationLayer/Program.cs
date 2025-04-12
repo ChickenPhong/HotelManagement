@@ -17,7 +17,7 @@ namespace QuanLyKhachSan
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new DieuHuong());
+            Application.Run(new Form1());
         }
     }
 }

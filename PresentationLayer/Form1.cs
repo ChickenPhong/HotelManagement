@@ -14,17 +14,17 @@ using QuanLyKhachSan.All_User_Control;
 
 namespace PresentationLayer
 {
-    public partial class Form1: Form
+    public partial class Form1 : Form
     {
         EmployeeServiceBL cs = new EmployeeServiceBL();
         String query;
-        
+
         public Form1()
         {
             InitializeComponent();
         }
 
-        public static string targetPage = "";
+ 
 
 
         private void btnExit_Click(object sender, EventArgs e)
@@ -36,20 +36,11 @@ namespace PresentationLayer
         {
             if (cs.CheckLogin(txtUsername.Text, txtPassword.Text))
             {
+              
+                DieuHuong tk = new DieuHuong(); 
                 this.Hide();
+                tk.Show();
 
-                if (targetPage == "Dashboard")
-                {
-                    Dashboard dash = new Dashboard();
-                    this.Hide();
-                    dash.Show();
-                }
-                else if (targetPage == "ThongKe")
-                {
-                    ThongKe tk = new ThongKe(); // Form Thống Kê
-                    this.Hide();
-                    tk.Show();
-                }
             }
             else
             {

@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using QuanLyKhachSan;
 
 namespace PresentationLayer
 {
@@ -72,6 +73,13 @@ namespace PresentationLayer
             PanelMoving.Left = btnCustomerRequest.Left + 60;
             uC_CustomerRequest1.Visible = true;
             uC_CustomerRequest1.BringToFront();
+        }
+
+        private void btnMinisize_Click(object sender, EventArgs e)
+        {
+            DieuHuong dieuHuong = new DieuHuong();
+            this.Hide();
+            dieuHuong.Show();
         }
     }
 }

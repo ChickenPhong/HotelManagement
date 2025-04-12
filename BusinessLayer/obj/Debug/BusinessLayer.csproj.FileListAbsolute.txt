@@ -20,3 +20,14 @@ D:\GitHubCode\gay\HotelManagement\BusinessLayer\obj\Debug\BusinessLayer.csproj.C
 D:\GitHubCode\gay\HotelManagement\BusinessLayer\obj\Debug\Business.EA331CBA.Up2Date
 D:\GitHubCode\gay\HotelManagement\BusinessLayer\obj\Debug\BusinessLayer.dll
 D:\GitHubCode\gay\HotelManagement\BusinessLayer\obj\Debug\BusinessLayer.pdb
+D:\GitHubCode\123\HotelManagement\BusinessLayer\bin\Debug\BusinessLayer.dll
+D:\GitHubCode\123\HotelManagement\BusinessLayer\bin\Debug\BusinessLayer.pdb
+D:\GitHubCode\123\HotelManagement\BusinessLayer\bin\Debug\DataLayer.dll
+D:\GitHubCode\123\HotelManagement\BusinessLayer\bin\Debug\TransferObject.dll
+D:\GitHubCode\123\HotelManagement\BusinessLayer\bin\Debug\DataLayer.pdb
+D:\GitHubCode\123\HotelManagement\BusinessLayer\bin\Debug\TransferObject.pdb
+D:\GitHubCode\123\HotelManagement\BusinessLayer\obj\Debug\BusinessLayer.csproj.AssemblyReference.cache
+D:\GitHubCode\123\HotelManagement\BusinessLayer\obj\Debug\BusinessLayer.csproj.CoreCompileInputs.cache
+D:\GitHubCode\123\HotelManagement\BusinessLayer\obj\Debug\Business.EA331CBA.Up2Date
+D:\GitHubCode\123\HotelManagement\BusinessLayer\obj\Debug\BusinessLayer.dll
+D:\GitHubCode\123\HotelManagement\BusinessLayer\obj\Debug\BusinessLayer.pdb

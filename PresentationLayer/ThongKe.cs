@@ -89,5 +89,12 @@ namespace QuanLyKhachSan
             txtThongKe.Items.Add("Theo năm");
             txtThongKe.SelectedIndex = 0; // Mặc định là Theo ngày
         }
+
+        private void btnMinisize_Click(object sender, EventArgs e)
+        {
+            DieuHuong dieuHuong = new DieuHuong();
+            this.Hide();
+            dieuHuong.Show();
+        }
     }
 }

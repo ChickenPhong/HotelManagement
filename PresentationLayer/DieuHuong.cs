@@ -21,10 +21,9 @@ namespace QuanLyKhachSan
         }
         private void guna2Button1_Click_1(object sender, EventArgs e)
         {
-            Form1.targetPage = "Dashboard"; // set target là Dashboard
-            Form1 form1 = new Form1();
+            Dashboard dashboard = new Dashboard();
             this.Hide();
-            form1.Show();
+            dashboard.Show();
         }
 
 
@@ -35,10 +34,9 @@ namespace QuanLyKhachSan
 
         private void guna2Button2_Click(object sender, EventArgs e)
         {
-            Form1.targetPage = "ThongKe"; // set target là Thống Kê
-            Form1 form1 = new Form1();
+            ThongKe thongKe = new ThongKe();
             this.Hide();
-            form1.Show();
+            thongKe.Show();
         }
     }
 }
