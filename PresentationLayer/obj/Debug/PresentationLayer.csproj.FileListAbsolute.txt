@@ -50,3 +50,5 @@ D:\GitHubCode\gay\HotelManagement\PresentationLayer\obj\Debug\Presenta.9C561136.
 D:\GitHubCode\gay\HotelManagement\PresentationLayer\obj\Debug\QuanLyKhachSan.exe
 D:\GitHubCode\gay\HotelManagement\PresentationLayer\obj\Debug\QuanLyKhachSan.pdb
 D:\GitHubCode\gay\HotelManagement\PresentationLayer\obj\Debug\QuanLyKhachSan.ThongKe.resources
+D:\HotelManagement\HotelManagement\PresentationLayer\obj\Debug\QuanLyKhachSan.DieuHuong.resources
+D:\HotelManagement\HotelManagement\PresentationLayer\obj\Debug\QuanLyKhachSan.ThongKe.resources
