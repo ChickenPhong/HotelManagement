@@ -46,6 +46,7 @@
     <Compile Include="EmployeeServiceBL.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="RoomServiceBL.cs" />
+    <Compile Include="StatisticServiceBL.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\DataLayer\DataLayer.csproj">

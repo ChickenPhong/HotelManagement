@@ -39,14 +39,14 @@ namespace PresentationLayer.All_User_Control
 
         private void btnRegistation_Click(object sender, EventArgs e)
         {
-            if(txtName.Text != "" && txtMobile.Text != "" && txtGender.Text != ""&& txtEmail.Text != "" && txtUsername.Text != "" && txtPassword.Text != "")
+            if(txtName.Text != "" && txtMobile.Text != "" && txtGender.Text != ""&& txtEmail.Text != "")
             {
                 String name = txtName.Text;
                 long mobile = long.Parse(txtMobile.Text);
                 String gender = txtGender.Text;
                 String email = txtEmail.Text;
-                String username = txtUsername.Text;
-                String pass = txtPassword.Text;
+                String username = txtUsername.Text == "" ? "NULL" : txtUsername.Text;
+                String pass = txtPassword.Text == "" ? "NULL" : txtPassword.Text;
 
                 employeeService.RegisterEmployee(name, mobile, gender, email, username, pass);
 

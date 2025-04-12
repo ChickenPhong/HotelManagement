@@ -16,7 +16,11 @@ namespace BusinessLayer
 
         public bool CheckLogin(string username, string password)
         {
-            string query = $"SELECT username, pass FROM employee WHERE username = '{username}' AND pass = '{password}'";
+            string query = $"SELECT username, pass FROM employee " +
+                   $"WHERE username IS NOT NULL AND pass IS NOT NULL " +
+                   $"AND username != '' AND pass != '' " +
+                   $"AND username = '{username}' AND pass = '{password}'";
+
             DataSet ds = employeeServiceDL.CheckLogin(query);
             return ds.Tables[0].Rows.Count > 0;
         }

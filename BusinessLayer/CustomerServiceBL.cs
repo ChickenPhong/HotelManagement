@@ -116,7 +116,7 @@ namespace BusinessLayer
 
         public void CheckOut(int customerId, string checkoutDate, string roomNo)
         {
-            string query = $"UPDATE customer SET chekout = 'YES' WHERE cid = {customerId}; " +
+            string query = $"UPDATE customer SET chekout = 'YES', checkout = '{checkoutDate}' WHERE cid = {customerId}; " +
                    $"UPDATE rooms SET booked = 'NO' WHERE roomNo = '{roomNo}'";
 
             fn.setData(query, "Thanh toán thành công");
