@@ -66,7 +66,7 @@ namespace QuanLyKhachSan.All_User_Control
                 MessageBox.Show("Yêu cầu đã được gửi thành công", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
 
                 // Sau khi gửi yêu cầu, ta có thể làm sạch các trường để sẵn sàng cho yêu cầu tiếp theo
-                clearAllRequestFields();
+                clearAll();
 
                 // Load lại danh sách request
                 LoadCustomerRequest();
@@ -77,7 +77,7 @@ namespace QuanLyKhachSan.All_User_Control
             }
         }
 
-        public void clearAllRequestFields()
+        public void clearAll()
         {
             txtRoomNo.SelectedIndex = -1;
             txtRequest.SelectedIndex = -1;

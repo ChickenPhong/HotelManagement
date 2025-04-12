@@ -206,7 +206,7 @@
             this.txtDob.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             this.txtDob.Font = new System.Drawing.Font("Segoe UI", 10F);
             this.txtDob.ForeColor = System.Drawing.Color.Black;
-            this.txtDob.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.txtDob.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
             this.txtDob.Location = new System.Drawing.Point(86, 769);
             this.txtDob.MaxDate = new System.DateTime(9998, 12, 31, 0, 0, 0, 0);
             this.txtDob.MinDate = new System.DateTime(1753, 1, 1, 0, 0, 0, 0);
@@ -214,6 +214,7 @@
             this.txtDob.Size = new System.Drawing.Size(504, 68);
             this.txtDob.TabIndex = 4;
             this.txtDob.Value = new System.DateTime(2025, 3, 20, 14, 45, 36, 236);
+            this.txtDob.Leave += new System.EventHandler(this.txtDob_Leave);
             // 
             // label7
             // 
@@ -221,9 +222,9 @@
             this.label7.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label7.Location = new System.Drawing.Point(671, 120);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(139, 28);
+            this.label7.Size = new System.Drawing.Size(219, 28);
             this.label7.TabIndex = 1;
-            this.label7.Text = "Mã Định Danh";
+            this.label7.Text = "Số Căn Cước Công Dân";
             // 
             // txtIDProof
             // 
@@ -301,6 +302,7 @@
             this.txtCheckin.Size = new System.Drawing.Size(504, 68);
             this.txtCheckin.TabIndex = 4;
             this.txtCheckin.Value = new System.DateTime(2025, 3, 20, 14, 45, 36, 236);
+            this.txtCheckin.Leave += new System.EventHandler(this.txtCheckin_Leave);
             // 
             // label10
             // 

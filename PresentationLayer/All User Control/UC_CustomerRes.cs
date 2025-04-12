@@ -23,7 +23,13 @@ namespace PresentationLayer.All_User_Control
 
         private void UC_CustomerRes_Load(object sender, EventArgs e)
         {
+            txtDob.Format = DateTimePickerFormat.Custom;
+            txtDob.CustomFormat = "dd/MM/yyyy";
+            txtDob.ShowUpDown = false; // muốn chọn nhanh có thể true
 
+            txtCheckin.Format = DateTimePickerFormat.Custom;
+            txtCheckin.CustomFormat = "dd/MM/yyyy";
+            txtCheckin.ShowUpDown = false; // muốn chọn nhanh có thể true
         }
 
         private void txtBedType_SelectedIndexChanged(object sender, EventArgs e)
@@ -52,6 +58,30 @@ namespace PresentationLayer.All_User_Control
             rid = roomId;
         }
 
+        private void txtDob_Leave(object sender, EventArgs e)
+        {
+            DateTime tempDate;
+            if (!DateTime.TryParseExact(txtDob.Text, "dd/MM/yyyy",
+                                        System.Globalization.CultureInfo.InvariantCulture,
+                                        System.Globalization.DateTimeStyles.None, out tempDate))
+            {
+                MessageBox.Show("Ngày sinh không hợp lệ, vui lòng nhập đúng định dạng dd/MM/yyyy.", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                txtDob.Focus();
+            }
+        }
+
+        private void txtCheckin_Leave(object sender, EventArgs e)
+        {
+            DateTime tempDate;
+            if (!DateTime.TryParseExact(txtCheckin.Text, "dd/MM/yyyy",
+                                        System.Globalization.CultureInfo.InvariantCulture,
+                                        System.Globalization.DateTimeStyles.None, out tempDate))
+            {
+                MessageBox.Show("Ngày đăng ký không hợp lệ, vui lòng nhập đúng định dạng dd/MM/yyyy.", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                txtCheckin.Focus();
+            }
+        }
+
         private void btnAllotCustomer_Click(object sender, EventArgs e)
         {
             if (txtFullName.Text != "" && txtContact.Text != "" && txtNationality.Text != "" && txtGender.Text != "" && txtDob.Text != "" && txtIDProof.Text != "" && txtAddress.Text != "" && txtCheckin.Text != "" && txtPrice.Text != "")
@@ -67,10 +97,11 @@ namespace PresentationLayer.All_User_Control
 
                 customerService.AllotCustomer(name, mobile, national, gender, dob, idproof, address, checkin, rid, txtRoomNo.Text);
                 clearAll();
-            } else
+            }
+            else
             {
                 MessageBox.Show("Vui lòng nhập lại đầy đủ thông tin.", "Thông tin", MessageBoxButtons.OK, MessageBoxIcon.Information);
-            }    
+            }
         }
 
         public void clearAll()
