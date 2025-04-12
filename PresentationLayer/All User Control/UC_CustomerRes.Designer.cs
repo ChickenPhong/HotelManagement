@@ -213,8 +213,7 @@
             this.txtDob.Name = "txtDob";
             this.txtDob.Size = new System.Drawing.Size(504, 68);
             this.txtDob.TabIndex = 4;
-            this.txtDob.Value = new System.DateTime(2025, 3, 20, 14, 45, 36, 236);
-            this.txtDob.Leave += new System.EventHandler(this.txtDob_Leave);
+            this.txtDob.Value = new System.DateTime(2025, 3, 20, 14, 45, 36, 236);           
             // 
             // label7
             // 
@@ -302,7 +301,6 @@
             this.txtCheckin.Size = new System.Drawing.Size(504, 68);
             this.txtCheckin.TabIndex = 4;
             this.txtCheckin.Value = new System.DateTime(2025, 3, 20, 14, 45, 36, 236);
-            this.txtCheckin.Leave += new System.EventHandler(this.txtCheckin_Leave);
             // 
             // label10
             // 
@@ -483,7 +481,6 @@
             this.Controls.Add(this.label1);
             this.Name = "UC_CustomerRes";
             this.Size = new System.Drawing.Size(1882, 852);
-            this.Load += new System.EventHandler(this.UC_CustomerRes_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

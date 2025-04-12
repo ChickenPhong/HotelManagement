@@ -21,17 +21,6 @@ namespace PresentationLayer.All_User_Control
             InitializeComponent();
         }
 
-        private void UC_CustomerRes_Load(object sender, EventArgs e)
-        {
-            txtDob.Format = DateTimePickerFormat.Custom;
-            txtDob.CustomFormat = "dd/MM/yyyy";
-            txtDob.ShowUpDown = false; // muốn chọn nhanh có thể true
-
-            txtCheckin.Format = DateTimePickerFormat.Custom;
-            txtCheckin.CustomFormat = "dd/MM/yyyy";
-            txtCheckin.ShowUpDown = false; // muốn chọn nhanh có thể true
-        }
-
         private void txtBedType_SelectedIndexChanged(object sender, EventArgs e)
         {
             txtRoom.SelectedIndex = -1;
@@ -56,30 +45,6 @@ namespace PresentationLayer.All_User_Control
             var (price, roomId) = customerService.GetRoomInfo(txtRoomNo.Text);
             txtPrice.Text = price.ToString();
             rid = roomId;
-        }
-
-        private void txtDob_Leave(object sender, EventArgs e)
-        {
-            DateTime tempDate;
-            if (!DateTime.TryParseExact(txtDob.Text, "dd/MM/yyyy",
-                                        System.Globalization.CultureInfo.InvariantCulture,
-                                        System.Globalization.DateTimeStyles.None, out tempDate))
-            {
-                MessageBox.Show("Ngày sinh không hợp lệ, vui lòng nhập đúng định dạng dd/MM/yyyy.", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-                txtDob.Focus();
-            }
-        }
-
-        private void txtCheckin_Leave(object sender, EventArgs e)
-        {
-            DateTime tempDate;
-            if (!DateTime.TryParseExact(txtCheckin.Text, "dd/MM/yyyy",
-                                        System.Globalization.CultureInfo.InvariantCulture,
-                                        System.Globalization.DateTimeStyles.None, out tempDate))
-            {
-                MessageBox.Show("Ngày đăng ký không hợp lệ, vui lòng nhập đúng định dạng dd/MM/yyyy.", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-                txtCheckin.Focus();
-            }
         }
 
         private void btnAllotCustomer_Click(object sender, EventArgs e)

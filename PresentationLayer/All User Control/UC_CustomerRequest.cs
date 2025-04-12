@@ -65,11 +65,13 @@ namespace QuanLyKhachSan.All_User_Control
 
                 MessageBox.Show("Yêu cầu đã được gửi thành công", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
 
+                // Load lại danh sách request
+                LoadCustomerRequest();
+
                 // Sau khi gửi yêu cầu, ta có thể làm sạch các trường để sẵn sàng cho yêu cầu tiếp theo
                 clearAll();
 
-                // Load lại danh sách request
-                LoadCustomerRequest();
+                
             }
             else
             {
