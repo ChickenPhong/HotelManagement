@@ -24,6 +24,23 @@ namespace QuanLyKhachSan
             Application.Exit();
         }
 
+        public string FormatRevenue(int revenue)
+        {
+            if (revenue >= 1000000)
+            {
+                double trieu = (double)revenue / 1000000;
+                return trieu.ToString("0.#") + " triệu VND";
+            }
+            else if (revenue >= 1000)
+            {
+                return revenue.ToString("N0") + " VND"; // Ví dụ: 120,000 VND
+            }
+            else
+            {
+                return revenue.ToString() + " VND";
+            }
+        }
+        int totalRevenue;
         private void btnThongKe_Click(object sender, EventArgs e)
         {
             DateTime selectedDate = dateTimePicker1.Value;
@@ -32,25 +49,34 @@ namespace QuanLyKhachSan
             {
                 txtTongSoPhong.Text = statisticService.GetTotalRoom().ToString();
                 txtTongKhachHang.Text = statisticService.GetTotalCustomerByDay(selectedDate).ToString();
-                txtTongDoanhThu.Text = statisticService.GetTotalRevenueByDay(selectedDate).ToString();
+
+                totalRevenue = statisticService.GetTotalRevenueByDay(selectedDate);
+                txtTongDoanhThu.Text = FormatRevenue(totalRevenue);
             }
             else if (txtThongKe.SelectedItem.ToString() == "Theo tháng")
             {
                 txtTongSoPhong.Text = statisticService.GetTotalRoom().ToString();
                 txtTongKhachHang.Text = statisticService.GetTotalCustomerByMonth(selectedDate).ToString();
-                txtTongDoanhThu.Text = statisticService.GetTotalRevenueByMonth(selectedDate).ToString();
+
+                totalRevenue = statisticService.GetTotalRevenueByMonth(selectedDate);
+                txtTongDoanhThu.Text = FormatRevenue(totalRevenue);
             }
             else if (txtThongKe.SelectedItem.ToString() == "Theo quý")
             {
                 txtTongSoPhong.Text = statisticService.GetTotalRoom().ToString();
                 txtTongKhachHang.Text = statisticService.GetTotalCustomerByQuarter(selectedDate).ToString();
-                txtTongDoanhThu.Text = statisticService.GetTotalRevenueByQuarter(selectedDate).ToString();
+
+                totalRevenue = statisticService.GetTotalRevenueByQuarter(selectedDate);
+                txtTongDoanhThu.Text = FormatRevenue(totalRevenue);
             }
             else if (txtThongKe.SelectedItem.ToString() == "Theo năm")
             {
                 txtTongSoPhong.Text = statisticService.GetTotalRoom().ToString();
                 txtTongKhachHang.Text = statisticService.GetTotalCustomerByYear(selectedDate).ToString();
-                txtTongDoanhThu.Text = statisticService.GetTotalRevenueByYear(selectedDate).ToString();
+
+
+                totalRevenue = statisticService.GetTotalRevenueByYear(selectedDate);
+                txtTongDoanhThu.Text = FormatRevenue(totalRevenue);
             }
 
             LoadChartRoomAndCustomer();
@@ -64,7 +90,7 @@ namespace QuanLyKhachSan
             chart1.Series["Series1"].Points.AddXY("Khách", Convert.ToInt32(txtTongKhachHang.Text));
 
             // Đổi màu từng cột
-            chart1.Series["Series1"].Points[0].Color = Color.Blue;  // Phòng
+            //chart1.Series["Series1"].Points[0].Color = Color.Blue;  // Phòng
             chart1.Series["Series1"].Points[1].Color = Color.Orange; // Khách
 
             // Tắt Legend nếu muốn
@@ -74,7 +100,37 @@ namespace QuanLyKhachSan
         private void LoadChartRevenue()
         {
             chart2.Series["Series1"].Points.Clear();
-            chart2.Series["Series1"].Points.AddXY("Doanh thu", Convert.ToInt32(txtTongDoanhThu.Text));
+            if (txtThongKe.SelectedItem.ToString() == "Theo năm")
+            {
+                List<int> revenueList = statisticService.GetRevenueByYear(dateTimePicker1.Value);
+
+                for (int i = 1; i <= 12; i++)
+                {
+                    chart2.Series["Series1"].Points.AddXY("Tháng " + i, revenueList[i - 1]);
+                }
+            }
+            else if (txtThongKe.SelectedItem.ToString() == "Theo quý")
+            {
+                List<int> revenueList = statisticService.GetRevenueByQuarter(dateTimePicker1.Value);
+                int quy = (dateTimePicker1.Value.Month - 1) / 3 + 1;
+                int startMonth = (quy - 1) * 3 + 1;
+                for (int i = 0; i < 3; i++)
+                {
+                    chart2.Series["Series1"].Points.AddXY("Tháng " + (startMonth + i), revenueList[i]);
+                }
+            }
+            else
+            {
+                chart2.Series["Series1"].Points.AddXY("Doanh thu", totalRevenue);
+            }
+            //chart2.Series["Series1"].Points.AddXY("Doanh thu",totalRevenue);
+
+            chart2.Series["Series1"].Points[0].Color = Color.Blue;  // Doanh thu
+
+            // Hiển thị trục Y đẹp
+            chart2.ChartAreas[0].AxisY.LabelStyle.Format = "#,##0";
+            chart2.ChartAreas[0].AxisX.Interval = 1; // Hiện đủ Tháng 1 đến Tháng 12
+            chart2.ChartAreas[0].AxisX.LabelStyle.Angle = -45;
 
             // Tắt Legend nếu muốn
             chart2.Legends[0].Enabled = false;

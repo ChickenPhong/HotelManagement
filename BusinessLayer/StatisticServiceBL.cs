@@ -121,5 +121,34 @@ namespace BusinessLayer
             DataSet ds = fn.getData(query);
             return Convert.ToInt32(ds.Tables[0].Rows[0][0] == DBNull.Value ? 0 : ds.Tables[0].Rows[0][0]);
         }
+
+        //hàm lấy doanh thu 3 tháng theo quý
+        public List<int> GetRevenueByQuarter(DateTime date)
+        {
+            List<int> revenueList = new List<int>();
+            int quy = (date.Month - 1) / 3 + 1;
+
+            int startMonth = (quy - 1) * 3 + 1; // tháng bắt đầu của quý
+            for (int i = 0; i < 3; i++)
+            {
+                DateTime month = new DateTime(date.Year, startMonth + i, 1);
+                int revenue = GetTotalRevenueByMonth(month); // đã có sẵn
+                revenueList.Add(revenue);
+            }
+            return revenueList;
+        }
+
+        //hàm lấy doanh thu theo từng tháng
+        public List<int> GetRevenueByYear(DateTime date)
+        {
+            List<int> revenueList = new List<int>();
+            for (int i = 1; i <= 12; i++)
+            {
+                DateTime month = new DateTime(date.Year, i, 1);
+                int revenue = GetTotalRevenueByMonth(month); // đã có sẵn hàm này rồi
+                revenueList.Add(revenue);
+            }
+            return revenueList;
+        }
     }
 }

@@ -74,7 +74,7 @@
             this.groupBox3.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.groupBox3.Name = "groupBox3";
             this.groupBox3.Padding = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.groupBox3.Size = new System.Drawing.Size(822, 503);
+            this.groupBox3.Size = new System.Drawing.Size(689, 503);
             this.groupBox3.TabIndex = 22;
             this.groupBox3.TabStop = false;
             this.groupBox3.Text = "Biểu đồ Phòng và Khách";
@@ -85,14 +85,14 @@
             this.chart1.ChartAreas.Add(chartArea1);
             legend1.Name = "Legend1";
             this.chart1.Legends.Add(legend1);
-            this.chart1.Location = new System.Drawing.Point(46, 52);
+            this.chart1.Location = new System.Drawing.Point(25, 52);
             this.chart1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.chart1.Name = "chart1";
             series1.ChartArea = "ChartArea1";
             series1.Legend = "Legend1";
             series1.Name = "Series1";
             this.chart1.Series.Add(series1);
-            this.chart1.Size = new System.Drawing.Size(746, 418);
+            this.chart1.Size = new System.Drawing.Size(640, 418);
             this.chart1.TabIndex = 0;
             this.chart1.Text = "chart1";
             // 
@@ -287,9 +287,9 @@
             this.groupBox4.BackColor = System.Drawing.Color.LightSteelBlue;
             this.groupBox4.Controls.Add(this.chart2);
             this.groupBox4.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox4.Location = new System.Drawing.Point(1016, 595);
+            this.groupBox4.Location = new System.Drawing.Point(809, 595);
             this.groupBox4.Name = "groupBox4";
-            this.groupBox4.Size = new System.Drawing.Size(822, 505);
+            this.groupBox4.Size = new System.Drawing.Size(1094, 505);
             this.groupBox4.TabIndex = 25;
             this.groupBox4.TabStop = false;
             this.groupBox4.Text = "Biểu đồ Doanh thu";
@@ -300,14 +300,14 @@
             this.chart2.ChartAreas.Add(chartArea2);
             legend2.Name = "Legend1";
             this.chart2.Legends.Add(legend2);
-            this.chart2.Location = new System.Drawing.Point(42, 54);
+            this.chart2.Location = new System.Drawing.Point(38, 54);
             this.chart2.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.chart2.Name = "chart2";
             series2.ChartArea = "ChartArea1";
             series2.Legend = "Legend1";
             series2.Name = "Series1";
             this.chart2.Series.Add(series2);
-            this.chart2.Size = new System.Drawing.Size(746, 418);
+            this.chart2.Size = new System.Drawing.Size(1023, 418);
             this.chart2.TabIndex = 0;
             this.chart2.Text = "chart1";
             // 
