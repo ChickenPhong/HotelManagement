@@ -33,10 +33,10 @@
             this.btnExit = new Guna.UI2.WinForms.Guna2CircleButton();
             this.label4 = new System.Windows.Forms.Label();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.guna2Button2 = new Guna.UI2.WinForms.Guna2Button();
+            this.btnThonKe = new Guna.UI2.WinForms.Guna2Button();
             this.label3 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.guna2Button1 = new Guna.UI2.WinForms.Guna2Button();
+            this.btnQuanLy = new Guna.UI2.WinForms.Guna2Button();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.guna2Panel1.SuspendLayout();
@@ -51,16 +51,16 @@
             this.guna2Panel1.Controls.Add(this.btnExit);
             this.guna2Panel1.Controls.Add(this.label4);
             this.guna2Panel1.Controls.Add(this.pictureBox2);
-            this.guna2Panel1.Controls.Add(this.guna2Button2);
+            this.guna2Panel1.Controls.Add(this.btnThonKe);
             this.guna2Panel1.Controls.Add(this.label3);
             this.guna2Panel1.Controls.Add(this.pictureBox1);
-            this.guna2Panel1.Controls.Add(this.guna2Button1);
+            this.guna2Panel1.Controls.Add(this.btnQuanLy);
             this.guna2Panel1.Controls.Add(this.label2);
             this.guna2Panel1.Controls.Add(this.label1);
             this.guna2Panel1.Location = new System.Drawing.Point(-2, -3);
             this.guna2Panel1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.guna2Panel1.Name = "guna2Panel1";
-            this.guna2Panel1.Size = new System.Drawing.Size(1422, 820);
+            this.guna2Panel1.Size = new System.Drawing.Size(1946, 1085);
             this.guna2Panel1.TabIndex = 0;
             // 
             // btnExit
@@ -107,26 +107,26 @@
             this.pictureBox2.TabIndex = 6;
             this.pictureBox2.TabStop = false;
             // 
-            // guna2Button2
+            // btnThonKe
             // 
-            this.guna2Button2.BorderColor = System.Drawing.Color.White;
-            this.guna2Button2.BorderRadius = 15;
-            this.guna2Button2.ButtonMode = Guna.UI2.WinForms.Enums.ButtonMode.RadioButton;
-            this.guna2Button2.CheckedState.FillColor = System.Drawing.Color.White;
-            this.guna2Button2.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.guna2Button2.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.guna2Button2.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.guna2Button2.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.guna2Button2.FillColor = System.Drawing.Color.White;
-            this.guna2Button2.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.guna2Button2.ForeColor = System.Drawing.Color.White;
-            this.guna2Button2.HoverState.FillColor = System.Drawing.Color.White;
-            this.guna2Button2.Location = new System.Drawing.Point(837, 294);
-            this.guna2Button2.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.guna2Button2.Name = "guna2Button2";
-            this.guna2Button2.Size = new System.Drawing.Size(303, 374);
-            this.guna2Button2.TabIndex = 5;
-            this.guna2Button2.Click += new System.EventHandler(this.guna2Button2_Click);
+            this.btnThonKe.BorderColor = System.Drawing.Color.White;
+            this.btnThonKe.BorderRadius = 15;
+            this.btnThonKe.ButtonMode = Guna.UI2.WinForms.Enums.ButtonMode.RadioButton;
+            this.btnThonKe.CheckedState.FillColor = System.Drawing.Color.White;
+            this.btnThonKe.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnThonKe.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnThonKe.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnThonKe.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnThonKe.FillColor = System.Drawing.Color.White;
+            this.btnThonKe.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.btnThonKe.ForeColor = System.Drawing.Color.White;
+            this.btnThonKe.HoverState.FillColor = System.Drawing.Color.White;
+            this.btnThonKe.Location = new System.Drawing.Point(837, 294);
+            this.btnThonKe.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.btnThonKe.Name = "btnThonKe";
+            this.btnThonKe.Size = new System.Drawing.Size(303, 374);
+            this.btnThonKe.TabIndex = 5;
+            this.btnThonKe.Click += new System.EventHandler(this.btnThonKe_Click);
             // 
             // label3
             // 
@@ -153,28 +153,28 @@
             this.pictureBox1.TabIndex = 3;
             this.pictureBox1.TabStop = false;
             // 
-            // guna2Button1
+            // btnQuanLy
             // 
-            this.guna2Button1.BorderColor = System.Drawing.Color.White;
-            this.guna2Button1.BorderRadius = 15;
-            this.guna2Button1.ButtonMode = Guna.UI2.WinForms.Enums.ButtonMode.RadioButton;
-            this.guna2Button1.CheckedState.FillColor = System.Drawing.Color.White;
-            this.guna2Button1.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.guna2Button1.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.guna2Button1.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.guna2Button1.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.guna2Button1.FillColor = System.Drawing.Color.White;
-            this.guna2Button1.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.guna2Button1.ForeColor = System.Drawing.Color.White;
-            this.guna2Button1.HoverState.BorderColor = System.Drawing.Color.White;
-            this.guna2Button1.HoverState.FillColor = System.Drawing.Color.White;
-            this.guna2Button1.HoverState.ForeColor = System.Drawing.Color.White;
-            this.guna2Button1.Location = new System.Drawing.Point(208, 294);
-            this.guna2Button1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.guna2Button1.Name = "guna2Button1";
-            this.guna2Button1.Size = new System.Drawing.Size(303, 374);
-            this.guna2Button1.TabIndex = 2;
-            this.guna2Button1.Click += new System.EventHandler(this.guna2Button1_Click_1);
+            this.btnQuanLy.BorderColor = System.Drawing.Color.White;
+            this.btnQuanLy.BorderRadius = 15;
+            this.btnQuanLy.ButtonMode = Guna.UI2.WinForms.Enums.ButtonMode.RadioButton;
+            this.btnQuanLy.CheckedState.FillColor = System.Drawing.Color.White;
+            this.btnQuanLy.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnQuanLy.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnQuanLy.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnQuanLy.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnQuanLy.FillColor = System.Drawing.Color.White;
+            this.btnQuanLy.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.btnQuanLy.ForeColor = System.Drawing.Color.White;
+            this.btnQuanLy.HoverState.BorderColor = System.Drawing.Color.White;
+            this.btnQuanLy.HoverState.FillColor = System.Drawing.Color.White;
+            this.btnQuanLy.HoverState.ForeColor = System.Drawing.Color.White;
+            this.btnQuanLy.Location = new System.Drawing.Point(208, 294);
+            this.btnQuanLy.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.btnQuanLy.Name = "btnQuanLy";
+            this.btnQuanLy.Size = new System.Drawing.Size(303, 374);
+            this.btnQuanLy.TabIndex = 2;
+            this.btnQuanLy.Click += new System.EventHandler(this.btnQuanLy_Click);
             // 
             // label2
             // 
@@ -224,12 +224,12 @@
         private Guna.UI2.WinForms.Guna2Panel guna2Panel1;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
-        private Guna.UI2.WinForms.Guna2Button guna2Button1;
+        private Guna.UI2.WinForms.Guna2Button btnQuanLy;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.PictureBox pictureBox2;
-        private Guna.UI2.WinForms.Guna2Button guna2Button2;
+        private Guna.UI2.WinForms.Guna2Button btnThonKe;
         private Guna.UI2.WinForms.Guna2CircleButton btnExit;
     }
 }

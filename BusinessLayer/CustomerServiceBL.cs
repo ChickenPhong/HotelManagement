@@ -174,6 +174,19 @@ namespace BusinessLayer
             return dataAccessCustomer.SearchCustomerByName(name);
         }
 
+        // Trả về số ngày ở của khách
+        public int GetTotalDayStay(int cid, DateTime checkoutDate)
+        {
+
+            return dataAccessCustomer.GetTotalDayStay(cid, checkoutDate);
+        }
+
+        // Lấy giá phòng theo roomid
+        public long GetRoomPrice(int roomid)
+        {
+            return dataAccessCustomer.GetRoomPrice(roomid);
+        }
+
         //public void CheckOut(int customerId, string checkoutDate, string roomNo)
         //{
         //    string query = $"UPDATE customer SET chekout = 'YES', checkout = '{checkoutDate}' WHERE cid = {customerId}; " +

@@ -103,14 +103,14 @@
             this.txtRequest.ForeColor = System.Drawing.Color.Black;
             this.txtRequest.ItemHeight = 30;
             this.txtRequest.Items.AddRange(new object[] {
-            "Khăn",
-            "Bàn chải đánh răng",
-            "Dép",
-            "Nước ngọt",
-            "Rượu",
-            "Dịch vụ giặt ủi",
-            "Dọn phòng",
-            "khác..."});
+            "Khan tam",
+            "Ban chai đanh rang",
+            "Dep",
+            "Nuoc ngot",
+            "Ruou",
+            "Dich vu giat ui",
+            "Don phong",
+            "khac..."});
             this.txtRequest.Location = new System.Drawing.Point(58, 320);
             this.txtRequest.Name = "txtRequest";
             this.txtRequest.Size = new System.Drawing.Size(516, 36);
@@ -190,11 +190,13 @@
             this.dgvRequest.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
             this.dgvRequest.Location = new System.Drawing.Point(657, 173);
             this.dgvRequest.Name = "dgvRequest";
+            this.dgvRequest.ReadOnly = true;
             this.dgvRequest.RowHeadersVisible = false;
             this.dgvRequest.RowHeadersWidth = 62;
             this.dgvRequest.RowTemplate.Height = 28;
             this.dgvRequest.Size = new System.Drawing.Size(1122, 622);
             this.dgvRequest.TabIndex = 8;
+            this.dgvRequest.TabStop = false;
             this.dgvRequest.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.White;
             this.dgvRequest.ThemeStyle.AlternatingRowsStyle.Font = null;
             this.dgvRequest.ThemeStyle.AlternatingRowsStyle.ForeColor = System.Drawing.Color.Empty;
@@ -208,7 +210,7 @@
             this.dgvRequest.ThemeStyle.HeaderStyle.ForeColor = System.Drawing.Color.White;
             this.dgvRequest.ThemeStyle.HeaderStyle.HeaightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
             this.dgvRequest.ThemeStyle.HeaderStyle.Height = 4;
-            this.dgvRequest.ThemeStyle.ReadOnly = false;
+            this.dgvRequest.ThemeStyle.ReadOnly = true;
             this.dgvRequest.ThemeStyle.RowsStyle.BackColor = System.Drawing.Color.White;
             this.dgvRequest.ThemeStyle.RowsStyle.BorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
             this.dgvRequest.ThemeStyle.RowsStyle.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));

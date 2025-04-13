@@ -30,6 +30,7 @@ namespace PresentationLayer
             uC_CheckOut1.Visible = false;
             uC_CustomerDetails1.Visible = false;
             uC_Employee1.Visible = false;
+            uC_CustomerRequest1.Visible = false;
             btnAddRoom.PerformClick();
         }
 
@@ -51,6 +52,9 @@ namespace PresentationLayer
         {
             PanelMoving.Left = btnCheckOut.Left + 60;
             uC_CheckOut1.Visible = true;
+            // Load lại data mới nhất
+            uC_CheckOut1.LoadCheckOut();
+            
             uC_CheckOut1.BringToFront();
         }
 
@@ -72,6 +76,10 @@ namespace PresentationLayer
         {
             PanelMoving.Left = btnCustomerRequest.Left + 60;
             uC_CustomerRequest1.Visible = true;
+            // Load lại Room và Request mới nhất
+            uC_CustomerRequest1.LoadActiveRoomNo();
+            uC_CustomerRequest1.LoadCustomerRequest();
+
             uC_CustomerRequest1.BringToFront();
         }
 

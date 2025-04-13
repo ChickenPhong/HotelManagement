@@ -19,12 +19,7 @@ namespace QuanLyKhachSan
         {
             InitializeComponent();
         }
-        private void guna2Button1_Click_1(object sender, EventArgs e)
-        {
-            Dashboard dashboard = new Dashboard();
-            this.Hide();
-            dashboard.Show();
-        }
+
 
 
         private void btnExit_Click(object sender, EventArgs e)
@@ -32,7 +27,14 @@ namespace QuanLyKhachSan
             Application.Exit();
         }
 
-        private void guna2Button2_Click(object sender, EventArgs e)
+        private void btnQuanLy_Click(object sender, EventArgs e)
+        {
+            Dashboard dashboard = new Dashboard();
+            this.Hide();
+            dashboard.Show();
+        }
+
+        private void btnThonKe_Click(object sender, EventArgs e)
         {
             ThongKe thongKe = new ThongKe();
             this.Hide();

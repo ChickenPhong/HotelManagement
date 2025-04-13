@@ -24,8 +24,20 @@ namespace PresentationLayer.All_User_Control
 
         private void UC_AddRoom_Load(object sender, EventArgs e)
         {
+            LoadRoom();
+        }
+
+        // Load danh sách phòng lên DataGridView
+        private void LoadRoom()
+        {
             List<Room> rooms = roomService.GetAllRooms();
             DataGridView1.DataSource = rooms;
+
+            // Ẩn cột RoomId cho dễ nhìn
+            if (DataGridView1.Columns.Contains("RoomId"))
+            {
+                DataGridView1.Columns["RoomId"].Visible = false;
+            }
         }
 
         private void btnAddRoom_Click(object sender, EventArgs e)
@@ -43,7 +55,7 @@ namespace PresentationLayer.All_User_Control
                 roomService.AddRoom(room);
                 MessageBox.Show("Đã thêm phòng", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
 
-                UC_AddRoom_Load(this, null);
+                LoadRoom();
                 clearAll();
             }
             else
@@ -67,7 +79,7 @@ namespace PresentationLayer.All_User_Control
 
         private void UC_AddRoom_Enter(object sender, EventArgs e)
         {
-            UC_AddRoom_Load(this, null);
+            LoadRoom();
         }
     }
 }

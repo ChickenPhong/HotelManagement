@@ -19,9 +19,14 @@ namespace PresentationLayer.All_User_Control
             InitializeComponent();
         }
 
-        private void UC_CheckOut_Load(object sender, EventArgs e)
+        public void LoadCheckOut()
         {
             guna2DataGridView1.DataSource = customerService.GetActiveCustomerRoomInfo();
+        }
+
+        private void UC_CheckOut_Load(object sender, EventArgs e)
+        {
+            LoadCheckOut();
         }
 
         private void txtName_TextChanged(object sender, EventArgs e)
@@ -38,6 +43,15 @@ namespace PresentationLayer.All_User_Control
                 id = Convert.ToInt32(row.Cells[0].Value);
                 txtCName.Text = row.Cells[1].Value.ToString();
                 txtRoom.Text = row.Cells[9].Value.ToString(); // roomNo
+
+                int roomid = Convert.ToInt32(row.Cells["roomid"].Value);
+                DateTime checkoutDate = txtCheckOutDate.Value; // Lấy từ DateTimePicker của bạn
+                int totalDayStay = customerService.GetTotalDayStay(id, checkoutDate);
+                long price = customerService.GetRoomPrice(roomid);
+
+                long totalPrice = totalDayStay * price;
+
+                txtTotalPrice.Text = totalPrice.ToString("N0") + " VND"; // format tiền đẹp
             }
         }
 
@@ -49,7 +63,7 @@ namespace PresentationLayer.All_User_Control
                 {
                     string checkoutDate = txtCheckOutDate.Text;
                     customerService.CheckOut(id, checkoutDate, txtRoom.Text);
-                    UC_CheckOut_Load(this, null);
+                    LoadCheckOut();
                     clearAll();
                 }
             }

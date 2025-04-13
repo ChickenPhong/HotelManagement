@@ -91,14 +91,47 @@ namespace DataLayer
 
         public DataTable GetActiveCustomerRoomInfo()
         {
-            string query = "SELECT customer.cid, customer.cname, customer.mobile, customer.nationality, customer.gender, customer.dob, customer.idproof, customer.address, customer.checkin, rooms.roomNo, rooms.roomType, rooms.bed, rooms.price FROM customer INNER JOIN rooms ON customer.roomid = rooms.roomid WHERE chekout = 'NO'";
+            string query = "SELECT customer.cid, customer.cname, customer.mobile, customer.nationality, customer.gender, customer.dob, customer.idproof, customer.address, customer.checkin, rooms.roomid, rooms.roomNo, rooms.roomType, rooms.bed, rooms.price FROM customer INNER JOIN rooms ON customer.roomid = rooms.roomid WHERE chekout = 'NO'";
             return fn.getData(query).Tables[0];
         }
 
         public DataTable SearchCustomerByName(string name)
         {
-            string query = $"SELECT customer.cid, customer.cname, customer.mobile, customer.nationality, customer.gender, customer.dob, customer.idproof, customer.address, customer.checkin, rooms.roomNo, rooms.roomType, rooms.bed, rooms.price FROM customer INNER JOIN rooms ON customer.roomid = rooms.roomid WHERE cname LIKE '{name}%' AND chekout = 'NO'";
+            string query = $"SELECT customer.cid, customer.cname, customer.mobile, customer.nationality, customer.gender, customer.dob, customer.idproof, customer.address, customer.checkin, rooms.roomid, rooms.roomNo, rooms.roomType, rooms.bed, rooms.price FROM customer INNER JOIN rooms ON customer.roomid = rooms.roomid WHERE cname LIKE '{name}%' AND chekout = 'NO'";
             return fn.getData(query).Tables[0];
+        }
+
+        // Trả về số ngày ở của khách
+        public int GetTotalDayStay(int cid, DateTime checkoutDate)
+        {
+            string query = $"SELECT checkin, checkout FROM customer WHERE cid = {cid}";
+            DataSet ds = fn.getData(query);
+            // Kiểm tra nếu dữ liệu NULL thì return 0
+            if (ds.Tables[0].Rows.Count > 0)
+            {
+                DateTime checkin = Convert.ToDateTime(ds.Tables[0].Rows[0]["checkin"]);
+
+                // Nếu checkout trong db có giá trị thì lấy
+                if (ds.Tables[0].Rows[0]["checkout"] != DBNull.Value)
+                {
+                    checkoutDate = Convert.ToDateTime(ds.Tables[0].Rows[0]["checkout"]);
+                }
+
+                int totalDay = (checkoutDate - checkin).Days + 1;
+                return totalDay > 0 ? totalDay : 1; // Đề phòng trường hợp dữ liệu sai
+            }
+            else
+            {
+                return 0;
+            }
+        }
+
+        // Lấy giá phòng theo roomid
+        public long GetRoomPrice(int roomid)
+        {
+            string query = $"SELECT price FROM rooms WHERE roomid = {roomid}";
+            DataSet ds = fn.getData(query);
+            return Convert.ToInt64(ds.Tables[0].Rows[0][0]);
         }
 
         public void CheckOut(int customerId, string checkoutDate, string roomNo)
@@ -117,7 +150,7 @@ namespace DataLayer
 
         public DataTable GetAllCustomerRequest()
         {
-            string query = "SELECT * FROM customerRequest";
+            string query = "SELECT * FROM customerRequest ORDER BY Id DESC";
             return fn.getData(query).Tables[0];
         }
 

@@ -68,6 +68,9 @@ namespace QuanLyKhachSan.All_User_Control
                 // Load lại danh sách request
                 LoadCustomerRequest();
 
+                // Load lại phòng đã có khách mới nhất
+                LoadActiveRoomNo();
+
                 // Sau khi gửi yêu cầu, ta có thể làm sạch các trường để sẵn sàng cho yêu cầu tiếp theo
                 clearAll();
                 
