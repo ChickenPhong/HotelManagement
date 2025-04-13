@@ -13,12 +13,12 @@ namespace BusinessLayer
     {
         RoomServiceDL roomDL = new RoomServiceDL();
 
-        public List<Room> GetAllRooms()
+        public List<RoomDTO> GetAllRooms()
         {
             return roomDL.GetAllRooms();
         }
 
-        public void AddRoom(Room room)
+        public void AddRoom(RoomDTO room)
         {
             roomDL.AddRoom(room);
         }

@@ -134,10 +134,10 @@ namespace DataLayer
             return Convert.ToInt64(ds.Tables[0].Rows[0][0]);
         }
 
-        public void CheckOut(int customerId, string checkoutDate, string roomNo)
+        public void CheckOut(int customerId, string checkoutDate, int roomId)
         {
             string query = $"UPDATE customer SET chekout = 'YES', checkout = '{checkoutDate}' WHERE cid = {customerId}; " +
-                   $"UPDATE rooms SET booked = 'NO' WHERE roomNo = '{roomNo}'";
+                   $"UPDATE rooms SET booked = 'NO' WHERE roomid = '{roomId}'";
 
             fn.setData(query, "Thanh toán thành công");
         }

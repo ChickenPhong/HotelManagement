@@ -62,7 +62,8 @@ namespace PresentationLayer.All_User_Control
                 if (MessageBox.Show("Bạn có chắc chắn không?", "Xác nhận", MessageBoxButtons.OK, MessageBoxIcon.Warning) == DialogResult.OK)
                 {
                     string checkoutDate = txtCheckOutDate.Text;
-                    customerService.CheckOut(id, checkoutDate, txtRoom.Text);
+                    int roomid = Convert.ToInt32(txtRoom.Text);
+                    customerService.CheckOut(id, checkoutDate, roomid);
                     LoadCheckOut();
                     clearAll();
                 }

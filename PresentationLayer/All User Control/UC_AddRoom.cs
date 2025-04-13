@@ -30,7 +30,7 @@ namespace PresentationLayer.All_User_Control
         // Load danh sách phòng lên DataGridView
         private void LoadRoom()
         {
-            List<Room> rooms = roomService.GetAllRooms();
+            List<RoomDTO> rooms = roomService.GetAllRooms();
             DataGridView1.DataSource = rooms;
 
             // Ẩn cột RoomId cho dễ nhìn
@@ -44,7 +44,7 @@ namespace PresentationLayer.All_User_Control
         {
             if (txtRoomNo.Text != "" && txtRoomType.Text != "" && txtBed.Text != "" && txtPrice.Text != "")
             {
-                Room room = new Room
+                RoomDTO room = new RoomDTO
                 {
                     RoomNo = txtRoomNo.Text,
                     RoomType = txtRoomType.Text,

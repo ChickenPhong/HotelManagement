@@ -4,6 +4,7 @@ using System.Data;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using TransferObject;
 using DataLayer;
 
 namespace BusinessLayer
@@ -194,9 +195,9 @@ namespace BusinessLayer
 
         //    fn.setData(query, "Thanh toán thành công");
         //}
-        public void CheckOut(int customerId, string checkoutDate, string roomNo)
+        public void CheckOut(int customerId, string checkoutDate, int roomid)
         {
-            dataAccessCustomer.CheckOut(customerId, checkoutDate, roomNo);
+            dataAccessCustomer.CheckOut(customerId, checkoutDate, roomid);
         }
 
         //public void AddCustomerRequest(string roomNo, string request, string employee, string status)

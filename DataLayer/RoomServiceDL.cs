@@ -12,14 +12,14 @@ namespace DataLayer
     {
         Function fn = new Function();
 
-        public List<Room> GetAllRooms()
+        public List<RoomDTO> GetAllRooms()
         {
-            var list = new List<Room>();
+            var list = new List<RoomDTO>();
             DataSet ds = fn.getData("SELECT * FROM rooms");
 
             foreach (DataRow row in ds.Tables[0].Rows)
             {
-                list.Add(new Room
+                list.Add(new RoomDTO
                 {
                     RoomId = Convert.ToInt32(row["roomid"]),
                     RoomNo = row["roomNo"].ToString(),
@@ -32,7 +32,7 @@ namespace DataLayer
             return list;
         }
 
-        public void AddRoom(Room room)
+        public void AddRoom(RoomDTO room)
         {
             string query = $"INSERT INTO rooms (roomNo, roomType, bed, price) VALUES ('{room.RoomNo}', '{room.RoomType}', '{room.Bed}', {room.Price})";
             fn.setData(query, "Thêm phòng thành công");
