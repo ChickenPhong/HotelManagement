@@ -38,6 +38,7 @@ namespace PresentationLayer.All_User_Control
             {
                 DataGridView1.Columns["RoomId"].Visible = false;
             }
+            LoadRoomNumbersToComboBox();
         }
 
         private void btnAddRoom_Click(object sender, EventArgs e)
@@ -80,6 +81,52 @@ namespace PresentationLayer.All_User_Control
         private void UC_AddRoom_Enter(object sender, EventArgs e)
         {
             LoadRoom();
+        }
+
+        private void LoadRoomNumbersToComboBox()
+        {
+            txtRoomHave.Items.Clear();
+            txtRoomHave.Items.Add("");
+            List<RoomDTO> rooms = roomService.GetAllRooms();
+            foreach (var room in rooms)
+            {
+                txtRoomHave.Items.Add(room.RoomNo);  // <-- CHỈ THÊM RoomNo (vd: 101, 102)
+            }
+            txtRoomHave.SelectedIndex = 0;
+        }
+
+
+
+
+        private void btnDeleteRoom_Click(object sender, EventArgs e)
+        {
+            if (txtRoomHave.SelectedItem != null)
+            {
+                string selectedRoomNo = txtRoomHave.SelectedItem.ToString();
+                List<RoomDTO> rooms = roomService.GetAllRooms();
+                RoomDTO roomToDelete = rooms.FirstOrDefault(r => r.RoomNo == selectedRoomNo);
+
+                if (roomToDelete != null)
+                {
+                    DialogResult result = MessageBox.Show($"Bạn có chắc chắn muốn xóa phòng {selectedRoomNo}?", "Xác nhận", MessageBoxButtons.YesNo, MessageBoxIcon.Warning);
+                    if (result == DialogResult.Yes)
+                    {
+                        roomService.DeleteRoom(roomToDelete.RoomId);
+                        MessageBox.Show("Đã xóa phòng thành công.");
+
+                        LoadRoom();
+                        txtRoomHave.SelectedIndex = -1; // Reset lại ComboBox
+                    }
+                }
+                else
+                {
+                    MessageBox.Show("Không tìm thấy phòng.");
+                }
+            }
+            else
+            {
+                MessageBox.Show("Vui lòng chọn số phòng cần xóa.");
+            }
         }
     }
 }

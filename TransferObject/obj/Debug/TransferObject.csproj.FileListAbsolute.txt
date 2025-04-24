@@ -10,3 +10,9 @@ D:\GitHubCode\gay\HotelManagement\TransferObject\obj\Debug\TransferObject.csproj
 D:\GitHubCode\gay\HotelManagement\TransferObject\obj\Debug\TransferObject.csproj.CoreCompileInputs.cache
 D:\GitHubCode\gay\HotelManagement\TransferObject\obj\Debug\TransferObject.dll
 D:\GitHubCode\gay\HotelManagement\TransferObject\obj\Debug\TransferObject.pdb
+D:\GitHubCode\HotelManagement\TransferObject\bin\Debug\TransferObject.dll
+D:\GitHubCode\HotelManagement\TransferObject\bin\Debug\TransferObject.pdb
+D:\GitHubCode\HotelManagement\TransferObject\obj\Debug\TransferObject.csproj.AssemblyReference.cache
+D:\GitHubCode\HotelManagement\TransferObject\obj\Debug\TransferObject.csproj.CoreCompileInputs.cache
+D:\GitHubCode\HotelManagement\TransferObject\obj\Debug\TransferObject.dll
+D:\GitHubCode\HotelManagement\TransferObject\obj\Debug\TransferObject.pdb

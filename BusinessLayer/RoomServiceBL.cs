@@ -22,5 +22,11 @@ namespace BusinessLayer
         {
             roomDL.AddRoom(room);
         }
+
+        public void DeleteRoom(int roomId)
+        {
+            roomDL.DeleteRoom(roomId);
+        }
+
     }
 }

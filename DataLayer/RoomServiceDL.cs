@@ -37,5 +37,11 @@ namespace DataLayer
             string query = $"INSERT INTO rooms (roomNo, roomType, bed, price) VALUES ('{room.RoomNo}', '{room.RoomType}', '{room.Bed}', {room.Price})";
             fn.setData(query, "Thêm phòng thành công");
         }
+        public void DeleteRoom(int roomId)
+        {
+            string query = $"DELETE FROM rooms WHERE roomid = {roomId}";
+            fn.setData(query, "Đã xóa phòng thành công");
+        }
+
     }
 }

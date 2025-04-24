@@ -25,3 +25,12 @@ D:\GitHubCode\123\HotelManagement\DataLayer\obj\Debug\DataLayer.csproj.CoreCompi
 D:\GitHubCode\123\HotelManagement\DataLayer\obj\Debug\DataLayer.csproj.Up2Date
 D:\GitHubCode\123\HotelManagement\DataLayer\obj\Debug\DataLayer.dll
 D:\GitHubCode\123\HotelManagement\DataLayer\obj\Debug\DataLayer.pdb
+D:\GitHubCode\HotelManagement\DataLayer\bin\Debug\DataLayer.dll
+D:\GitHubCode\HotelManagement\DataLayer\bin\Debug\DataLayer.pdb
+D:\GitHubCode\HotelManagement\DataLayer\bin\Debug\TransferObject.dll
+D:\GitHubCode\HotelManagement\DataLayer\bin\Debug\TransferObject.pdb
+D:\GitHubCode\HotelManagement\DataLayer\obj\Debug\DataLayer.csproj.AssemblyReference.cache
+D:\GitHubCode\HotelManagement\DataLayer\obj\Debug\DataLayer.csproj.CoreCompileInputs.cache
+D:\GitHubCode\HotelManagement\DataLayer\obj\Debug\DataLayer.csproj.Up2Date
+D:\GitHubCode\HotelManagement\DataLayer\obj\Debug\DataLayer.dll
+D:\GitHubCode\HotelManagement\DataLayer\obj\Debug\DataLayer.pdb
