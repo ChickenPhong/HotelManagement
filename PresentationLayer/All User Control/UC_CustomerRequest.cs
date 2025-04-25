@@ -39,9 +39,19 @@ namespace QuanLyKhachSan.All_User_Control
 
             txtEmployee.Items.Clear();
 
+            //foreach (DataRow row in dt.Rows)
+            //{
+            //    txtEmployee.Items.Add(row["ename"].ToString());
+            //}
             foreach (DataRow row in dt.Rows)
             {
-                txtEmployee.Items.Add(row["ename"].ToString());
+                string role = row["role"]?.ToString();
+                string name = row["ename"]?.ToString();
+
+                if (role == "Nhan vien le tan" || role == "Nhan vien don dep")
+                {
+                    txtEmployee.Items.Add(name);
+                }
             }
         }
 

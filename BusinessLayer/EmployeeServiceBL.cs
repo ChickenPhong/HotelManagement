@@ -34,6 +34,11 @@ namespace BusinessLayer
             }
         }
 
+        public string GetRoleByUsername(string username)
+        {
+            return employeeServiceDL.GetRoleByUsername(username);
+        }
+
         public int GetNextEmployeeId()
         {
             DataSet ds = employeeServiceDL.GetNextEmployeeId();

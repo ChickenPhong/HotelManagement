@@ -17,7 +17,10 @@ namespace PresentationLayer
     public partial class Form1 : Form
     {
         EmployeeServiceBL cs = new EmployeeServiceBL();
-        String query;
+
+        public static string LoggedInUsername;
+        public static string LoggedInRole;
+
 
         public Form1()
         {
@@ -25,8 +28,6 @@ namespace PresentationLayer
         }
 
  
-
-
         private void btnExit_Click(object sender, EventArgs e)
         {
             Application.Exit();
@@ -34,9 +35,16 @@ namespace PresentationLayer
 
         private void btnLogin_Click(object sender, EventArgs e)
         {
-            if (cs.CheckLogin(txtUsername.Text, txtPassword.Text))
+            string username = txtUsername.Text;
+            string password = txtPassword.Text;
+
+            //if (cs.CheckLogin(txtUsername.Text, txtPassword.Text))
+            if (cs.CheckLogin(username, password))
             {
-              
+                // Lưu lại thông tin đăng nhập
+                LoggedInUsername = username;
+                LoggedInRole = cs.GetRoleByUsername(username);
+
                 DieuHuong tk = new DieuHuong(); 
                 this.Hide();
                 tk.Show();

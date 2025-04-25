@@ -136,7 +136,7 @@ namespace PresentationLayer
             this.btnCustomerRequest.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
             this.btnCustomerRequest.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnCustomerRequest.ForeColor = System.Drawing.Color.White;
-            this.btnCustomerRequest.Location = new System.Drawing.Point(1220, 3);
+            this.btnCustomerRequest.Location = new System.Drawing.Point(600, 3);
             this.btnCustomerRequest.Name = "btnCustomerRequest";
             this.btnCustomerRequest.Size = new System.Drawing.Size(200, 115);
             this.btnCustomerRequest.TabIndex = 0;
@@ -154,7 +154,7 @@ namespace PresentationLayer
             this.btnCustomerDetail.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
             this.btnCustomerDetail.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnCustomerDetail.ForeColor = System.Drawing.Color.White;
-            this.btnCustomerDetail.Location = new System.Drawing.Point(926, 3);
+            this.btnCustomerDetail.Location = new System.Drawing.Point(899, 3);
             this.btnCustomerDetail.Name = "btnCustomerDetail";
             this.btnCustomerDetail.Size = new System.Drawing.Size(200, 115);
             this.btnCustomerDetail.TabIndex = 0;
@@ -172,7 +172,7 @@ namespace PresentationLayer
             this.btnCheckOut.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
             this.btnCheckOut.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnCheckOut.ForeColor = System.Drawing.Color.White;
-            this.btnCheckOut.Location = new System.Drawing.Point(627, 3);
+            this.btnCheckOut.Location = new System.Drawing.Point(319, 3);
             this.btnCheckOut.Name = "btnCheckOut";
             this.btnCheckOut.Size = new System.Drawing.Size(200, 115);
             this.btnCheckOut.TabIndex = 0;
@@ -190,7 +190,7 @@ namespace PresentationLayer
             this.btnCustomerRes.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
             this.btnCustomerRes.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnCustomerRes.ForeColor = System.Drawing.Color.White;
-            this.btnCustomerRes.Location = new System.Drawing.Point(324, 3);
+            this.btnCustomerRes.Location = new System.Drawing.Point(32, 3);
             this.btnCustomerRes.Name = "btnCustomerRes";
             this.btnCustomerRes.Size = new System.Drawing.Size(200, 115);
             this.btnCustomerRes.TabIndex = 0;
@@ -208,7 +208,7 @@ namespace PresentationLayer
             this.btnAddRoom.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
             this.btnAddRoom.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnAddRoom.ForeColor = System.Drawing.Color.White;
-            this.btnAddRoom.Location = new System.Drawing.Point(31, 3);
+            this.btnAddRoom.Location = new System.Drawing.Point(1205, 3);
             this.btnAddRoom.Name = "btnAddRoom";
             this.btnAddRoom.Size = new System.Drawing.Size(200, 115);
             this.btnAddRoom.TabIndex = 0;

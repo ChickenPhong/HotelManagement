@@ -31,7 +31,19 @@ namespace PresentationLayer
             uC_CustomerDetails1.Visible = false;
             uC_Employee1.Visible = false;
             uC_CustomerRequest1.Visible = false;
-            btnAddRoom.PerformClick();
+            btnCustomerRes.PerformClick();
+
+            string role = Form1.LoggedInRole;
+
+            if (role == "Nhan vien le tan")
+            {
+                // Disable 2 nút chức năng
+                btnAddRoom.Enabled = false;
+                btnAddRoom.BackColor = Color.Gray;
+
+                btnEmployee.Enabled = false;
+                btnEmployee.BackColor = Color.Gray;
+            }
         }
 
         private void btnAddRoom_Click(object sender, EventArgs e)
@@ -39,6 +51,12 @@ namespace PresentationLayer
             PanelMoving.Left = btnAddRoom.Left + 50;
             uC_AddRoom1.Visible = true;
             uC_AddRoom1.BringToFront();
+
+            if (Form1.LoggedInRole == "Nhan vien le tan")
+            {
+                MessageBox.Show("Bạn không có quyền sử dụng chức năng này.", "Cảnh báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return;
+            }
         }
 
         private void btnCustomerRes_Click(object sender, EventArgs e)
@@ -70,6 +88,12 @@ namespace PresentationLayer
             PanelMoving.Left = btnEmployee.Left + 60;
             uC_Employee1.Visible = true;
             uC_Employee1.BringToFront();
+
+            if (Form1.LoggedInRole == "Nhan vien le tan")
+            {
+                MessageBox.Show("Bạn không có quyền sử dụng chức năng này.", "Cảnh báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return;
+            }
         }
 
         private void btnCustomerRequest_Click(object sender, EventArgs e)

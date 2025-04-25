@@ -40,5 +40,6 @@ namespace QuanLyKhachSan
             this.Hide();
             thongKe.Show();
         }
+
     }
 }

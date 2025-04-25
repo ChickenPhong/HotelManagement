@@ -26,6 +26,15 @@ namespace DataLayer
             return fn.getData(query);
         }
 
+        public string GetRoleByUsername(string username)
+        {
+            string query = $"SELECT role FROM employee WHERE username = '{username}'";
+            DataSet ds = fn.getData(query);
+            if (ds.Tables[0].Rows.Count > 0)
+                return ds.Tables[0].Rows[0]["role"].ToString();
+            return "";
+        }
+
         public DataSet GetNextEmployeeId()
         {
             string query = "SELECT MAX(eid) FROM employee";
