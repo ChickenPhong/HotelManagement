@@ -23,6 +23,16 @@ namespace PresentationLayer
             Application.Exit();
         }
 
+        private void btnReturnLogin_Click(object sender, EventArgs e)
+        {
+            // Ẩn form hiện tại
+            this.Hide();
+
+            // Hiển thị lại Form1 (màn hình đăng nhập)
+            Form1 form1 = new Form1();
+            form1.Show();
+        }
+
         private void Dashboard_Load(object sender, EventArgs e)
         {
             uC_AddRoom1.Visible = false;

@@ -49,6 +49,7 @@ namespace PresentationLayer
             this.guna2Elipse4 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
             this.guna2Elipse5 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
             this.guna2Elipse6 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
+            this.btnReturnLogin = new Guna.UI2.WinForms.Guna2Button();
             this.uC_CustomerRequest1 = new QuanLyKhachSan.All_User_Control.UC_CustomerRequest();
             this.uC_Employee1 = new PresentationLayer.All_User_Control.UC_Employee();
             this.uC_CustomerDetails1 = new PresentationLayer.All_User_Control.UC_CustomerDetails();
@@ -104,7 +105,7 @@ namespace PresentationLayer
             this.panel1.Controls.Add(this.btnAddRoom);
             this.panel1.Location = new System.Drawing.Point(90, 12);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1765, 130);
+            this.panel1.Size = new System.Drawing.Size(1515, 130);
             this.panel1.TabIndex = 1;
             // 
             // btnEmployee
@@ -118,7 +119,7 @@ namespace PresentationLayer
             this.btnEmployee.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
             this.btnEmployee.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnEmployee.ForeColor = System.Drawing.Color.White;
-            this.btnEmployee.Location = new System.Drawing.Point(1510, 3);
+            this.btnEmployee.Location = new System.Drawing.Point(1279, 3);
             this.btnEmployee.Name = "btnEmployee";
             this.btnEmployee.Size = new System.Drawing.Size(200, 115);
             this.btnEmployee.TabIndex = 0;
@@ -136,7 +137,7 @@ namespace PresentationLayer
             this.btnCustomerRequest.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
             this.btnCustomerRequest.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnCustomerRequest.ForeColor = System.Drawing.Color.White;
-            this.btnCustomerRequest.Location = new System.Drawing.Point(600, 3);
+            this.btnCustomerRequest.Location = new System.Drawing.Point(517, 3);
             this.btnCustomerRequest.Name = "btnCustomerRequest";
             this.btnCustomerRequest.Size = new System.Drawing.Size(200, 115);
             this.btnCustomerRequest.TabIndex = 0;
@@ -154,7 +155,7 @@ namespace PresentationLayer
             this.btnCustomerDetail.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
             this.btnCustomerDetail.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnCustomerDetail.ForeColor = System.Drawing.Color.White;
-            this.btnCustomerDetail.Location = new System.Drawing.Point(899, 3);
+            this.btnCustomerDetail.Location = new System.Drawing.Point(768, 3);
             this.btnCustomerDetail.Name = "btnCustomerDetail";
             this.btnCustomerDetail.Size = new System.Drawing.Size(200, 115);
             this.btnCustomerDetail.TabIndex = 0;
@@ -172,7 +173,7 @@ namespace PresentationLayer
             this.btnCheckOut.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
             this.btnCheckOut.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnCheckOut.ForeColor = System.Drawing.Color.White;
-            this.btnCheckOut.Location = new System.Drawing.Point(319, 3);
+            this.btnCheckOut.Location = new System.Drawing.Point(263, 3);
             this.btnCheckOut.Name = "btnCheckOut";
             this.btnCheckOut.Size = new System.Drawing.Size(200, 115);
             this.btnCheckOut.TabIndex = 0;
@@ -190,7 +191,7 @@ namespace PresentationLayer
             this.btnCustomerRes.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
             this.btnCustomerRes.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnCustomerRes.ForeColor = System.Drawing.Color.White;
-            this.btnCustomerRes.Location = new System.Drawing.Point(32, 3);
+            this.btnCustomerRes.Location = new System.Drawing.Point(20, 3);
             this.btnCustomerRes.Name = "btnCustomerRes";
             this.btnCustomerRes.Size = new System.Drawing.Size(200, 115);
             this.btnCustomerRes.TabIndex = 0;
@@ -208,7 +209,7 @@ namespace PresentationLayer
             this.btnAddRoom.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
             this.btnAddRoom.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnAddRoom.ForeColor = System.Drawing.Color.White;
-            this.btnAddRoom.Location = new System.Drawing.Point(1205, 3);
+            this.btnAddRoom.Location = new System.Drawing.Point(1020, 3);
             this.btnAddRoom.Name = "btnAddRoom";
             this.btnAddRoom.Size = new System.Drawing.Size(200, 115);
             this.btnAddRoom.TabIndex = 0;
@@ -260,6 +261,25 @@ namespace PresentationLayer
             // guna2Elipse6
             // 
             this.guna2Elipse6.TargetControl = this;
+            // 
+            // btnReturnLogin
+            // 
+            this.btnReturnLogin.BackColor = System.Drawing.Color.SlateBlue;
+            this.btnReturnLogin.BorderRadius = 18;
+            this.btnReturnLogin.ButtonMode = Guna.UI2.WinForms.Enums.ButtonMode.RadioButton;
+            this.btnReturnLogin.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnReturnLogin.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnReturnLogin.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnReturnLogin.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnReturnLogin.FillColor = System.Drawing.Color.Crimson;
+            this.btnReturnLogin.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnReturnLogin.ForeColor = System.Drawing.Color.White;
+            this.btnReturnLogin.Location = new System.Drawing.Point(1673, 52);
+            this.btnReturnLogin.Name = "btnReturnLogin";
+            this.btnReturnLogin.Size = new System.Drawing.Size(207, 65);
+            this.btnReturnLogin.TabIndex = 4;
+            this.btnReturnLogin.Text = "Thoát tài khoản";
+            this.btnReturnLogin.Click += new System.EventHandler(this.btnReturnLogin_Click);
             // 
             // uC_CustomerRequest1
             // 
@@ -321,6 +341,7 @@ namespace PresentationLayer
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.SlateBlue;
             this.ClientSize = new System.Drawing.Size(1946, 1085);
+            this.Controls.Add(this.btnReturnLogin);
             this.Controls.Add(this.PanelMoving);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
@@ -363,5 +384,6 @@ namespace PresentationLayer
         private All_User_Control.UC_Employee uC_Employee1;
         private QuanLyKhachSan.All_User_Control.UC_CustomerRequest uC_CustomerRequest1;
         private Guna.UI2.WinForms.Guna2Elipse guna2Elipse6;
+        private Guna.UI2.WinForms.Guna2Button btnReturnLogin;
     }
 }
