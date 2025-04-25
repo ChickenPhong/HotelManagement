@@ -147,6 +147,7 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
     <EmbeddedResource Include="ThongKe.resx">
       <DependentUpon>ThongKe.cs</DependentUpon>
@@ -174,6 +175,12 @@
       <Project>{b3a4f7f0-7020-47fd-9a5a-87aa43676bb1}</Project>
       <Name>TransferObject</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\room_hotel.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bg_hotel.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

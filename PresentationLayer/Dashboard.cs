@@ -25,12 +25,22 @@ namespace PresentationLayer
 
         private void btnReturnLogin_Click(object sender, EventArgs e)
         {
-            // Ẩn form hiện tại
-            this.Hide();
+            DialogResult result = MessageBox.Show(
+                "Bạn có chắc chắn muốn thoát tài khoản không?",
+                "Xác nhận",
+                MessageBoxButtons.YesNo,
+                MessageBoxIcon.Question
+            );
 
-            // Hiển thị lại Form1 (màn hình đăng nhập)
-            Form1 form1 = new Form1();
-            form1.Show();
+            if (result == DialogResult.Yes)
+            {
+                // Ẩn form hiện tại
+                this.Hide();
+
+                // Hiển thị lại Form1 (màn hình đăng nhập)
+                Form1 form1 = new Form1();
+                form1.Show();
+            }
         }
 
         private void Dashboard_Load(object sender, EventArgs e)

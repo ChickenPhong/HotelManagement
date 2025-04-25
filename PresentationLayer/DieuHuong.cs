@@ -36,10 +36,29 @@ namespace QuanLyKhachSan
 
         private void btnThonKe_Click(object sender, EventArgs e)
         {
+            if (Form1.LoggedInRole == "Nhan vien le tan")
+            {
+                MessageBox.Show("Bạn không có quyền truy cập chức năng này.", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return;
+            }
+
             ThongKe thongKe = new ThongKe();
             this.Hide();
             thongKe.Show();
         }
 
+        private void DieuHuong_Load(object sender, EventArgs e)
+        {
+            this.BackgroundImage = Properties.Resources.bg_hotel;
+            this.BackgroundImageLayout = ImageLayout.Stretch; // hoặc .Zoom, .Center tùy ý
+
+            // Nếu tài khoản là nhân viên lễ tân, khóa chức năng Thống Kê
+            if (Form1.LoggedInRole == "Nhan vien le tan")
+            {
+                btnThonKe.Enabled = false;
+                btnThonKe.Cursor = Cursors.No;
+                btnThonKe.BackColor = Color.LightGray; // Tùy chọn để làm mờ nút
+            }
+        }
     }
 }

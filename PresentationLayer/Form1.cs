@@ -56,6 +56,5 @@ namespace PresentationLayer
                 txtPassword.Clear();
             }
         }
-
     }
 }
