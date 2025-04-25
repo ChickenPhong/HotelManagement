@@ -79,9 +79,11 @@ namespace BusinessLayer
         //    fn.setData(query, "Nhân viên đã được xóa!!");
         //}
 
-        public void DeleteEmployee(int id)
+        
+        public void DeleteEmployeeByName(string name)
         {
-            employeeServiceDL.DeleteEmployee(id);
+            employeeServiceDL.DeleteEmployeeByName(name);
         }
+
     }
 }

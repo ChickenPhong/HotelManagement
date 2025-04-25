@@ -52,11 +52,10 @@ namespace DataLayer
             string query = "SELECT * FROM employee";
             return fn.getData(query).Tables[0];
         }
-
-        public void DeleteEmployee(int id)
+        public void DeleteEmployeeByName(string name)
         {
-            string query = $"DELETE FROM employee WHERE eid = {id}";
-            fn.setData(query, "Nhân viên đã được xóa!!");
+            string query = $"DELETE FROM employee WHERE ename = '{name}'";
+            fn.setData(query, "Xóa nhân viên thành công!");
         }
     }
 }

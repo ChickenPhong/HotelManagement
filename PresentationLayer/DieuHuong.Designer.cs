@@ -57,10 +57,9 @@
             this.guna2Panel1.Controls.Add(this.btnQuanLy);
             this.guna2Panel1.Controls.Add(this.label2);
             this.guna2Panel1.Controls.Add(this.label1);
-            this.guna2Panel1.Location = new System.Drawing.Point(-2, -3);
-            this.guna2Panel1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.guna2Panel1.Location = new System.Drawing.Point(-1, -2);
             this.guna2Panel1.Name = "guna2Panel1";
-            this.guna2Panel1.Size = new System.Drawing.Size(1946, 1085);
+            this.guna2Panel1.Size = new System.Drawing.Size(948, 537);
             this.guna2Panel1.TabIndex = 0;
             // 
             // btnExit
@@ -75,10 +74,11 @@
             this.btnExit.ForeColor = System.Drawing.Color.White;
             this.btnExit.Image = ((System.Drawing.Image)(resources.GetObject("btnExit.Image")));
             this.btnExit.ImageSize = new System.Drawing.Size(35, 35);
-            this.btnExit.Location = new System.Drawing.Point(0, 3);
+            this.btnExit.Location = new System.Drawing.Point(0, 2);
+            this.btnExit.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnExit.Name = "btnExit";
             this.btnExit.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
-            this.btnExit.Size = new System.Drawing.Size(70, 62);
+            this.btnExit.Size = new System.Drawing.Size(47, 40);
             this.btnExit.TabIndex = 8;
             this.btnExit.Click += new System.EventHandler(this.btnExit_Click);
             // 
@@ -88,10 +88,9 @@
             this.label4.BackColor = System.Drawing.Color.White;
             this.label4.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
             this.label4.ForeColor = System.Drawing.Color.Black;
-            this.label4.Location = new System.Drawing.Point(862, 546);
-            this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label4.Location = new System.Drawing.Point(575, 355);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(261, 40);
+            this.label4.Size = new System.Drawing.Size(171, 25);
             this.label4.TabIndex = 7;
             this.label4.Text = "Thống Kê Dữ Liệu";
             // 
@@ -99,10 +98,9 @@
             // 
             this.pictureBox2.BackColor = System.Drawing.Color.White;
             this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
-            this.pictureBox2.Location = new System.Drawing.Point(912, 338);
-            this.pictureBox2.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.pictureBox2.Location = new System.Drawing.Point(608, 220);
             this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(146, 151);
+            this.pictureBox2.Size = new System.Drawing.Size(97, 98);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox2.TabIndex = 6;
             this.pictureBox2.TabStop = false;
@@ -121,10 +119,9 @@
             this.btnThonKe.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.btnThonKe.ForeColor = System.Drawing.Color.White;
             this.btnThonKe.HoverState.FillColor = System.Drawing.Color.White;
-            this.btnThonKe.Location = new System.Drawing.Point(837, 294);
-            this.btnThonKe.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.btnThonKe.Location = new System.Drawing.Point(558, 191);
             this.btnThonKe.Name = "btnThonKe";
-            this.btnThonKe.Size = new System.Drawing.Size(303, 374);
+            this.btnThonKe.Size = new System.Drawing.Size(202, 243);
             this.btnThonKe.TabIndex = 5;
             this.btnThonKe.Click += new System.EventHandler(this.btnThonKe_Click);
             // 
@@ -134,10 +131,9 @@
             this.label3.BackColor = System.Drawing.Color.White;
             this.label3.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
             this.label3.ForeColor = System.Drawing.Color.Black;
-            this.label3.Location = new System.Drawing.Point(220, 546);
-            this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label3.Location = new System.Drawing.Point(147, 355);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(278, 40);
+            this.label3.Size = new System.Drawing.Size(180, 25);
             this.label3.TabIndex = 4;
             this.label3.Text = "Quản Lý Khách Sạn";
             // 
@@ -145,10 +141,9 @@
             // 
             this.pictureBox1.BackColor = System.Drawing.Color.White;
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(284, 338);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.pictureBox1.Location = new System.Drawing.Point(189, 220);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(146, 151);
+            this.pictureBox1.Size = new System.Drawing.Size(97, 98);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 3;
             this.pictureBox1.TabStop = false;
@@ -169,10 +164,9 @@
             this.btnQuanLy.HoverState.BorderColor = System.Drawing.Color.White;
             this.btnQuanLy.HoverState.FillColor = System.Drawing.Color.White;
             this.btnQuanLy.HoverState.ForeColor = System.Drawing.Color.White;
-            this.btnQuanLy.Location = new System.Drawing.Point(208, 294);
-            this.btnQuanLy.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.btnQuanLy.Location = new System.Drawing.Point(139, 191);
             this.btnQuanLy.Name = "btnQuanLy";
-            this.btnQuanLy.Size = new System.Drawing.Size(303, 374);
+            this.btnQuanLy.Size = new System.Drawing.Size(202, 243);
             this.btnQuanLy.TabIndex = 2;
             this.btnQuanLy.Click += new System.EventHandler(this.btnQuanLy_Click);
             // 
@@ -181,10 +175,9 @@
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Segoe UI", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.Black;
-            this.label2.Location = new System.Drawing.Point(434, 86);
-            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label2.Location = new System.Drawing.Point(289, 56);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(530, 65);
+            this.label2.Size = new System.Drawing.Size(355, 45);
             this.label2.TabIndex = 1;
             this.label2.Text = "QUẢN LÝ KHÁCH SẠN";
             this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -192,21 +185,19 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(735, 105);
-            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label1.Location = new System.Drawing.Point(490, 68);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(0, 20);
+            this.label1.Size = new System.Drawing.Size(0, 13);
             this.label1.TabIndex = 0;
             // 
             // DieuHuong
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(1419, 815);
+            this.ClientSize = new System.Drawing.Size(946, 530);
             this.Controls.Add(this.guna2Panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.Name = "DieuHuong";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "DieuHuong";

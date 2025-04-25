@@ -14,6 +14,7 @@ namespace PresentationLayer.All_User_Control
     public partial class UC_Employee: UserControl
     {
         EmployeeServiceBL employeeService = new EmployeeServiceBL();
+
         public UC_Employee()
         {
             InitializeComponent();
@@ -22,6 +23,7 @@ namespace PresentationLayer.All_User_Control
         private void UC_Employee_Load(object sender, EventArgs e)
         {
             labelToSET.Text = employeeService.GetNextEmployeeId().ToString();
+            LoadEmployeeNames();
         }
 
         // --------------------------------------
@@ -126,15 +128,40 @@ namespace PresentationLayer.All_User_Control
 
         private void btnDelete_Click(object sender, EventArgs e)
         {
-            if (txtID.Text != "")
+            if (txtID.SelectedIndex > 0)
             {
-                if (MessageBox.Show("Bạn có chắc chắn xóa nhân viên này không?", "Xác nhận", MessageBoxButtons.YesNo, MessageBoxIcon.Warning) == DialogResult.Yes)
+                string name = txtID.SelectedItem.ToString();
+
+                DialogResult result = MessageBox.Show($"Bạn có chắc chắn muốn xóa nhân viên '{name}' không?",
+                                                      "Xác nhận", MessageBoxButtons.YesNo, MessageBoxIcon.Warning);
+                if (result == DialogResult.Yes)
                 {
-                    int id = int.Parse(txtID.Text);
-                    employeeService.DeleteEmployee(id);
-                    tabEmployee_SelectedIndexChanged(this, null);
-                }    
-            }    
+                    employeeService.DeleteEmployeeByName(name);
+                    MessageBox.Show("Đã xóa thành công!", "Thông báo");
+
+                    LoadEmployeeNames(); // load lại danh sách
+                    tabEmployee_SelectedIndexChanged(this, null); // nếu bạn có
+                }
+            }
+            else
+            {
+                MessageBox.Show("Vui lòng chọn một nhân viên để xóa.", "Thông báo");
+            }
+        }
+        private void LoadEmployeeNames()
+        {
+            txtID.Items.Clear();
+            txtID.Items.Add("");
+
+            DataTable dt = employeeService.GetAllEmployees();
+
+            foreach (DataRow row in dt.Rows)
+            {
+                string name = row["ename"].ToString();
+                txtID.Items.Add(name);
+            }
+
+            txtID.SelectedIndex = 0;
         }
 
         private void UC_Employee_Leave(object sender, EventArgs e)
