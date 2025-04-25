@@ -11,7 +11,7 @@ namespace BusinessLayer
 {
     public class EmployeeServiceBL
     {
-        Function fn = new Function();
+        //Function fn = new Function();
 
         EmployeeServiceDL employeeServiceDL = new EmployeeServiceDL();
 

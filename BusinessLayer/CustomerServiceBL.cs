@@ -12,7 +12,7 @@ namespace BusinessLayer
     public class CustomerServiceBL
     {
         CustomerServiceDL dataAccessCustomer = new CustomerServiceDL();
-        Function fn = new Function();
+        //Function fn = new Function();
 
         // Lấy toàn bộ danh sách khách hàng
         //public DataTable GetAllCustomers()

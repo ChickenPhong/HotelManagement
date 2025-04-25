@@ -25,7 +25,8 @@ namespace DataLayer
                     RoomNo = row["roomNo"].ToString(),
                     RoomType = row["roomType"].ToString(),
                     Bed = row["bed"].ToString(),
-                    Price = Convert.ToInt64(row["price"])
+                    Price = Convert.ToInt64(row["price"]),
+                    Booked = row["booked"].ToString()
                 });
             }
 
