@@ -39,20 +39,34 @@ namespace PresentationLayer.All_User_Control
 
         private void btnRegistation_Click(object sender, EventArgs e)
         {
-            if(txtName.Text != "" && txtMobile.Text != "" && txtGender.Text != ""&& txtEmail.Text != "")
+            if(txtName.Text != "" && txtMobile.Text != "" && txtGender.Text != ""&& txtEmail.Text != "" && txtRole.Text != "")
             {
+                String role = txtRole.Text;
+
+                // Nếu là quản lý hoặc lễ tân thì phải có username và password
+                if ((role == "Quan ly" || role == "Nhan vien le tan") &&
+                    (txtUsername.Text == "" || txtPassword.Text == ""))
+                {
+                    MessageBox.Show("Bạn phải nhập tên người dùng và mật khẩu cho vai trò này!", "Thiếu thông tin", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    return;
+                }
+
                 String name = txtName.Text;
                 long mobile = long.Parse(txtMobile.Text);
                 String gender = txtGender.Text;
                 String email = txtEmail.Text;
-                String username = txtUsername.Text == "" ? "NULL" : txtUsername.Text;
-                String pass = txtPassword.Text == "" ? "NULL" : txtPassword.Text;
-
-                employeeService.RegisterEmployee(name, mobile, gender, email, username, pass);
+                String username = (role == "Quan ly" || role == "Nhan vien le tan") ? txtUsername.Text : "NULL";
+                String pass = (role == "Quan ly" || role == "Nhan vien le tan") ? txtPassword.Text : "NULL";
+                
+                employeeService.RegisterEmployee(name, mobile, gender, email, username, pass, role);
 
                 clearAll();
                 labelToSET.Text = employeeService.GetNextEmployeeId().ToString();
-            }    
+            }
+            else
+            {
+                MessageBox.Show("Vui lòng điền đầy đủ thông tin!", "Thiếu thông tin", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            }
         }
 
         public void clearAll()
@@ -61,6 +75,7 @@ namespace PresentationLayer.All_User_Control
             txtMobile.Clear();
             txtGender.SelectedIndex = -1;
             txtEmail.Clear();
+            txtRole.SelectedIndex = -1;
             txtUsername.Clear();
             txtPassword.Clear();
 
@@ -75,6 +90,31 @@ namespace PresentationLayer.All_User_Control
             {
                 dgvXoaNhanVien.DataSource = employeeService.GetAllEmployees();
             }    
+        }
+
+        private void txtRole_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            if (txtRole.SelectedItem != null)
+            {
+                string selectedRole = txtRole.SelectedItem.ToString();
+
+                if (selectedRole == "Quan ly" || selectedRole == "Nhan vien le tan")
+                {
+                    txtUsername.Enabled = true;
+                    txtPassword.Enabled = true;
+                    txtUsername.BackColor = Color.White;
+                    txtPassword.BackColor = Color.White;
+                }
+                else
+                {
+                    txtUsername.Enabled = false;
+                    txtPassword.Enabled = false;
+                    txtUsername.Clear();
+                    txtPassword.Clear();
+                    txtUsername.BackColor = Color.LightGray;
+                    txtPassword.BackColor = Color.LightGray;
+                }
+            }
         }
 
         //public void setEmployee(DataGridView dgv)

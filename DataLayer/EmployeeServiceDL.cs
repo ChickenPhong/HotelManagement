@@ -20,7 +20,8 @@ namespace DataLayer
             string query = $"SELECT username, pass FROM employee " +
                            $"WHERE username IS NOT NULL AND pass IS NOT NULL " +
                            $"AND username != '' AND pass != '' " +
-                           $"AND username = '{username}' AND pass = '{password}'";
+                           $"AND username = '{username}' AND pass = '{password}'" +
+                           $"AND role IN ('Quan ly', 'Nhan vien le tan')";
 
             return fn.getData(query);
         }
@@ -31,9 +32,9 @@ namespace DataLayer
             return fn.getData(query);
         }
 
-        public void RegisterEmployee(string name, long mobile, string gender, string email, string username, string pass)
+        public void RegisterEmployee(string name, long mobile, string gender, string email, string username, string pass, string role)
         {
-            string query = $"INSERT INTO employee (ename, mobile, gender, emailid, username, pass) VALUES ('{name}', {mobile}, '{gender}', '{email}', '{username}', '{pass}')";
+            string query = $"INSERT INTO employee (ename, mobile, gender, emailid, username, pass, role) VALUES ('{name}', {mobile}, '{gender}', '{email}', '{username}', '{pass}', '{role}')";
             fn.setData(query, "Đăng ký nhân viên thành công!!");
         }
 
