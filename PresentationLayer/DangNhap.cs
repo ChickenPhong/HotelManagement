@@ -14,7 +14,7 @@ using QuanLyKhachSan.All_User_Control;
 
 namespace PresentationLayer
 {
-    public partial class Form1 : Form
+    public partial class DangNhap : Form
     {
         EmployeeServiceBL cs = new EmployeeServiceBL();
 
@@ -22,7 +22,7 @@ namespace PresentationLayer
         public static string LoggedInRole;
 
 
-        public Form1()
+        public DangNhap()
         {
             InitializeComponent();
         }

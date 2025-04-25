@@ -36,7 +36,7 @@ namespace QuanLyKhachSan
 
         private void btnThonKe_Click(object sender, EventArgs e)
         {
-            if (Form1.LoggedInRole == "Nhan vien le tan")
+            if (DangNhap.LoggedInRole == "Nhan vien le tan")
             {
                 MessageBox.Show("Bạn không có quyền truy cập chức năng này.", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 return;
@@ -53,7 +53,7 @@ namespace QuanLyKhachSan
             this.BackgroundImageLayout = ImageLayout.Stretch; // hoặc .Zoom, .Center tùy ý
 
             // Nếu tài khoản là nhân viên lễ tân, khóa chức năng Thống Kê
-            if (Form1.LoggedInRole == "Nhan vien le tan")
+            if (DangNhap.LoggedInRole == "Nhan vien le tan")
             {
                 btnThonKe.Enabled = false;
                 btnThonKe.Cursor = Cursors.No;

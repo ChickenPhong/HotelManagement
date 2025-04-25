@@ -5,7 +5,6 @@ D:\HotelManagement\HotelManagement\PresentationLayer\obj\Debug\PresentationLayer
 D:\HotelManagement\HotelManagement\PresentationLayer\obj\Debug\PresentationLayer.All_User_Control.UC_CustomerRes.resources
 D:\HotelManagement\HotelManagement\PresentationLayer\obj\Debug\PresentationLayer.All_User_Control.UC_Employee.resources
 D:\HotelManagement\HotelManagement\PresentationLayer\obj\Debug\PresentationLayer.Dashboard.resources
-D:\HotelManagement\HotelManagement\PresentationLayer\obj\Debug\PresentationLayer.Form1.resources
 D:\HotelManagement\HotelManagement\PresentationLayer\obj\Debug\QuanLyKhachSan.Properties.Resources.resources
 D:\HotelManagement\HotelManagement\PresentationLayer\obj\Debug\PresentationLayer.csproj.GenerateResource.cache
 D:\HotelManagement\HotelManagement\PresentationLayer\obj\Debug\PresentationLayer.csproj.CoreCompileInputs.cache
@@ -133,3 +132,4 @@ D:\GitHubCode\New folder\HotelManagement\PresentationLayer\obj\Debug\Presentatio
 D:\GitHubCode\New folder\HotelManagement\PresentationLayer\obj\Debug\Presenta.9C561136.Up2Date
 D:\GitHubCode\New folder\HotelManagement\PresentationLayer\obj\Debug\QuanLyKhachSan.exe
 D:\GitHubCode\New folder\HotelManagement\PresentationLayer\obj\Debug\QuanLyKhachSan.pdb
+D:\HotelManagement\HotelManagement\PresentationLayer\obj\Debug\PresentationLayer.DangNhap.resources

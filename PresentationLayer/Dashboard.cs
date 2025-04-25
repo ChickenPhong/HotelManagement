@@ -38,7 +38,7 @@ namespace PresentationLayer
                 this.Hide();
 
                 // Hiển thị lại Form1 (màn hình đăng nhập)
-                Form1 form1 = new Form1();
+                DangNhap form1 = new DangNhap();
                 form1.Show();
             }
         }
@@ -53,7 +53,7 @@ namespace PresentationLayer
             uC_CustomerRequest1.Visible = false;
             btnCustomerRes.PerformClick();
 
-            string role = Form1.LoggedInRole;
+            string role = DangNhap.LoggedInRole;
 
             if (role == "Nhan vien le tan")
             {
@@ -72,7 +72,7 @@ namespace PresentationLayer
             uC_AddRoom1.Visible = true;
             uC_AddRoom1.BringToFront();
 
-            if (Form1.LoggedInRole == "Nhan vien le tan")
+            if (DangNhap.LoggedInRole == "Nhan vien le tan")
             {
                 MessageBox.Show("Bạn không có quyền sử dụng chức năng này.", "Cảnh báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 return;
@@ -109,7 +109,7 @@ namespace PresentationLayer
             uC_Employee1.Visible = true;
             uC_Employee1.BringToFront();
 
-            if (Form1.LoggedInRole == "Nhan vien le tan")
+            if (DangNhap.LoggedInRole == "Nhan vien le tan")
             {
                 MessageBox.Show("Bạn không có quyền sử dụng chức năng này.", "Cảnh báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 return;
