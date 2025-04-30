@@ -21,7 +21,7 @@ namespace DataLayer
                            $"WHERE username IS NOT NULL AND pass IS NOT NULL " +
                            $"AND username != '' AND pass != '' " +
                            $"AND username = '{username}' AND pass = '{password}'" +
-                           $"AND role IN ('Quan ly', 'Nhan vien le tan')";
+                           $"AND role IN (N'Quản lý', N'Nhân viên lễ tân')";
 
             return fn.getData(query);
         }
@@ -43,7 +43,7 @@ namespace DataLayer
 
         public void RegisterEmployee(string name, long mobile, string gender, string email, string username, string pass, string role)
         {
-            string query = $"INSERT INTO employee (ename, mobile, gender, emailid, username, pass, role) VALUES ('{name}', {mobile}, '{gender}', '{email}', '{username}', '{pass}', '{role}')";
+            string query = $"INSERT INTO employee (ename, mobile, gender, emailid, username, pass, role) VALUES (N'{name}', {mobile}, N'{gender}', N'{email}', N'{username}', N'{pass}', N'{role}')";
             fn.setData(query, "Đăng ký nhân viên thành công!!");
         }
 
@@ -54,7 +54,7 @@ namespace DataLayer
         }
         public void DeleteEmployeeByName(string name)
         {
-            string query = $"DELETE FROM employee WHERE ename = '{name}'";
+            string query = $"DELETE FROM employee WHERE ename = N'{name}'";
             fn.setData(query, "Xóa nhân viên thành công!");
         }
     }

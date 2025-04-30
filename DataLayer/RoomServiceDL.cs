@@ -35,7 +35,7 @@ namespace DataLayer
 
         public void AddRoom(RoomDTO room)
         {
-            string query = $"INSERT INTO rooms (roomNo, roomType, bed, price) VALUES ('{room.RoomNo}', '{room.RoomType}', '{room.Bed}', {room.Price})";
+            string query = $"INSERT INTO rooms (roomNo, roomType, bed, price) VALUES ('{room.RoomNo}', N'{room.RoomType}', N'{room.Bed}', {room.Price})";
             fn.setData(query, "Thêm phòng thành công");
         }
         public void DeleteRoom(int roomId)

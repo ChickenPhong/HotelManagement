@@ -46,7 +46,7 @@ namespace PresentationLayer.All_User_Control
                 String role = txtRole.Text;
 
                 // Nếu là quản lý hoặc lễ tân thì phải có username và password
-                if ((role == "Quan ly" || role == "Nhan vien le tan") &&
+                if ((role == "Quản lý" || role == "Nhân viên lễ tân") &&
                     (txtUsername.Text == "" || txtPassword.Text == ""))
                 {
                     MessageBox.Show("Bạn phải nhập tên người dùng và mật khẩu cho vai trò này!", "Thiếu thông tin", MessageBoxButtons.OK, MessageBoxIcon.Warning);
@@ -57,8 +57,8 @@ namespace PresentationLayer.All_User_Control
                 long mobile = long.Parse(txtMobile.Text);
                 String gender = txtGender.Text;
                 String email = txtEmail.Text;
-                String username = (role == "Quan ly" || role == "Nhan vien le tan") ? txtUsername.Text : "NULL";
-                String pass = (role == "Quan ly" || role == "Nhan vien le tan") ? txtPassword.Text : "NULL";
+                String username = (role == "Quản lý" || role == "Nhân viên lễ tân") ? txtUsername.Text : "NULL";
+                String pass = (role == "Quản lý" || role == "Nhân viên lễ tân") ? txtPassword.Text : "NULL";
                 
                 employeeService.RegisterEmployee(name, mobile, gender, email, username, pass, role);
 
@@ -100,7 +100,7 @@ namespace PresentationLayer.All_User_Control
             {
                 string selectedRole = txtRole.SelectedItem.ToString();
 
-                if (selectedRole == "Quan ly" || selectedRole == "Nhan vien le tan")
+                if (selectedRole == "Quản lý" || selectedRole == "Nhân viên lễ tân")
                 {
                     txtUsername.Enabled = true;
                     txtPassword.Enabled = true;

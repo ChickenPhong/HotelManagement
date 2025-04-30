@@ -45,7 +45,7 @@ namespace DataLayer
                                   string idproof, string address, string checkin, int roomId, string roomNo)
         {
             string query = $"INSERT INTO customer (cname, mobile, nationality, gender, dob, idproof, address, checkin, roomid) " +
-                           $"VALUES ('{name}', {mobile}, '{nationality}', '{gender}', '{dob}', '{idproof}', '{address}', '{checkin}', {roomId}); " +
+                           $"VALUES (N'{name}', {mobile}, N'{nationality}', N'{gender}', N'{dob}', N'{idproof}', N'{address}', '{checkin}', {roomId}); " +
                            $"UPDATE rooms SET booked = 'YES' WHERE roomNo = '{roomNo}'";
             fn.setData(query, $"Số Phòng {roomNo} Đăng ký khách hàng thành công.");
         }
@@ -53,7 +53,7 @@ namespace DataLayer
         // Lấy danh sách phòng trống theo loại giường và loại phòng
         public DataTable GetAvailableRooms(string bed, string roomType)
         {
-            string query = $"SELECT roomNo FROM rooms WHERE bed = '{bed}' AND roomType = '{roomType}' AND booked = 'NO'";
+            string query = $"SELECT roomNo FROM rooms WHERE bed = N'{bed}' AND roomType = N'{roomType}' AND booked = 'NO'";
             return fn.getData(query).Tables[0];
         }
 
@@ -97,7 +97,7 @@ namespace DataLayer
 
         public DataTable SearchCustomerByName(string name)
         {
-            string query = $"SELECT customer.cid, customer.cname, customer.mobile, customer.nationality, customer.gender, customer.dob, customer.idproof, customer.address, customer.checkin, rooms.roomid, rooms.roomNo, rooms.roomType, rooms.bed, rooms.price FROM customer INNER JOIN rooms ON customer.roomid = rooms.roomid WHERE cname LIKE '{name}%' AND chekout = 'NO'";
+            string query = $"SELECT customer.cid, customer.cname, customer.mobile, customer.nationality, customer.gender, customer.dob, customer.idproof, customer.address, customer.checkin, rooms.roomid, rooms.roomNo, rooms.roomType, rooms.bed, rooms.price FROM customer INNER JOIN rooms ON customer.roomid = rooms.roomid WHERE cname LIKE N'{name}%' AND chekout = 'NO'";
             return fn.getData(query).Tables[0];
         }
 
@@ -144,7 +144,7 @@ namespace DataLayer
 
         public void AddCustomerRequest(string roomNo, string request, string employee, string status)
         {
-            string query = $"INSERT INTO customerRequest (RoomNo, Request, EmployeeName, Status) VALUES ('{roomNo}', '{request}', '{employee}', '{status}')";
+            string query = $"INSERT INTO customerRequest (RoomNo, Request, EmployeeName, Status) VALUES ('{roomNo}', N'{request}', N'{employee}', N'{status}')";
             fn.setData(query, "Yêu cầu đã được thêm vào.");
         }
 

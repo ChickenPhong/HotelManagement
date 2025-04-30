@@ -55,7 +55,7 @@ namespace PresentationLayer
 
             string role = DangNhap.LoggedInRole;
 
-            if (role == "Nhan vien le tan")
+            if (role == "Nhân viên lễ tân")
             {
                 // Disable 2 nút chức năng
                 btnAddRoom.Enabled = false;
@@ -72,7 +72,7 @@ namespace PresentationLayer
             uC_AddRoom1.Visible = true;
             uC_AddRoom1.BringToFront();
 
-            if (DangNhap.LoggedInRole == "Nhan vien le tan")
+            if (DangNhap.LoggedInRole == "Nhân viên lễ tân")
             {
                 MessageBox.Show("Bạn không có quyền sử dụng chức năng này.", "Cảnh báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 return;
@@ -109,7 +109,7 @@ namespace PresentationLayer
             uC_Employee1.Visible = true;
             uC_Employee1.BringToFront();
 
-            if (DangNhap.LoggedInRole == "Nhan vien le tan")
+            if (DangNhap.LoggedInRole == "Nhân viên lễ tân")
             {
                 MessageBox.Show("Bạn không có quyền sử dụng chức năng này.", "Cảnh báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 return;
