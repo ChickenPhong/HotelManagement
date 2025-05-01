@@ -27,6 +27,17 @@ namespace BusinessLayer
         {
             roomDL.DeleteRoom(roomId);
         }
+     
+        public DataSet GetRoomInfo(string roomNo)
+        {
+            return roomDL.GetRoomInfo(roomNo);
+        }
+
+
+        public void UpdateRoomPrice(string roomNo, long newPrice)
+        {
+            roomDL.UpdateRoomPrice(roomNo, newPrice);
+        }
 
     }
 }

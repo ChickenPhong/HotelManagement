@@ -44,5 +44,16 @@ namespace DataLayer
             fn.setData(query, "Đã xóa phòng thành công");
         }
 
+        public DataSet GetRoomInfo(string roomNo)
+        {
+            string query = $"SELECT price FROM rooms WHERE roomNo = '{roomNo}'";
+            return fn.getData(query);
+        }
+
+        public void UpdateRoomPrice(string roomNo, long newPrice)
+        {
+            string query = $"UPDATE rooms SET price = {newPrice} WHERE roomNo = '{roomNo}'";
+            fn.setData(query, "Đã cập nhật giá phòng.");
+        }
     }
 }

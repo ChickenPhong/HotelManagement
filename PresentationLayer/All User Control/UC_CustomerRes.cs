@@ -73,7 +73,7 @@ namespace PresentationLayer.All_User_Control
         {
             txtFullName.Clear();
             txtContact.Clear();
-            txtNationality.Clear();
+            txtNationality.SelectedIndex = -1;
             txtGender.SelectedIndex = -1;
             txtDob.ResetText();
             txtIDProof.Clear();

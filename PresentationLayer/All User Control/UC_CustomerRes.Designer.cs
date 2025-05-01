@@ -35,7 +35,6 @@
             this.label3 = new System.Windows.Forms.Label();
             this.txtContact = new Guna.UI2.WinForms.Guna2TextBox();
             this.label4 = new System.Windows.Forms.Label();
-            this.txtNationality = new Guna.UI2.WinForms.Guna2TextBox();
             this.label5 = new System.Windows.Forms.Label();
             this.txtGender = new Guna.UI2.WinForms.Guna2ComboBox();
             this.label6 = new System.Windows.Forms.Label();
@@ -56,6 +55,7 @@
             this.txtPrice = new Guna.UI2.WinForms.Guna2TextBox();
             this.btnAllotCustomer = new Guna.UI2.WinForms.Guna2Button();
             this.guna2Elipse1 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
+            this.txtNationality = new Guna.UI2.WinForms.Guna2ComboBox();
             this.SuspendLayout();
             // 
             // label1
@@ -93,7 +93,7 @@
             this.txtFullName.ForeColor = System.Drawing.Color.Black;
             this.txtFullName.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtFullName.Location = new System.Drawing.Point(57, 112);
-            this.txtFullName.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtFullName.Margin = new System.Windows.Forms.Padding(2);
             this.txtFullName.Name = "txtFullName";
             this.txtFullName.PasswordChar = '\0';
             this.txtFullName.PlaceholderText = "Enter Full Name";
@@ -126,7 +126,7 @@
             this.txtContact.ForeColor = System.Drawing.Color.Black;
             this.txtContact.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtContact.Location = new System.Drawing.Point(57, 216);
-            this.txtContact.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtContact.Margin = new System.Windows.Forms.Padding(2);
             this.txtContact.Name = "txtContact";
             this.txtContact.PasswordChar = '\0';
             this.txtContact.PlaceholderText = "Enter Phone Number";
@@ -145,28 +145,6 @@
             this.label4.Size = new System.Drawing.Size(71, 19);
             this.label4.TabIndex = 1;
             this.label4.Text = "Quốc Tịch";
-            // 
-            // txtNationality
-            // 
-            this.txtNationality.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txtNationality.DefaultText = "";
-            this.txtNationality.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.txtNationality.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.txtNationality.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txtNationality.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txtNationality.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtNationality.Font = new System.Drawing.Font("Segoe UI", 10F);
-            this.txtNationality.ForeColor = System.Drawing.Color.Black;
-            this.txtNationality.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtNationality.Location = new System.Drawing.Point(57, 320);
-            this.txtNationality.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.txtNationality.Name = "txtNationality";
-            this.txtNationality.PasswordChar = '\0';
-            this.txtNationality.PlaceholderText = "Enter Nationality";
-            this.txtNationality.SelectedText = "";
-            this.txtNationality.Size = new System.Drawing.Size(336, 47);
-            this.txtNationality.Style = Guna.UI2.WinForms.Enums.TextBoxStyle.Material;
-            this.txtNationality.TabIndex = 2;
             // 
             // label5
             // 
@@ -193,7 +171,7 @@
             "Nam",
             "Nữ"});
             this.txtGender.Location = new System.Drawing.Point(57, 420);
-            this.txtGender.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtGender.Margin = new System.Windows.Forms.Padding(2);
             this.txtGender.Name = "txtGender";
             this.txtGender.Size = new System.Drawing.Size(337, 36);
             this.txtGender.Style = Guna.UI2.WinForms.Enums.TextBoxStyle.Material;
@@ -218,7 +196,7 @@
             this.txtDob.ForeColor = System.Drawing.Color.Black;
             this.txtDob.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
             this.txtDob.Location = new System.Drawing.Point(57, 500);
-            this.txtDob.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtDob.Margin = new System.Windows.Forms.Padding(2);
             this.txtDob.MaxDate = new System.DateTime(9998, 12, 31, 0, 0, 0, 0);
             this.txtDob.MinDate = new System.DateTime(1753, 1, 1, 0, 0, 0, 0);
             this.txtDob.Name = "txtDob";
@@ -250,7 +228,7 @@
             this.txtIDProof.ForeColor = System.Drawing.Color.Black;
             this.txtIDProof.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtIDProof.Location = new System.Drawing.Point(451, 112);
-            this.txtIDProof.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtIDProof.Margin = new System.Windows.Forms.Padding(2);
             this.txtIDProof.Name = "txtIDProof";
             this.txtIDProof.PasswordChar = '\0';
             this.txtIDProof.PlaceholderText = "Enter ID";
@@ -283,7 +261,7 @@
             this.txtAddress.ForeColor = System.Drawing.Color.Black;
             this.txtAddress.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtAddress.Location = new System.Drawing.Point(451, 216);
-            this.txtAddress.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtAddress.Margin = new System.Windows.Forms.Padding(2);
             this.txtAddress.Name = "txtAddress";
             this.txtAddress.PasswordChar = '\0';
             this.txtAddress.PlaceholderText = "Enter Address";
@@ -311,7 +289,7 @@
             this.txtCheckin.ForeColor = System.Drawing.Color.Black;
             this.txtCheckin.Format = System.Windows.Forms.DateTimePickerFormat.Short;
             this.txtCheckin.Location = new System.Drawing.Point(451, 322);
-            this.txtCheckin.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtCheckin.Margin = new System.Windows.Forms.Padding(2);
             this.txtCheckin.MaxDate = new System.DateTime(9998, 12, 31, 0, 0, 0, 0);
             this.txtCheckin.MinDate = new System.DateTime(1753, 1, 1, 0, 0, 0, 0);
             this.txtCheckin.Name = "txtCheckin";
@@ -345,7 +323,7 @@
             "Giường đôi",
             "Giường ba"});
             this.txtBed.Location = new System.Drawing.Point(863, 112);
-            this.txtBed.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtBed.Margin = new System.Windows.Forms.Padding(2);
             this.txtBed.Name = "txtBed";
             this.txtBed.Size = new System.Drawing.Size(337, 36);
             this.txtBed.Style = Guna.UI2.WinForms.Enums.TextBoxStyle.Material;
@@ -377,7 +355,7 @@
             "Có máy lạnh",
             "Không có máy lạnh"});
             this.txtRoom.Location = new System.Drawing.Point(863, 192);
-            this.txtRoom.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtRoom.Margin = new System.Windows.Forms.Padding(2);
             this.txtRoom.Name = "txtRoom";
             this.txtRoom.Size = new System.Drawing.Size(337, 36);
             this.txtRoom.Style = Guna.UI2.WinForms.Enums.TextBoxStyle.Material;
@@ -406,7 +384,7 @@
             this.txtRoomNo.ForeColor = System.Drawing.Color.Black;
             this.txtRoomNo.ItemHeight = 30;
             this.txtRoomNo.Location = new System.Drawing.Point(863, 270);
-            this.txtRoomNo.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtRoomNo.Margin = new System.Windows.Forms.Padding(2);
             this.txtRoomNo.Name = "txtRoomNo";
             this.txtRoomNo.Size = new System.Drawing.Size(337, 36);
             this.txtRoomNo.Style = Guna.UI2.WinForms.Enums.TextBoxStyle.Material;
@@ -437,7 +415,7 @@
             this.txtPrice.ForeColor = System.Drawing.Color.Black;
             this.txtPrice.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtPrice.Location = new System.Drawing.Point(863, 356);
-            this.txtPrice.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtPrice.Margin = new System.Windows.Forms.Padding(2);
             this.txtPrice.Name = "txtPrice";
             this.txtPrice.PasswordChar = '\0';
             this.txtPrice.PlaceholderText = "";
@@ -462,7 +440,7 @@
             this.btnAllotCustomer.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnAllotCustomer.ForeColor = System.Drawing.Color.White;
             this.btnAllotCustomer.Location = new System.Drawing.Point(1047, 430);
-            this.btnAllotCustomer.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnAllotCustomer.Margin = new System.Windows.Forms.Padding(2);
             this.btnAllotCustomer.Name = "btnAllotCustomer";
             this.btnAllotCustomer.Size = new System.Drawing.Size(152, 57);
             this.btnAllotCustomer.TabIndex = 5;
@@ -475,6 +453,38 @@
             this.guna2Elipse1.BorderRadius = 30;
             this.guna2Elipse1.TargetControl = this;
             // 
+            // txtNationality
+            // 
+            this.txtNationality.BackColor = System.Drawing.Color.Transparent;
+            this.txtNationality.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
+            this.txtNationality.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.txtNationality.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtNationality.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtNationality.Font = new System.Drawing.Font("Segoe UI", 10F);
+            this.txtNationality.ForeColor = System.Drawing.Color.Black;
+            this.txtNationality.ItemHeight = 30;
+            this.txtNationality.Items.AddRange(new object[] {
+            "Việt Nam,",
+            "Trung Quốc",
+            "Hàn Quốc",
+            "Nhật Bản",
+            "Thái Lan",
+            "Malaysia",
+            "Singapore",
+            "Indonesia",
+            "Philippines",
+            "Hoa Kỳ",
+            "Canada",
+            "Anh",
+            "Pháp",
+            "Úc"});
+            this.txtNationality.Location = new System.Drawing.Point(56, 330);
+            this.txtNationality.Margin = new System.Windows.Forms.Padding(2);
+            this.txtNationality.Name = "txtNationality";
+            this.txtNationality.Size = new System.Drawing.Size(337, 36);
+            this.txtNationality.Style = Guna.UI2.WinForms.Enums.TextBoxStyle.Material;
+            this.txtNationality.TabIndex = 3;
+            // 
             // UC_CustomerRes
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -485,11 +495,11 @@
             this.Controls.Add(this.txtRoomNo);
             this.Controls.Add(this.txtRoom);
             this.Controls.Add(this.txtBed);
+            this.Controls.Add(this.txtNationality);
             this.Controls.Add(this.txtGender);
             this.Controls.Add(this.label12);
             this.Controls.Add(this.label9);
             this.Controls.Add(this.label11);
-            this.Controls.Add(this.txtNationality);
             this.Controls.Add(this.label10);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.label5);
@@ -505,7 +515,7 @@
             this.Controls.Add(this.txtFullName);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "UC_CustomerRes";
             this.Size = new System.Drawing.Size(1255, 554);
             this.ResumeLayout(false);
@@ -521,7 +531,6 @@
         private System.Windows.Forms.Label label3;
         private Guna.UI2.WinForms.Guna2TextBox txtContact;
         private System.Windows.Forms.Label label4;
-        private Guna.UI2.WinForms.Guna2TextBox txtNationality;
         private System.Windows.Forms.Label label5;
         private Guna.UI2.WinForms.Guna2ComboBox txtGender;
         private System.Windows.Forms.Label label6;
@@ -542,5 +551,6 @@
         private Guna.UI2.WinForms.Guna2TextBox txtPrice;
         private Guna.UI2.WinForms.Guna2Button btnAllotCustomer;
         private Guna.UI2.WinForms.Guna2Elipse guna2Elipse1;
+        private Guna.UI2.WinForms.Guna2ComboBox txtNationality;
     }
 }

@@ -87,12 +87,16 @@ namespace PresentationLayer.All_User_Control
         {
             txtRoomHave.Items.Clear();
             txtRoomHave.Items.Add("");
+            txtRoomHave2.Items.Clear();
+            txtRoomHave2.Items.Add("");
             List<RoomDTO> rooms = roomService.GetAllRooms();
             foreach (var room in rooms)
             {
                 txtRoomHave.Items.Add(room.RoomNo);  // <-- CHỈ THÊM RoomNo (vd: 101, 102)
+                txtRoomHave2.Items.Add(room.RoomNo);
             }
             txtRoomHave.SelectedIndex = 0;
+            txtRoomHave2.SelectedIndex = 0;
         }
 
 
@@ -126,6 +130,50 @@ namespace PresentationLayer.All_User_Control
             else
             {
                 MessageBox.Show("Vui lòng chọn số phòng cần xóa.");
+            }
+        }
+
+        private void txtRoomHave2_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            if (txtRoomHave2.SelectedItem != null)
+            {
+                string selectedRoomNo = txtRoomHave2.SelectedItem.ToString();
+                var ds = roomService.GetRoomInfo(selectedRoomNo);
+
+                if (ds.Tables[0].Rows.Count > 0)
+                {
+                    txtPricePresent.Text = ds.Tables[0].Rows[0]["price"].ToString();
+                }
+                else
+                {
+                    txtPricePresent.Text = "Không tìm thấy";
+                }
+            }
+        }
+
+        private void btnUpdatePrice_Click(object sender, EventArgs e)
+        {
+            if (txtRoomHave2.SelectedItem != null && txtPriceUpdate.Text != "")
+            {
+                string roomNo = txtRoomHave2.SelectedItem.ToString();
+
+                if (long.TryParse(txtPriceUpdate.Text, out long newPrice))
+                {
+                    roomService.UpdateRoomPrice(roomNo, newPrice);
+                    MessageBox.Show("Đã cập nhật giá thành công!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+
+                    txtPricePresent.Text = newPrice.ToString(); // cập nhật lại giá hiển thị
+                    txtPriceUpdate.Clear();
+                    LoadRoom(); // reload DataGridView nếu có
+                }
+                else
+                {
+                    MessageBox.Show("Giá mới không hợp lệ.", "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
+            }
+            else
+            {
+                MessageBox.Show("❗ Vui lòng chọn phòng và nhập giá mới.", "Thiếu thông tin", MessageBoxButtons.OK, MessageBoxIcon.Warning);
             }
         }
     }
