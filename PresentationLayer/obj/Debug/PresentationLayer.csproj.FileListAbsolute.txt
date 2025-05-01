@@ -133,3 +133,30 @@ D:\GitHubCode\New folder\HotelManagement\PresentationLayer\obj\Debug\Presenta.9C
 D:\GitHubCode\New folder\HotelManagement\PresentationLayer\obj\Debug\QuanLyKhachSan.exe
 D:\GitHubCode\New folder\HotelManagement\PresentationLayer\obj\Debug\QuanLyKhachSan.pdb
 D:\HotelManagement\HotelManagement\PresentationLayer\obj\Debug\PresentationLayer.DangNhap.resources
+D:\GitHubCode\New folder (3)\HotelManagement\PresentationLayer\bin\Debug\QuanLyKhachSan.exe.config
+D:\GitHubCode\New folder (3)\HotelManagement\PresentationLayer\bin\Debug\QuanLyKhachSan.exe
+D:\GitHubCode\New folder (3)\HotelManagement\PresentationLayer\bin\Debug\QuanLyKhachSan.pdb
+D:\GitHubCode\New folder (3)\HotelManagement\PresentationLayer\bin\Debug\BusinessLayer.dll
+D:\GitHubCode\New folder (3)\HotelManagement\PresentationLayer\bin\Debug\Guna.UI2.dll
+D:\GitHubCode\New folder (3)\HotelManagement\PresentationLayer\bin\Debug\TransferObject.dll
+D:\GitHubCode\New folder (3)\HotelManagement\PresentationLayer\bin\Debug\DataLayer.dll
+D:\GitHubCode\New folder (3)\HotelManagement\PresentationLayer\bin\Debug\BusinessLayer.pdb
+D:\GitHubCode\New folder (3)\HotelManagement\PresentationLayer\bin\Debug\TransferObject.pdb
+D:\GitHubCode\New folder (3)\HotelManagement\PresentationLayer\bin\Debug\DataLayer.pdb
+D:\GitHubCode\New folder (3)\HotelManagement\PresentationLayer\obj\Debug\PresentationLayer.csproj.AssemblyReference.cache
+D:\GitHubCode\New folder (3)\HotelManagement\PresentationLayer\obj\Debug\PresentationLayer.All_User_Control.UC_AddRoom.resources
+D:\GitHubCode\New folder (3)\HotelManagement\PresentationLayer\obj\Debug\PresentationLayer.All_User_Control.UC_CheckOut.resources
+D:\GitHubCode\New folder (3)\HotelManagement\PresentationLayer\obj\Debug\PresentationLayer.All_User_Control.UC_CustomerDetails.resources
+D:\GitHubCode\New folder (3)\HotelManagement\PresentationLayer\obj\Debug\QuanLyKhachSan.All_User_Control.UC_CustomerRequest.resources
+D:\GitHubCode\New folder (3)\HotelManagement\PresentationLayer\obj\Debug\PresentationLayer.All_User_Control.UC_CustomerRes.resources
+D:\GitHubCode\New folder (3)\HotelManagement\PresentationLayer\obj\Debug\PresentationLayer.All_User_Control.UC_Employee.resources
+D:\GitHubCode\New folder (3)\HotelManagement\PresentationLayer\obj\Debug\PresentationLayer.Dashboard.resources
+D:\GitHubCode\New folder (3)\HotelManagement\PresentationLayer\obj\Debug\QuanLyKhachSan.DieuHuong.resources
+D:\GitHubCode\New folder (3)\HotelManagement\PresentationLayer\obj\Debug\PresentationLayer.DangNhap.resources
+D:\GitHubCode\New folder (3)\HotelManagement\PresentationLayer\obj\Debug\QuanLyKhachSan.Properties.Resources.resources
+D:\GitHubCode\New folder (3)\HotelManagement\PresentationLayer\obj\Debug\QuanLyKhachSan.ThongKe.resources
+D:\GitHubCode\New folder (3)\HotelManagement\PresentationLayer\obj\Debug\PresentationLayer.csproj.GenerateResource.cache
+D:\GitHubCode\New folder (3)\HotelManagement\PresentationLayer\obj\Debug\PresentationLayer.csproj.CoreCompileInputs.cache
+D:\GitHubCode\New folder (3)\HotelManagement\PresentationLayer\obj\Debug\Presenta.9C561136.Up2Date
+D:\GitHubCode\New folder (3)\HotelManagement\PresentationLayer\obj\Debug\QuanLyKhachSan.exe
+D:\GitHubCode\New folder (3)\HotelManagement\PresentationLayer\obj\Debug\QuanLyKhachSan.pdb

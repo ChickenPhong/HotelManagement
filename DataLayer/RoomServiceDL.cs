@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Data;
+using System.Data.SqlClient;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -54,6 +55,11 @@ namespace DataLayer
         {
             string query = $"UPDATE rooms SET price = {newPrice} WHERE roomNo = '{roomNo}'";
             fn.setData(query, "Đã cập nhật giá phòng.");
+        }
+        public void UpdateRoomInfo(RoomDTO room)
+        {
+            string query = $"UPDATE rooms SET roomType = N'{room.RoomType}', bed = N'{room.Bed}', booked = N'{room.Booked}' WHERE roomNo = '{room.RoomNo}'";
+            fn.setData(query, "Đã cập nhật thông tin phòng.");  // Cập nhật cơ sở dữ liệu
         }
     }
 }

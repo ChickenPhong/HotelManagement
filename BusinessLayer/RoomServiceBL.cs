@@ -22,12 +22,6 @@ namespace BusinessLayer
         {
             roomDL.AddRoom(room);
         }
-
-        public void DeleteRoom(int roomId)
-        {
-            roomDL.DeleteRoom(roomId);
-        }
-     
         public DataSet GetRoomInfo(string roomNo)
         {
             return roomDL.GetRoomInfo(roomNo);
@@ -37,6 +31,10 @@ namespace BusinessLayer
         public void UpdateRoomPrice(string roomNo, long newPrice)
         {
             roomDL.UpdateRoomPrice(roomNo, newPrice);
+        }
+        public void UpdateRoomInfo(RoomDTO room)
+        {
+            roomDL.UpdateRoomInfo(room);  // Gọi DataLayer để cập nhật thông tin phòng
         }
 
     }

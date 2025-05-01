@@ -98,41 +98,6 @@ namespace PresentationLayer.All_User_Control
             txtRoomHave.SelectedIndex = 0;
             txtRoomHave2.SelectedIndex = 0;
         }
-
-
-
-
-        private void btnDeleteRoom_Click(object sender, EventArgs e)
-        {
-            if (txtRoomHave.SelectedItem != null)
-            {
-                string selectedRoomNo = txtRoomHave.SelectedItem.ToString();
-                List<RoomDTO> rooms = roomService.GetAllRooms();
-                RoomDTO roomToDelete = rooms.FirstOrDefault(r => r.RoomNo == selectedRoomNo);
-
-                if (roomToDelete != null)
-                {
-                    DialogResult result = MessageBox.Show($"Bạn có chắc chắn muốn xóa phòng {selectedRoomNo}?", "Xác nhận", MessageBoxButtons.YesNo, MessageBoxIcon.Warning);
-                    if (result == DialogResult.Yes)
-                    {
-                        roomService.DeleteRoom(roomToDelete.RoomId);
-                        MessageBox.Show("Đã xóa phòng thành công.");
-
-                        LoadRoom();
-                        txtRoomHave.SelectedIndex = -1; // Reset lại ComboBox
-                    }
-                }
-                else
-                {
-                    MessageBox.Show("Không tìm thấy phòng.");
-                }
-            }
-            else
-            {
-                MessageBox.Show("Vui lòng chọn số phòng cần xóa.");
-            }
-        }
-
         private void txtRoomHave2_SelectedIndexChanged(object sender, EventArgs e)
         {
             if (txtRoomHave2.SelectedItem != null)
@@ -153,28 +118,61 @@ namespace PresentationLayer.All_User_Control
 
         private void btnUpdatePrice_Click(object sender, EventArgs e)
         {
-            if (txtRoomHave2.SelectedItem != null && txtPriceUpdate.Text != "")
+            if (txtRoomHave.SelectedItem != null)
             {
-                string roomNo = txtRoomHave2.SelectedItem.ToString();
+                string selectedRoomNo = txtRoomHave.SelectedItem.ToString();
+                var ds = roomService.GetRoomInfo(selectedRoomNo);
 
-                if (long.TryParse(txtPriceUpdate.Text, out long newPrice))
+                if (ds.Tables[0].Rows.Count > 0)
                 {
-                    roomService.UpdateRoomPrice(roomNo, newPrice);
-                    MessageBox.Show("Đã cập nhật giá thành công!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
-
-                    txtPricePresent.Text = newPrice.ToString(); // cập nhật lại giá hiển thị
-                    txtPriceUpdate.Clear();
-                    LoadRoom(); // reload DataGridView nếu có
+                    txtPricePresent.Text = ds.Tables[0].Rows[0]["price"].ToString();
                 }
                 else
                 {
-                    MessageBox.Show("Giá mới không hợp lệ.", "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    txtPricePresent.Text = "Không tìm thấy";
                 }
             }
-            else
+            LoadRoom();
+        }
+
+        private void txtRoomHave_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            if (txtRoomHave.SelectedItem != null)
             {
-                MessageBox.Show("❗ Vui lòng chọn phòng và nhập giá mới.", "Thiếu thông tin", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                // Lấy số phòng đã chọn từ ComboBox
+                string selectedRoomNo = txtRoomHave.SelectedItem.ToString();
+
+                // Gọi đến BusinessLayer để lấy thông tin phòng
+                var ds = roomService.GetRoomInfo(selectedRoomNo);
+
             }
+        }
+
+        private void btnUpdateRoom_Click(object sender, EventArgs e)
+        {
+            // Lấy số phòng đã chọn từ ComboBox
+            string selectedRoomNo = txtRoomHave.SelectedItem.ToString();
+
+            // Lấy các giá trị từ các TextBox
+            string roomType = txtRoomType1.Text;
+            string bedType = txtBedType1.Text;
+            string bookedStatus = txtBooked.Text;
+
+            // Tạo đối tượng RoomDTO để chứa các thông tin đã thay đổi
+            RoomDTO room = new RoomDTO
+            {
+                RoomNo = selectedRoomNo,
+                RoomType = roomType,
+                Bed = bedType,
+                Booked = bookedStatus
+            };
+
+            // Gọi đến BusinessLayer để cập nhật thông tin phòng
+            RoomServiceBL roomService = new RoomServiceBL();
+            roomService.UpdateRoomInfo(room); // Cập nhật thông tin phòng
+
+            MessageBox.Show("Thông tin phòng đã được cập nhật!");
+            LoadRoom();
         }
     }
 }
