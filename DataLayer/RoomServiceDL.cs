@@ -11,7 +11,7 @@ namespace DataLayer
 {
     public class RoomServiceDL
     {
-        Function fn = new Function();
+        DataProvider fn = new DataProvider();
 
         public List<RoomDTO> GetAllRooms()
         {

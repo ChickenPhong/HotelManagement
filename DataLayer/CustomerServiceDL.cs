@@ -9,7 +9,7 @@ namespace DataLayer
 {
     public class CustomerServiceDL
     {
-        Function fn = new Function();
+        DataProvider fn = new DataProvider();
 
         // Lấy toàn bộ danh sách khách hàng
         public DataTable GetAllCustomers()

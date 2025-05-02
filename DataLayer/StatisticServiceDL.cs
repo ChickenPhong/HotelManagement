@@ -9,7 +9,7 @@ namespace DataLayer
 {
     public class StatisticServiceDL
     {
-        Function fn = new Function();
+        DataProvider fn = new DataProvider();
 
         public int GetTotalRoom()
         {

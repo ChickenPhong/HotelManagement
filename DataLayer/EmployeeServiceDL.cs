@@ -11,7 +11,7 @@ namespace DataLayer
 {
     public class EmployeeServiceDL
     {
-        Function fn = new Function();
+        DataProvider fn = new DataProvider();
 
         //public DataSet CheckLogin(string query)
         //{

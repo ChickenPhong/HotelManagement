@@ -8,7 +8,7 @@ using System.Data;
 
 namespace DataLayer
 {
-    public class Function
+    public class DataProvider
     {
         protected SqlConnection GetConnection()
         {

@@ -1,1 +1,7 @@
+//lệnh kiểm tra
 sp_help rooms
+
+
+//lệnh xóa
+DELETE FROM dbo.customerRequest
+WHERE Id IN (1, 2, 3);
