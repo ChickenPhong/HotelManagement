@@ -159,9 +159,13 @@ namespace PresentationLayer.All_User_Control
                 MessageBox.Show("Đã cập nhật số phòng", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
 
                 LoadRoom();
-                txtRoomNo1.Clear(); // 👉 Xóa nội dung sau khi cập nhật
+                txtRoomNo1.Clear(); // Xóa nội dung sau khi cập nhật
                 txtRoomHave.SelectedIndex = 0; // reset lại chọn phòng
 
+            }
+            else
+            {
+                MessageBox.Show("Nhập số phòng!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
             }
         }
 
@@ -176,8 +180,12 @@ namespace PresentationLayer.All_User_Control
                 MessageBox.Show("Đã cập nhật loại giường", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
 
                 LoadRoom();
-                txtBedType1.SelectedIndex = -1; // 👉 Reset ComboBox
+                txtBedType1.SelectedIndex = -1; // Reset ComboBox
                 txtRoomHave.SelectedIndex = 0;  // reset lại chọn phòng
+            }
+            else
+            {
+                MessageBox.Show("Nhập loại giường!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
             }
         }
 
@@ -192,8 +200,12 @@ namespace PresentationLayer.All_User_Control
                 MessageBox.Show("Đã cập nhật loại phòng", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
 
                 LoadRoom();
-                txtRoomType1.SelectedIndex = -1; // 👉 Reset ComboBox
+                txtRoomType1.SelectedIndex = -1; //  Reset ComboBox
                 txtRoomHave.SelectedIndex = 0;   // reset lại chọn phòng
+            }
+            else
+            {
+                MessageBox.Show("Nhập loại phòng!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
             }
         }
     }
