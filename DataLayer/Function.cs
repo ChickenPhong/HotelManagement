@@ -29,6 +29,26 @@ namespace DataLayer
             return ds;
         }
 
+        // Hàm mới có hỗ trợ SqlParameter
+        public DataSet getData(string query, List<SqlParameter> parameters)
+        {
+            using (SqlConnection con = GetConnection())
+            {
+                SqlCommand cmd = new SqlCommand(query, con);
+                cmd.CommandType = CommandType.Text;
+
+                if (parameters != null && parameters.Count > 0)
+                {
+                    cmd.Parameters.AddRange(parameters.ToArray());
+                }
+
+                SqlDataAdapter adapter = new SqlDataAdapter(cmd);
+                DataSet ds = new DataSet();
+                adapter.Fill(ds);
+                return ds;
+            }
+        }
+
         public void setData(String query, String message)
         {
             SqlConnection con = GetConnection();// Lấy kết nối SQL hợp lệ

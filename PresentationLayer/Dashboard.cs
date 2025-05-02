@@ -133,5 +133,17 @@ namespace PresentationLayer
             this.Hide();
             dieuHuong.Show();
         }
+
+        private void btnSetPassword_Click(object sender, EventArgs e)
+        {
+            using (ThayMatKhau form = new ThayMatKhau())
+            {
+                form.NhanVienDangNhap = DangNhap.NhanVienDangNhap; // gán username hiện tại
+                if (form.ShowDialog() == DialogResult.OK)
+                {
+                    MessageBox.Show("Đổi mật khẩu thành công!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                }
+            }
+        }
     }
 }

@@ -73,17 +73,34 @@ namespace BusinessLayer
             return employeeServiceDL.GetAllEmployees();
         }
 
+        public EmployeeDTO GetEmployeeByUsername(string username)
+        {
+            return employeeServiceDL.GetEmployeeByUsername(username);
+        }
+
         //public void DeleteEmployee(int id)
         //{
         //    string query = $"DELETE FROM employee WHERE eid = {id}";
         //    fn.setData(query, "Nhân viên đã được xóa!!");
         //}
 
-        
+
         public void DeleteEmployeeByName(string name)
         {
             employeeServiceDL.DeleteEmployeeByName(name);
         }
 
+
+        public bool CheckPassword(string username, string password)
+        {
+            string hashed = HashPassword(password); // Băm mật khẩu cũ
+            return employeeServiceDL.CheckPassword(username, hashed);
+        }
+
+        public bool UpdatePassword(string username, string newPassword)
+        {
+            string hashedNewPass = HashPassword(newPassword); // Băm mật khẩu mới
+            return employeeServiceDL.UpdatePassword(username, hashedNewPass);
+        }
     }
 }

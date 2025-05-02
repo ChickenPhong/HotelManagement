@@ -11,6 +11,7 @@ using BusinessLayer;
 using BusinessLayer;
 using QuanLyKhachSan;
 using QuanLyKhachSan.All_User_Control;
+using TransferObject;
 
 namespace PresentationLayer
 {
@@ -20,6 +21,7 @@ namespace PresentationLayer
 
         public static string LoggedInUsername;
         public static string LoggedInRole;
+        public static EmployeeDTO NhanVienDangNhap;
 
 
         public DangNhap()
@@ -44,6 +46,8 @@ namespace PresentationLayer
                 // Lưu lại thông tin đăng nhập
                 LoggedInUsername = username;
                 LoggedInRole = cs.GetRoleByUsername(username);
+
+                NhanVienDangNhap = cs.GetEmployeeByUsername(username); // lấy dữ liệu đầy đủ
 
                 DieuHuong tk = new DieuHuong(); 
                 this.Hide();

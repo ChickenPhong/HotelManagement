@@ -1,9 +1,11 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Data;
+using System.Data.SqlClient;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using TransferObject;
 
 namespace DataLayer
 {
@@ -52,10 +54,52 @@ namespace DataLayer
             string query = "SELECT * FROM employee";
             return fn.getData(query).Tables[0];
         }
+
+        public EmployeeDTO GetEmployeeByUsername(string username)
+        {
+            string query = $"SELECT * FROM employee WHERE username = @username";
+            List<SqlParameter> parameters = new List<SqlParameter>
+    {
+        new SqlParameter("@username", username)
+    };
+
+            DataSet ds = fn.getData(query, parameters); // đảm bảo bạn có overload getData(query, params)
+
+            if (ds.Tables[0].Rows.Count > 0)
+            {
+                DataRow row = ds.Tables[0].Rows[0];
+                return new EmployeeDTO
+                {
+                    EmployeeId = Convert.ToInt32(row["eid"]),
+                    EmployeeName = row["ename"].ToString(),
+                    Mobile = row["mobile"].ToString(),
+                    Gender = row["gender"].ToString(),
+                    Email = row["emailid"].ToString(),
+                    Username = row["username"].ToString(),
+                    Password = row["pass"].ToString()
+                };
+            }
+
+            return null;
+        }
         public void DeleteEmployeeByName(string name)
         {
             string query = $"DELETE FROM employee WHERE ename = N'{name}'";
             fn.setData(query, "Xóa nhân viên thành công!");
+        }
+
+        public bool CheckPassword(string username, string password)
+        {
+            string query = $"SELECT * FROM employee WHERE username = N'{username}' AND pass = N'{password}'";
+            DataSet ds = fn.getData(query);
+            return ds.Tables[0].Rows.Count > 0;
+        }
+
+        public bool UpdatePassword(string username, string newPassword)
+        {
+            string query = $"UPDATE employee SET pass = N'{newPassword}' WHERE username = N'{username}'";
+            fn.setData(query, "Đã cập nhật mật khẩu.");
+            return true;
         }
     }
 }

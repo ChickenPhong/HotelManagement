@@ -160,3 +160,4 @@ D:\GitHubCode\New folder (3)\HotelManagement\PresentationLayer\obj\Debug\Present
 D:\GitHubCode\New folder (3)\HotelManagement\PresentationLayer\obj\Debug\Presenta.9C561136.Up2Date
 D:\GitHubCode\New folder (3)\HotelManagement\PresentationLayer\obj\Debug\QuanLyKhachSan.exe
 D:\GitHubCode\New folder (3)\HotelManagement\PresentationLayer\obj\Debug\QuanLyKhachSan.pdb
+D:\HotelManagement\HotelManagement\PresentationLayer\obj\Debug\QuanLyKhachSan.ThayMatKhau.resources
