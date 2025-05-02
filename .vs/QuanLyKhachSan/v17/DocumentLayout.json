@@ -3,7 +3,55 @@
   "WorkspaceRootPath": "D:\\HotelManagement\\HotelManagement\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{C07156DE-CB19-4EAF-9F77-7128E2D05351}|PresentationLayer\\PresentationLayer.csproj|D:\\HotelManagement\\HotelManagement\\presentationlayer\\all user control\\uc_customerrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{C07156DE-CB19-4EAF-9F77-7128E2D05351}|PresentationLayer\\PresentationLayer.csproj|D:\\HotelManagement\\HotelManagement\\presentationlayer\\all user control\\uc_customerres.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C07156DE-CB19-4EAF-9F77-7128E2D05351}|PresentationLayer\\PresentationLayer.csproj|solutionrelative:presentationlayer\\all user control\\uc_customerres.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C07156DE-CB19-4EAF-9F77-7128E2D05351}|PresentationLayer\\PresentationLayer.csproj|D:\\HotelManagement\\HotelManagement\\presentationlayer\\all user control\\uc_customerres.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{C07156DE-CB19-4EAF-9F77-7128E2D05351}|PresentationLayer\\PresentationLayer.csproj|solutionrelative:presentationlayer\\all user control\\uc_customerres.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8668F4CE-E0F6-4153-BE2E-0BD2A1F9E2D9}|BusinessLayer\\BusinessLayer.csproj|D:\\HotelManagement\\HotelManagement\\businesslayer\\customerservicebl.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8668F4CE-E0F6-4153-BE2E-0BD2A1F9E2D9}|BusinessLayer\\BusinessLayer.csproj|solutionrelative:businesslayer\\customerservicebl.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A65E10DD-0C4B-4758-B72C-6CF28F6E55B8}|DataLayer\\DataLayer.csproj|D:\\HotelManagement\\HotelManagement\\datalayer\\customerservicedl.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A65E10DD-0C4B-4758-B72C-6CF28F6E55B8}|DataLayer\\DataLayer.csproj|solutionrelative:datalayer\\customerservicedl.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A65E10DD-0C4B-4758-B72C-6CF28F6E55B8}|DataLayer\\DataLayer.csproj|D:\\HotelManagement\\HotelManagement\\datalayer\\roomservicedl.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A65E10DD-0C4B-4758-B72C-6CF28F6E55B8}|DataLayer\\DataLayer.csproj|solutionrelative:datalayer\\roomservicedl.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8668F4CE-E0F6-4153-BE2E-0BD2A1F9E2D9}|BusinessLayer\\BusinessLayer.csproj|D:\\HotelManagement\\HotelManagement\\businesslayer\\roomservicebl.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8668F4CE-E0F6-4153-BE2E-0BD2A1F9E2D9}|BusinessLayer\\BusinessLayer.csproj|solutionrelative:businesslayer\\roomservicebl.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C07156DE-CB19-4EAF-9F77-7128E2D05351}|PresentationLayer\\PresentationLayer.csproj|D:\\HotelManagement\\HotelManagement\\presentationlayer\\dieuhuong.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{C07156DE-CB19-4EAF-9F77-7128E2D05351}|PresentationLayer\\PresentationLayer.csproj|solutionrelative:presentationlayer\\dieuhuong.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C07156DE-CB19-4EAF-9F77-7128E2D05351}|PresentationLayer\\PresentationLayer.csproj|D:\\HotelManagement\\HotelManagement\\presentationlayer\\all user control\\uc_employee.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{C07156DE-CB19-4EAF-9F77-7128E2D05351}|PresentationLayer\\PresentationLayer.csproj|solutionrelative:presentationlayer\\all user control\\uc_employee.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C07156DE-CB19-4EAF-9F77-7128E2D05351}|PresentationLayer\\PresentationLayer.csproj|d:\\hotelmanagement\\hotelmanagement\\presentationlayer\\all user control\\uc_checkout.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C07156DE-CB19-4EAF-9F77-7128E2D05351}|PresentationLayer\\PresentationLayer.csproj|solutionrelative:presentationlayer\\all user control\\uc_checkout.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C07156DE-CB19-4EAF-9F77-7128E2D05351}|PresentationLayer\\PresentationLayer.csproj|D:\\HotelManagement\\HotelManagement\\presentationlayer\\all user control\\uc_checkout.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{C07156DE-CB19-4EAF-9F77-7128E2D05351}|PresentationLayer\\PresentationLayer.csproj|solutionrelative:presentationlayer\\all user control\\uc_checkout.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C07156DE-CB19-4EAF-9F77-7128E2D05351}|PresentationLayer\\PresentationLayer.csproj|d:\\hotelmanagement\\hotelmanagement\\presentationlayer\\all user control\\uc_checkout.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C07156DE-CB19-4EAF-9F77-7128E2D05351}|PresentationLayer\\PresentationLayer.csproj|solutionrelative:presentationlayer\\all user control\\uc_checkout.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8668F4CE-E0F6-4153-BE2E-0BD2A1F9E2D9}|BusinessLayer\\BusinessLayer.csproj|D:\\HotelManagement\\HotelManagement\\businesslayer\\employeeservicebl.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8668F4CE-E0F6-4153-BE2E-0BD2A1F9E2D9}|BusinessLayer\\BusinessLayer.csproj|solutionrelative:businesslayer\\employeeservicebl.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C07156DE-CB19-4EAF-9F77-7128E2D05351}|PresentationLayer\\PresentationLayer.csproj|d:\\hotelmanagement\\hotelmanagement\\presentationlayer\\all user control\\uc_customerrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{C07156DE-CB19-4EAF-9F77-7128E2D05351}|PresentationLayer\\PresentationLayer.csproj|solutionrelative:presentationlayer\\all user control\\uc_customerrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
@@ -11,31 +59,23 @@
       "RelativeMoniker": "D:0:0:{C07156DE-CB19-4EAF-9F77-7128E2D05351}|PresentationLayer\\PresentationLayer.csproj|solutionrelative:presentationlayer\\all user control\\uc_customerrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{C07156DE-CB19-4EAF-9F77-7128E2D05351}|PresentationLayer\\PresentationLayer.csproj|D:\\HotelManagement\\HotelManagement\\presentationlayer\\all user control\\uc_customerres.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{C07156DE-CB19-4EAF-9F77-7128E2D05351}|PresentationLayer\\PresentationLayer.csproj|solutionrelative:presentationlayer\\all user control\\uc_customerres.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{C07156DE-CB19-4EAF-9F77-7128E2D05351}|PresentationLayer\\PresentationLayer.csproj|d:\\hotelmanagement\\hotelmanagement\\presentationlayer\\all user control\\uc_customerres.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C07156DE-CB19-4EAF-9F77-7128E2D05351}|PresentationLayer\\PresentationLayer.csproj|solutionrelative:presentationlayer\\all user control\\uc_customerres.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{C07156DE-CB19-4EAF-9F77-7128E2D05351}|PresentationLayer\\PresentationLayer.csproj|D:\\HotelManagement\\HotelManagement\\presentationlayer\\all user control\\uc_addroom.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{C07156DE-CB19-4EAF-9F77-7128E2D05351}|PresentationLayer\\PresentationLayer.csproj|solutionrelative:presentationlayer\\all user control\\uc_addroom.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{C07156DE-CB19-4EAF-9F77-7128E2D05351}|PresentationLayer\\PresentationLayer.csproj|D:\\HotelManagement\\HotelManagement\\presentationlayer\\all user control\\uc_customerdetails.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{C07156DE-CB19-4EAF-9F77-7128E2D05351}|PresentationLayer\\PresentationLayer.csproj|solutionrelative:presentationlayer\\all user control\\uc_customerdetails.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A65E10DD-0C4B-4758-B72C-6CF28F6E55B8}|DataLayer\\DataLayer.csproj|D:\\HotelManagement\\HotelManagement\\datalayer\\roomservicedl.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A65E10DD-0C4B-4758-B72C-6CF28F6E55B8}|DataLayer\\DataLayer.csproj|solutionrelative:datalayer\\roomservicedl.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{8668F4CE-E0F6-4153-BE2E-0BD2A1F9E2D9}|BusinessLayer\\BusinessLayer.csproj|D:\\HotelManagement\\HotelManagement\\businesslayer\\employeeservicebl.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8668F4CE-E0F6-4153-BE2E-0BD2A1F9E2D9}|BusinessLayer\\BusinessLayer.csproj|solutionrelative:businesslayer\\employeeservicebl.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{A65E10DD-0C4B-4758-B72C-6CF28F6E55B8}|DataLayer\\DataLayer.csproj|D:\\HotelManagement\\HotelManagement\\datalayer\\employeeservicedl.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{A65E10DD-0C4B-4758-B72C-6CF28F6E55B8}|DataLayer\\DataLayer.csproj|solutionrelative:datalayer\\employeeservicedl.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{C07156DE-CB19-4EAF-9F77-7128E2D05351}|PresentationLayer\\PresentationLayer.csproj|d:\\hotelmanagement\\hotelmanagement\\presentationlayer\\all user control\\uc_addroom.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{C07156DE-CB19-4EAF-9F77-7128E2D05351}|PresentationLayer\\PresentationLayer.csproj|D:\\HotelManagement\\HotelManagement\\presentationlayer\\all user control\\uc_customerdetails.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{C07156DE-CB19-4EAF-9F77-7128E2D05351}|PresentationLayer\\PresentationLayer.csproj|solutionrelative:presentationlayer\\all user control\\uc_customerdetails.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C07156DE-CB19-4EAF-9F77-7128E2D05351}|PresentationLayer\\PresentationLayer.csproj|D:\\HotelManagement\\HotelManagement\\presentationlayer\\all user control\\uc_addroom.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{C07156DE-CB19-4EAF-9F77-7128E2D05351}|PresentationLayer\\PresentationLayer.csproj|solutionrelative:presentationlayer\\all user control\\uc_addroom.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
@@ -43,20 +83,8 @@
       "RelativeMoniker": "D:0:0:{A65E10DD-0C4B-4758-B72C-6CF28F6E55B8}|DataLayer\\DataLayer.csproj|solutionrelative:datalayer\\function.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{8668F4CE-E0F6-4153-BE2E-0BD2A1F9E2D9}|BusinessLayer\\BusinessLayer.csproj|D:\\HotelManagement\\HotelManagement\\businesslayer\\roomservicebl.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8668F4CE-E0F6-4153-BE2E-0BD2A1F9E2D9}|BusinessLayer\\BusinessLayer.csproj|solutionrelative:businesslayer\\roomservicebl.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{C07156DE-CB19-4EAF-9F77-7128E2D05351}|PresentationLayer\\PresentationLayer.csproj|D:\\HotelManagement\\HotelManagement\\presentationlayer\\all user control\\uc_employee.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{C07156DE-CB19-4EAF-9F77-7128E2D05351}|PresentationLayer\\PresentationLayer.csproj|solutionrelative:presentationlayer\\all user control\\uc_employee.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{C07156DE-CB19-4EAF-9F77-7128E2D05351}|PresentationLayer\\PresentationLayer.csproj|D:\\HotelManagement\\HotelManagement\\presentationlayer\\all user control\\uc_employee.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{C07156DE-CB19-4EAF-9F77-7128E2D05351}|PresentationLayer\\PresentationLayer.csproj|solutionrelative:presentationlayer\\all user control\\uc_employee.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A65E10DD-0C4B-4758-B72C-6CF28F6E55B8}|DataLayer\\DataLayer.csproj|D:\\HotelManagement\\HotelManagement\\datalayer\\customerservicedl.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A65E10DD-0C4B-4758-B72C-6CF28F6E55B8}|DataLayer\\DataLayer.csproj|solutionrelative:datalayer\\customerservicedl.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{C07156DE-CB19-4EAF-9F77-7128E2D05351}|PresentationLayer\\PresentationLayer.csproj|D:\\HotelManagement\\HotelManagement\\presentationlayer\\thaymatkhau.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
@@ -73,10 +101,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{C07156DE-CB19-4EAF-9F77-7128E2D05351}|PresentationLayer\\PresentationLayer.csproj|D:\\HotelManagement\\HotelManagement\\presentationlayer\\dashboard.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{C07156DE-CB19-4EAF-9F77-7128E2D05351}|PresentationLayer\\PresentationLayer.csproj|solutionrelative:presentationlayer\\dashboard.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{C07156DE-CB19-4EAF-9F77-7128E2D05351}|PresentationLayer\\PresentationLayer.csproj|D:\\HotelManagement\\HotelManagement\\presentationlayer\\dieuhuong.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{C07156DE-CB19-4EAF-9F77-7128E2D05351}|PresentationLayer\\PresentationLayer.csproj|solutionrelative:presentationlayer\\dieuhuong.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
       "AbsoluteMoniker": "D:0:0:{C07156DE-CB19-4EAF-9F77-7128E2D05351}|PresentationLayer\\PresentationLayer.csproj|D:\\HotelManagement\\HotelManagement\\presentationlayer\\dangnhap.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -103,20 +127,12 @@
       "RelativeMoniker": "D:0:0:{B3A4F7F0-7020-47FD-9A5A-87AA43676BB1}|TransferObject\\TransferObject.csproj|solutionrelative:transferobject\\roomdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{C07156DE-CB19-4EAF-9F77-7128E2D05351}|PresentationLayer\\PresentationLayer.csproj|D:\\HotelManagement\\HotelManagement\\presentationlayer\\all user control\\uc_checkout.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{C07156DE-CB19-4EAF-9F77-7128E2D05351}|PresentationLayer\\PresentationLayer.csproj|solutionrelative:presentationlayer\\all user control\\uc_checkout.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{C07156DE-CB19-4EAF-9F77-7128E2D05351}|PresentationLayer\\PresentationLayer.csproj|D:\\HotelManagement\\HotelManagement\\presentationlayer\\all user control\\uc_addroom.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{C07156DE-CB19-4EAF-9F77-7128E2D05351}|PresentationLayer\\PresentationLayer.csproj|solutionrelative:presentationlayer\\all user control\\uc_addroom.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{C07156DE-CB19-4EAF-9F77-7128E2D05351}|PresentationLayer\\PresentationLayer.csproj|D:\\HotelManagement\\HotelManagement\\presentationlayer\\thongke.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{C07156DE-CB19-4EAF-9F77-7128E2D05351}|PresentationLayer\\PresentationLayer.csproj|solutionrelative:presentationlayer\\thongke.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{8668F4CE-E0F6-4153-BE2E-0BD2A1F9E2D9}|BusinessLayer\\BusinessLayer.csproj|D:\\HotelManagement\\HotelManagement\\businesslayer\\customerservicebl.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8668F4CE-E0F6-4153-BE2E-0BD2A1F9E2D9}|BusinessLayer\\BusinessLayer.csproj|solutionrelative:businesslayer\\customerservicebl.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{B3A4F7F0-7020-47FD-9A5A-87AA43676BB1}|TransferObject\\TransferObject.csproj|D:\\HotelManagement\\HotelManagement\\transferobject\\customerdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -142,10 +158,6 @@
       "RelativeMoniker": "D:0:0:{B3A4F7F0-7020-47FD-9A5A-87AA43676BB1}|TransferObject\\TransferObject.csproj|solutionrelative:transferobject\\customerrequestdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{C07156DE-CB19-4EAF-9F77-7128E2D05351}|PresentationLayer\\PresentationLayer.csproj|D:\\HotelManagement\\HotelManagement\\presentationlayer\\all user control\\uc_customerres.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C07156DE-CB19-4EAF-9F77-7128E2D05351}|PresentationLayer\\PresentationLayer.csproj|solutionrelative:presentationlayer\\all user control\\uc_customerres.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{8668F4CE-E0F6-4153-BE2E-0BD2A1F9E2D9}|BusinessLayer\\BusinessLayer.csproj|D:\\HotelManagement\\HotelManagement\\businesslayer\\statisticservicebl.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{8668F4CE-E0F6-4153-BE2E-0BD2A1F9E2D9}|BusinessLayer\\BusinessLayer.csproj|solutionrelative:businesslayer\\statisticservicebl.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -169,11 +181,50 @@
       "DocumentGroups": [
         {
           "DockedHeight": 200,
-          "SelectedChildIndex": 36,
+          "SelectedChildIndex": 23,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 20,
+              "DocumentIndex": 10,
+              "Title": "UC_CheckOut.Designer.cs",
+              "DocumentMoniker": "D:\\HotelManagement\\HotelManagement\\PresentationLayer\\All User Control\\UC_CheckOut.Designer.cs",
+              "RelativeDocumentMoniker": "PresentationLayer\\All User Control\\UC_CheckOut.Designer.cs",
+              "ToolTip": "D:\\HotelManagement\\HotelManagement\\PresentationLayer\\All User Control\\UC_CheckOut.Designer.cs",
+              "RelativeToolTip": "PresentationLayer\\All User Control\\UC_CheckOut.Designer.cs",
+              "ViewState": "AgIAAKgAAAAAAAAAAAAvwLwAAAAqAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-02T12:18:34.104Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "UC_CheckOut.cs",
+              "DocumentMoniker": "D:\\HotelManagement\\HotelManagement\\PresentationLayer\\All User Control\\UC_CheckOut.cs",
+              "RelativeDocumentMoniker": "PresentationLayer\\All User Control\\UC_CheckOut.cs",
+              "ToolTip": "D:\\HotelManagement\\HotelManagement\\PresentationLayer\\All User Control\\UC_CheckOut.cs",
+              "RelativeToolTip": "PresentationLayer\\All User Control\\UC_CheckOut.cs",
+              "ViewState": "AgIAABUAAAAAAAAAAIAwwCcAAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-02T12:05:38.637Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "UC_CustomerRes.Designer.cs",
+              "DocumentMoniker": "D:\\HotelManagement\\HotelManagement\\PresentationLayer\\All User Control\\UC_CustomerRes.Designer.cs",
+              "RelativeDocumentMoniker": "PresentationLayer\\All User Control\\UC_CustomerRes.Designer.cs",
+              "ToolTip": "D:\\HotelManagement\\HotelManagement\\PresentationLayer\\All User Control\\UC_CustomerRes.Designer.cs",
+              "RelativeToolTip": "PresentationLayer\\All User Control\\UC_CustomerRes.Designer.cs",
+              "ViewState": "AgIAAFICAAAAAAAAAAAvwGYCAACuAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-02T11:52:03.049Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 26,
               "Title": "ThayMatKhau.cs",
               "DocumentMoniker": "D:\\HotelManagement\\HotelManagement\\PresentationLayer\\ThayMatKhau.cs",
               "RelativeDocumentMoniker": "PresentationLayer\\ThayMatKhau.cs",
@@ -185,7 +236,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 21,
               "Title": "ThayMatKhau.cs [Design]",
               "DocumentMoniker": "D:\\HotelManagement\\HotelManagement\\PresentationLayer\\ThayMatKhau.cs",
               "RelativeDocumentMoniker": "PresentationLayer\\ThayMatKhau.cs",
@@ -196,7 +247,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 27,
+              "DocumentIndex": 32,
               "Title": "ThongKe.cs",
               "DocumentMoniker": "D:\\HotelManagement\\HotelManagement\\PresentationLayer\\ThongKe.cs",
               "RelativeDocumentMoniker": "PresentationLayer\\ThongKe.cs",
@@ -208,7 +259,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
+              "DocumentIndex": 22,
               "Title": "ThongKe.cs [Design]",
               "DocumentMoniker": "D:\\HotelManagement\\HotelManagement\\PresentationLayer\\ThongKe.cs",
               "RelativeDocumentMoniker": "PresentationLayer\\ThongKe.cs",
@@ -219,7 +270,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 30,
+              "DocumentIndex": 34,
               "Title": "DieuHuong.cs",
               "DocumentMoniker": "D:\\HotelManagement\\HotelManagement\\PresentationLayer\\DieuHuong.cs",
               "RelativeDocumentMoniker": "PresentationLayer\\DieuHuong.cs",
@@ -227,11 +278,12 @@
               "RelativeToolTip": "PresentationLayer\\DieuHuong.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAADcAAAA5AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-25T12:43:48.006Z"
+              "WhenOpened": "2025-04-25T12:43:48.006Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 15,
               "Title": "UC_AddRoom.cs [Design]",
               "DocumentMoniker": "D:\\HotelManagement\\HotelManagement\\PresentationLayer\\All User Control\\UC_AddRoom.cs",
               "RelativeDocumentMoniker": "PresentationLayer\\All User Control\\UC_AddRoom.cs",
@@ -243,7 +295,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 18,
               "Title": "UC_AddRoom.cs",
               "DocumentMoniker": "D:\\HotelManagement\\HotelManagement\\PresentationLayer\\All User Control\\UC_AddRoom.cs",
               "RelativeDocumentMoniker": "PresentationLayer\\All User Control\\UC_AddRoom.cs",
@@ -256,7 +308,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 26,
+              "DocumentIndex": 31,
               "Title": "UC_AddRoom.Designer.cs",
               "DocumentMoniker": "D:\\HotelManagement\\HotelManagement\\PresentationLayer\\All User Control\\UC_AddRoom.Designer.cs",
               "RelativeDocumentMoniker": "PresentationLayer\\All User Control\\UC_AddRoom.Designer.cs",
@@ -264,36 +316,38 @@
               "RelativeToolTip": "PresentationLayer\\All User Control\\UC_AddRoom.Designer.cs",
               "ViewState": "AgIAAG4BAAAAAAAAAAAvwIsBAAAzAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-01T06:52:15.205Z"
+              "WhenOpened": "2025-05-01T06:52:15.205Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 5,
               "Title": "RoomServiceBL.cs",
               "DocumentMoniker": "D:\\HotelManagement\\HotelManagement\\BusinessLayer\\RoomServiceBL.cs",
               "RelativeDocumentMoniker": "BusinessLayer\\RoomServiceBL.cs",
               "ToolTip": "D:\\HotelManagement\\HotelManagement\\BusinessLayer\\RoomServiceBL.cs",
               "RelativeToolTip": "BusinessLayer\\RoomServiceBL.cs",
-              "ViewState": "AgIAABQAAAAAAAAAAAA0wDgAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAUAAAAAAAAAAAAgwBsAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-24T18:06:33.593Z"
+              "WhenOpened": "2025-04-24T18:06:33.593Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 16,
               "Title": "EmployeeServiceDL.cs",
               "DocumentMoniker": "D:\\HotelManagement\\HotelManagement\\DataLayer\\EmployeeServiceDL.cs",
               "RelativeDocumentMoniker": "DataLayer\\EmployeeServiceDL.cs",
               "ToolTip": "D:\\HotelManagement\\HotelManagement\\DataLayer\\EmployeeServiceDL.cs",
               "RelativeToolTip": "DataLayer\\EmployeeServiceDL.cs",
-              "ViewState": "AgIAACgAAAAAAAAAAAAAwDMAAAAqAAAAAAAAAA==",
+              "ViewState": "AgIAAFIAAAAAAAAAAAAswDMAAAAqAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-04-24T18:03:09.647Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 31,
+              "DocumentIndex": 35,
               "Title": "StatisticServiceDL.cs",
               "DocumentMoniker": "D:\\HotelManagement\\HotelManagement\\DataLayer\\StatisticServiceDL.cs",
               "RelativeDocumentMoniker": "DataLayer\\StatisticServiceDL.cs",
@@ -305,20 +359,20 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 4,
               "Title": "RoomServiceDL.cs",
               "DocumentMoniker": "D:\\HotelManagement\\HotelManagement\\DataLayer\\RoomServiceDL.cs",
               "RelativeDocumentMoniker": "DataLayer\\RoomServiceDL.cs",
               "ToolTip": "D:\\HotelManagement\\HotelManagement\\DataLayer\\RoomServiceDL.cs",
               "RelativeToolTip": "DataLayer\\RoomServiceDL.cs",
-              "ViewState": "AgIAAC8AAAAAAAAAAAA0wFMAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAACgAAAAAAAAAAAAIwC4AAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-04-24T18:06:32.687Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 24,
+              "DocumentIndex": 30,
               "Title": "RoomDTO.cs",
               "DocumentMoniker": "D:\\HotelManagement\\HotelManagement\\TransferObject\\RoomDTO.cs",
               "RelativeDocumentMoniker": "TransferObject\\RoomDTO.cs",
@@ -330,7 +384,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 19,
               "Title": "Function.cs",
               "DocumentMoniker": "D:\\HotelManagement\\HotelManagement\\DataLayer\\Function.cs",
               "RelativeDocumentMoniker": "DataLayer\\Function.cs",
@@ -338,12 +392,11 @@
               "RelativeToolTip": "DataLayer\\Function.cs",
               "ViewState": "AgIAAAMAAAAAAAAAAAAAABcAAAAhAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-24T18:06:22.283Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-24T18:06:22.283Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 32,
+              "DocumentIndex": 36,
               "Title": "Form1.Designer.cs",
               "DocumentMoniker": "D:\\HotelManagement\\HotelManagement\\PresentationLayer\\Form1.Designer.cs",
               "RelativeDocumentMoniker": "PresentationLayer\\Form1.Designer.cs",
@@ -354,7 +407,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 34,
+              "DocumentIndex": 38,
               "Title": "CustomerRequestDTO.cs",
               "DocumentMoniker": "D:\\HotelManagement\\HotelManagement\\TransferObject\\CustomerRequestDTO.cs",
               "RelativeDocumentMoniker": "TransferObject\\CustomerRequestDTO.cs",
@@ -366,7 +419,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 11,
               "Title": "EmployeeServiceBL.cs",
               "DocumentMoniker": "D:\\HotelManagement\\HotelManagement\\BusinessLayer\\EmployeeServiceBL.cs",
               "RelativeDocumentMoniker": "BusinessLayer\\EmployeeServiceBL.cs",
@@ -379,7 +432,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 20,
               "Title": "UC_Employee.cs",
               "DocumentMoniker": "D:\\HotelManagement\\HotelManagement\\PresentationLayer\\All User Control\\UC_Employee.cs",
               "RelativeDocumentMoniker": "PresentationLayer\\All User Control\\UC_Employee.cs",
@@ -387,11 +440,12 @@
               "RelativeToolTip": "PresentationLayer\\All User Control\\UC_Employee.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAHcAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-25T01:50:43.506Z"
+              "WhenOpened": "2025-04-25T01:50:43.506Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 33,
+              "DocumentIndex": 37,
               "Title": "PresentationLayer",
               "DocumentMoniker": "D:\\HotelManagement\\HotelManagement\\PresentationLayer\\PresentationLayer.csproj",
               "RelativeDocumentMoniker": "PresentationLayer\\PresentationLayer.csproj",
@@ -402,7 +456,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 23,
+              "DocumentIndex": 29,
               "Title": "EmployeeDTO.cs",
               "DocumentMoniker": "D:\\HotelManagement\\HotelManagement\\TransferObject\\EmployeeDTO.cs",
               "RelativeDocumentMoniker": "TransferObject\\EmployeeDTO.cs",
@@ -414,20 +468,20 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 35,
+              "DocumentIndex": 0,
               "Title": "UC_CustomerRes.cs",
               "DocumentMoniker": "D:\\HotelManagement\\HotelManagement\\PresentationLayer\\All User Control\\UC_CustomerRes.cs",
               "RelativeDocumentMoniker": "PresentationLayer\\All User Control\\UC_CustomerRes.cs",
               "ToolTip": "D:\\HotelManagement\\HotelManagement\\PresentationLayer\\All User Control\\UC_CustomerRes.cs",
               "RelativeToolTip": "PresentationLayer\\All User Control\\UC_CustomerRes.cs",
-              "ViewState": "AgIAADkAAAAAAAAAAAAvwEcAAAAeAAAAAAAAAA==",
+              "ViewState": "AgIAAGAAAAAAAAAAAAAnwG4AAAAlAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-04-30T09:34:40.223Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 16,
+              "DocumentIndex": 23,
               "Title": "DangNhap.cs [Design]",
               "DocumentMoniker": "D:\\HotelManagement\\HotelManagement\\PresentationLayer\\DangNhap.cs",
               "RelativeDocumentMoniker": "PresentationLayer\\DangNhap.cs",
@@ -438,7 +492,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 19,
+              "DocumentIndex": 25,
               "Title": "DangNhap.cs",
               "DocumentMoniker": "D:\\HotelManagement\\HotelManagement\\PresentationLayer\\DangNhap.cs",
               "RelativeDocumentMoniker": "PresentationLayer\\DangNhap.cs",
@@ -450,7 +504,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 36,
+              "DocumentIndex": 39,
               "Title": "StatisticServiceBL.cs",
               "DocumentMoniker": "D:\\HotelManagement\\HotelManagement\\BusinessLayer\\StatisticServiceBL.cs",
               "RelativeDocumentMoniker": "BusinessLayer\\StatisticServiceBL.cs",
@@ -462,7 +516,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 38,
+              "DocumentIndex": 41,
               "Title": "Form1.cs [Design]",
               "DocumentMoniker": "D:\\HotelManagement\\HotelManagement\\PresentationLayer\\Form1.cs",
               "RelativeDocumentMoniker": "PresentationLayer\\Form1.cs",
@@ -473,7 +527,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 39,
+              "DocumentIndex": 42,
               "Title": "Form1.cs",
               "DocumentMoniker": "D:\\HotelManagement\\HotelManagement\\PresentationLayer\\Form1.cs",
               "RelativeDocumentMoniker": "PresentationLayer\\Form1.cs",
@@ -485,7 +539,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 1,
               "Title": "UC_CustomerRes.cs [Design]",
               "DocumentMoniker": "D:\\HotelManagement\\HotelManagement\\PresentationLayer\\All User Control\\UC_CustomerRes.cs",
               "RelativeDocumentMoniker": "PresentationLayer\\All User Control\\UC_CustomerRes.cs",
@@ -497,29 +551,31 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 7,
               "Title": "UC_Employee.cs [Design]",
               "DocumentMoniker": "D:\\HotelManagement\\HotelManagement\\PresentationLayer\\All User Control\\UC_Employee.cs",
               "RelativeDocumentMoniker": "PresentationLayer\\All User Control\\UC_Employee.cs",
-              "ToolTip": "D:\\GitHubCode\\New folder (4)\\HotelManagement\\PresentationLayer\\All User Control\\UC_Employee.cs [Design]",
-              "RelativeToolTip": "..\\..\\GitHubCode\\New folder (4)\\HotelManagement\\PresentationLayer\\All User Control\\UC_Employee.cs [Design]",
+              "ToolTip": "D:\\HotelManagement\\HotelManagement\\PresentationLayer\\All User Control\\UC_Employee.cs [Design]",
+              "RelativeToolTip": "PresentationLayer\\All User Control\\UC_Employee.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-25T00:53:06.198Z"
+              "WhenOpened": "2025-04-25T00:53:06.198Z",
+              "EditorCaption": " [Design]"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 25,
+              "DocumentIndex": 9,
               "Title": "UC_CheckOut.cs [Design]",
               "DocumentMoniker": "D:\\HotelManagement\\HotelManagement\\PresentationLayer\\All User Control\\UC_CheckOut.cs",
               "RelativeDocumentMoniker": "PresentationLayer\\All User Control\\UC_CheckOut.cs",
               "ToolTip": "D:\\HotelManagement\\HotelManagement\\PresentationLayer\\All User Control\\UC_CheckOut.cs [Design]",
               "RelativeToolTip": "PresentationLayer\\All User Control\\UC_CheckOut.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-25T00:37:58.366Z"
+              "WhenOpened": "2025-04-25T00:37:58.366Z",
+              "EditorCaption": " [Design]"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 13,
               "Title": "UC_CustomerRequest.cs [Design]",
               "DocumentMoniker": "D:\\HotelManagement\\HotelManagement\\PresentationLayer\\All User Control\\UC_CustomerRequest.cs",
               "RelativeDocumentMoniker": "PresentationLayer\\All User Control\\UC_CustomerRequest.cs",
@@ -531,7 +587,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 17,
               "Title": "UC_CustomerDetails.cs [Design]",
               "DocumentMoniker": "D:\\HotelManagement\\HotelManagement\\PresentationLayer\\All User Control\\UC_CustomerDetails.cs",
               "RelativeDocumentMoniker": "PresentationLayer\\All User Control\\UC_CustomerDetails.cs",
@@ -543,7 +599,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 22,
+              "DocumentIndex": 28,
               "Title": "Program.cs",
               "DocumentMoniker": "D:\\HotelManagement\\HotelManagement\\PresentationLayer\\Program.cs",
               "RelativeDocumentMoniker": "PresentationLayer\\Program.cs",
@@ -555,7 +611,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 17,
+              "DocumentIndex": 24,
               "Title": "Dashboard.cs [Design]",
               "DocumentMoniker": "D:\\HotelManagement\\HotelManagement\\PresentationLayer\\Dashboard.cs",
               "RelativeDocumentMoniker": "PresentationLayer\\Dashboard.cs",
@@ -566,30 +622,32 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 18,
+              "DocumentIndex": 6,
               "Title": "DieuHuong.cs [Design]",
               "DocumentMoniker": "D:\\HotelManagement\\HotelManagement\\PresentationLayer\\DieuHuong.cs",
               "RelativeDocumentMoniker": "PresentationLayer\\DieuHuong.cs",
               "ToolTip": "D:\\HotelManagement\\HotelManagement\\PresentationLayer\\DieuHuong.cs [Design]",
               "RelativeToolTip": "PresentationLayer\\DieuHuong.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-24T18:03:56.618Z"
+              "WhenOpened": "2025-04-24T18:03:56.618Z",
+              "EditorCaption": " [Design]"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 28,
+              "DocumentIndex": 2,
               "Title": "CustomerServiceBL.cs",
               "DocumentMoniker": "D:\\HotelManagement\\HotelManagement\\BusinessLayer\\CustomerServiceBL.cs",
               "RelativeDocumentMoniker": "BusinessLayer\\CustomerServiceBL.cs",
               "ToolTip": "D:\\HotelManagement\\HotelManagement\\BusinessLayer\\CustomerServiceBL.cs",
               "RelativeToolTip": "BusinessLayer\\CustomerServiceBL.cs",
-              "ViewState": "AgIAAAsAAAAAAAAAAAAqwAUAAAAdAAAAAAAAAA==",
+              "ViewState": "AgIAADsAAAAAAAAAAAAwwFMAAAA8AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-25T00:49:09.59Z"
+              "WhenOpened": "2025-04-25T00:49:09.59Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 21,
+              "DocumentIndex": 27,
               "Title": "Dashboard.cs",
               "DocumentMoniker": "D:\\HotelManagement\\HotelManagement\\PresentationLayer\\Dashboard.cs",
               "RelativeDocumentMoniker": "PresentationLayer\\Dashboard.cs",
@@ -601,20 +659,20 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 12,
               "Title": "UC_CustomerRequest.cs",
               "DocumentMoniker": "D:\\HotelManagement\\HotelManagement\\PresentationLayer\\All User Control\\UC_CustomerRequest.cs",
               "RelativeDocumentMoniker": "PresentationLayer\\All User Control\\UC_CustomerRequest.cs",
               "ToolTip": "D:\\HotelManagement\\HotelManagement\\PresentationLayer\\All User Control\\UC_CustomerRequest.cs",
               "RelativeToolTip": "PresentationLayer\\All User Control\\UC_CustomerRequest.cs",
-              "ViewState": "AgIAACAAAAAAAAAAAAAMwDIAAABLAAAAAAAAAA==",
+              "ViewState": "AgIAAFwAAAAAAAAAAAAvwE8AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-04-25T02:44:37.109Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 37,
+              "DocumentIndex": 40,
               "Title": "DieuHuong.Designer.cs",
               "DocumentMoniker": "D:\\HotelManagement\\HotelManagement\\PresentationLayer\\DieuHuong.Designer.cs",
               "RelativeDocumentMoniker": "PresentationLayer\\DieuHuong.Designer.cs",
@@ -622,23 +680,25 @@
               "RelativeToolTip": "PresentationLayer\\DieuHuong.Designer.cs",
               "ViewState": "AgIAADcAAAAAAAAAAAAswEAAAAAqAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-25T06:30:26.823Z"
+              "WhenOpened": "2025-04-25T06:30:26.823Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 3,
               "Title": "CustomerServiceDL.cs",
               "DocumentMoniker": "D:\\HotelManagement\\HotelManagement\\DataLayer\\CustomerServiceDL.cs",
               "RelativeDocumentMoniker": "DataLayer\\CustomerServiceDL.cs",
               "ToolTip": "D:\\HotelManagement\\HotelManagement\\DataLayer\\CustomerServiceDL.cs",
               "RelativeToolTip": "DataLayer\\CustomerServiceDL.cs",
-              "ViewState": "AgIAABAAAAAAAAAAAAAswDcAAABbAAAAAAAAAA==",
+              "ViewState": "AgIAACMAAAAAAAAAAAA2wEYAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-25T00:51:15.19Z"
+              "WhenOpened": "2025-04-25T00:51:15.19Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 29,
+              "DocumentIndex": 33,
               "Title": "CustomerDTO.cs",
               "DocumentMoniker": "D:\\HotelManagement\\HotelManagement\\TransferObject\\CustomerDTO.cs",
               "RelativeDocumentMoniker": "TransferObject\\CustomerDTO.cs",

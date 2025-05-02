@@ -68,7 +68,7 @@ namespace QuanLyKhachSan.All_User_Control
                 string roomNo = txtRoomNo.Text;        // Lấy số phòng
                 string request = txtRequest.Text;      // Lấy yêu cầu
                 string employee = txtEmployee.Text;    // Lấy tên nhân viên
-                string status = "Da gui yeu cau";          // Trạng thái mặc định là "Đang xử lý"
+                string status = "Đã gửi yêu cầu";          // Trạng thái mặc định là "Đang xử lý"
 
                 // Gọi BusinessLayer để thêm yêu cầu vào database
                 customerService.AddCustomerRequest(roomNo, request, employee, status);

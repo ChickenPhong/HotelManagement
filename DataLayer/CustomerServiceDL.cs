@@ -50,6 +50,26 @@ namespace DataLayer
             fn.setData(query, $"Số Phòng {roomNo} Đăng ký khách hàng thành công.");
         }
 
+        public void CancelCustomerByRoom(string roomNo)
+        {
+            // Xóa khách có phòng tương ứng
+            string deleteQuery = $"DELETE FROM customer WHERE roomid = (SELECT roomid FROM rooms WHERE roomNo = '{roomNo}')";
+            fn.setData(deleteQuery, "Đã hủy khách hàng");
+
+            // Cập nhật trạng thái phòng thành "NO"
+            string updateRoom = $"UPDATE rooms SET booked = 'NO' WHERE roomNo = '{roomNo}'";
+            fn.setData(updateRoom, "Đã cập nhật trạng thái phòng");
+        }
+
+        public void CancelCustomerByRoomId(string roomId)
+        {
+            string deleteQuery = $"DELETE FROM customer WHERE roomid = {roomId}";
+            fn.setData(deleteQuery, "Đã hủy khách hàng");
+
+            string updateRoom = $"UPDATE rooms SET booked = 'NO' WHERE roomid = {roomId}";
+            fn.setData(updateRoom, "Đã cập nhật trạng thái phòng");
+        }
+
         // Lấy danh sách phòng trống theo loại giường và loại phòng
         public DataTable GetAvailableRooms(string bed, string roomType)
         {

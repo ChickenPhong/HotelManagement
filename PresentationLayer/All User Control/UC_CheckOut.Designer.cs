@@ -85,6 +85,7 @@
             this.txtName.ForeColor = System.Drawing.Color.Black;
             this.txtName.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtName.Location = new System.Drawing.Point(527, 114);
+            this.txtName.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.txtName.Name = "txtName";
             this.txtName.PasswordChar = '\0';
             this.txtName.PlaceholderText = "Enter Full Name";
@@ -119,7 +120,7 @@
             this.guna2DataGridView1.DefaultCellStyle = dataGridViewCellStyle3;
             this.guna2DataGridView1.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
             this.guna2DataGridView1.Location = new System.Drawing.Point(40, 214);
-            this.guna2DataGridView1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.guna2DataGridView1.Margin = new System.Windows.Forms.Padding(2);
             this.guna2DataGridView1.Name = "guna2DataGridView1";
             this.guna2DataGridView1.ReadOnly = true;
             this.guna2DataGridView1.RowHeadersVisible = false;
@@ -176,6 +177,7 @@
             this.txtCName.ForeColor = System.Drawing.Color.Black;
             this.txtCName.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtCName.Location = new System.Drawing.Point(111, 491);
+            this.txtCName.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.txtCName.Name = "txtCName";
             this.txtCName.PasswordChar = '\0';
             this.txtCName.PlaceholderText = "Name";
@@ -211,6 +213,7 @@
             this.txtRoom.ForeColor = System.Drawing.Color.Black;
             this.txtRoom.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtRoom.Location = new System.Drawing.Point(363, 491);
+            this.txtRoom.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.txtRoom.Name = "txtRoom";
             this.txtRoom.PasswordChar = '\0';
             this.txtRoom.PlaceholderText = "Room No";
@@ -239,7 +242,7 @@
             this.txtCheckOutDate.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.txtCheckOutDate.Format = System.Windows.Forms.DateTimePickerFormat.Short;
             this.txtCheckOutDate.Location = new System.Drawing.Point(95, 125);
-            this.txtCheckOutDate.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtCheckOutDate.Margin = new System.Windows.Forms.Padding(2);
             this.txtCheckOutDate.MaxDate = new System.DateTime(9998, 12, 31, 0, 0, 0, 0);
             this.txtCheckOutDate.MinDate = new System.DateTime(1753, 1, 1, 0, 0, 0, 0);
             this.txtCheckOutDate.Name = "txtCheckOutDate";
@@ -263,7 +266,7 @@
             this.btnCheckOut.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnCheckOut.ForeColor = System.Drawing.Color.White;
             this.btnCheckOut.Location = new System.Drawing.Point(1047, 476);
-            this.btnCheckOut.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnCheckOut.Margin = new System.Windows.Forms.Padding(2);
             this.btnCheckOut.Name = "btnCheckOut";
             this.btnCheckOut.Size = new System.Drawing.Size(148, 69);
             this.btnCheckOut.TabIndex = 6;
@@ -300,6 +303,7 @@
             this.txtTotalPrice.ForeColor = System.Drawing.Color.Black;
             this.txtTotalPrice.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtTotalPrice.Location = new System.Drawing.Point(710, 491);
+            this.txtTotalPrice.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.txtTotalPrice.Name = "txtTotalPrice";
             this.txtTotalPrice.PasswordChar = '\0';
             this.txtTotalPrice.PlaceholderText = "";
@@ -327,7 +331,7 @@
             this.Controls.Add(this.txtName);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "UC_CheckOut";
             this.Size = new System.Drawing.Size(1255, 554);
             this.Load += new System.EventHandler(this.UC_CheckOut_Load);

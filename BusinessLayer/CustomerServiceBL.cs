@@ -79,6 +79,16 @@ namespace BusinessLayer
             dataAccessCustomer.AllotCustomer(name, mobile, nationality, gender, dob, idproof, address, checkin, roomId, roomNo);
         }
 
+        public void CancelCustomerByRoom(string roomNo)
+        {
+            dataAccessCustomer.CancelCustomerByRoom(roomNo);
+        }
+
+        public void CancelCustomerByRoomId(string roomId)
+        {
+            dataAccessCustomer.CancelCustomerByRoomId(roomId);
+        }
+
         //// Lấy danh sách phòng trống theo loại giường và loại phòng
         //public DataTable GetAvailableRooms(string bed, string roomType)
         //{

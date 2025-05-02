@@ -9,6 +9,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Data.SqlClient;
 using BusinessLayer;
+using Guna.UI2.WinForms;
 
 namespace PresentationLayer.All_User_Control
 {
@@ -88,6 +89,52 @@ namespace PresentationLayer.All_User_Control
         private void btnAllotCustomer_Leave(object sender, EventArgs e)
         {
             clearAll();
+        }
+
+        public void LoadCustomerList()
+        {
+            DataTable dt = customerService.GetAllCustomers(); // phải có hàm này ở BusinessLayer
+            dgvCustomerList.DataSource = dt;
+        }
+
+        private void btnCancelCustomer_Click(object sender, EventArgs e)
+        {
+            if (dgvCustomerList.SelectedRows.Count > 0)
+            {
+                string roomId = dgvCustomerList.SelectedRows[0].Cells["roomid"].Value.ToString();
+
+                var result = MessageBox.Show("Bạn có chắc muốn hủy khách hàng và trả phòng này?", "Xác nhận", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+
+                if (result == DialogResult.Yes)
+                {
+                    customerService.CancelCustomerByRoomId(roomId); // viết theo roomid
+                    MessageBox.Show("Đã hủy khách hàng và cập nhật trạng thái phòng", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    LoadCustomerList();
+                }
+            }
+            else
+            {
+                MessageBox.Show("❗ Vui lòng chọn khách hàng để hủy", "Cảnh báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            }
+        }
+
+        private void UC_CustomerRes_Load(object sender, EventArgs e)
+        {
+            LoadCustomerList();
+        }
+
+        private void txtName_TextChanged(object sender, EventArgs e)
+        {
+            dgvCustomerList.DataSource = customerService.SearchCustomerByName(txtName.Text);
+        }
+
+        private void dgvCustomerList_CellClick(object sender, DataGridViewCellEventArgs e)
+        {
+            if (e.RowIndex >= 0 && dgvCustomerList.Rows[e.RowIndex].Cells["cname"].Value != null)
+            {
+                string customerName = dgvCustomerList.Rows[e.RowIndex].Cells["cname"].Value.ToString();
+                txtCName.Text = customerName;
+            }
         }
     }
 }
