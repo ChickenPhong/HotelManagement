@@ -37,5 +37,20 @@ namespace BusinessLayer
             roomDL.UpdateRoomInfo(room);  // Gọi DataLayer để cập nhật thông tin phòng
         }
 
+        public void UpdateRoomNo(string oldRoomNo, string newRoomNo)
+        {
+            roomDL.UpdateRoomNo(oldRoomNo, newRoomNo);
+        }
+
+        public void UpdateRoomBedType(string roomNo, string newBedType)
+        {
+            roomDL.UpdateRoomBedType(roomNo, newBedType);
+        }
+
+        public void UpdateRoomType(string roomNo, string newRoomType)
+        {
+            roomDL.UpdateRoomType(roomNo, newRoomType);
+        }
+
     }
 }

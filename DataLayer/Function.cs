@@ -16,6 +16,7 @@ namespace DataLayer
             con.ConnectionString = "Server=PHONGTRAN;Database=hoteldb;Trusted_Connection=True;TrustServerCertificate=Yes;MultipleActiveResultSets=true";
             return con;
         }
+
         public DataSet getData(String query)
         {
             SqlConnection con = GetConnection();

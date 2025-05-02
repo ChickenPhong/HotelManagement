@@ -148,31 +148,53 @@ namespace PresentationLayer.All_User_Control
             }
         }
 
-        private void btnUpdateRoom_Click(object sender, EventArgs e)
+        private void btnUpdateRoomNo_Click(object sender, EventArgs e)
         {
-            // Lấy số phòng đã chọn từ ComboBox
-            string selectedRoomNo = txtRoomHave.SelectedItem.ToString();
-
-            // Lấy các giá trị từ các TextBox
-            string roomType = txtRoomType1.Text;
-            string bedType = txtBedType1.Text;
-            string bookedStatus = txtBooked.Text;
-
-            // Tạo đối tượng RoomDTO để chứa các thông tin đã thay đổi
-            RoomDTO room = new RoomDTO
+            if (txtRoomHave.SelectedItem != null && !string.IsNullOrWhiteSpace(txtRoomNo1.Text))
             {
-                RoomNo = selectedRoomNo,
-                RoomType = roomType,
-                Bed = bedType,
-                Booked = bookedStatus
-            };
+                string oldRoomNo = txtRoomHave.SelectedItem.ToString();
+                string newRoomNo = txtRoomNo1.Text.Trim();
 
-            // Gọi đến BusinessLayer để cập nhật thông tin phòng
-            RoomServiceBL roomService = new RoomServiceBL();
-            roomService.UpdateRoomInfo(room); // Cập nhật thông tin phòng
+                roomService.UpdateRoomNo(oldRoomNo, newRoomNo);
+                MessageBox.Show("Đã cập nhật số phòng", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
 
-            MessageBox.Show("Thông tin phòng đã được cập nhật!");
-            LoadRoom();
+                LoadRoom();
+                txtRoomNo1.Clear(); // 👉 Xóa nội dung sau khi cập nhật
+                txtRoomHave.SelectedIndex = 0; // reset lại chọn phòng
+
+            }
+        }
+
+        private void btnUpdateBedType_Click(object sender, EventArgs e)
+        {
+            if (txtRoomHave.SelectedItem != null && txtBedType1.SelectedItem != null)
+            {
+                string roomNo = txtRoomHave.SelectedItem.ToString();
+                string newBedType = txtBedType1.SelectedItem.ToString();
+
+                roomService.UpdateRoomBedType(roomNo, newBedType);
+                MessageBox.Show("Đã cập nhật loại giường", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+
+                LoadRoom();
+                txtBedType1.SelectedIndex = -1; // 👉 Reset ComboBox
+                txtRoomHave.SelectedIndex = 0;  // reset lại chọn phòng
+            }
+        }
+
+        private void btnUpdateRoomType_Click(object sender, EventArgs e)
+        {
+            if (txtRoomHave.SelectedItem != null && txtRoomType1.SelectedItem != null)
+            {
+                string roomNo = txtRoomHave.SelectedItem.ToString();
+                string newRoomType = txtRoomType1.SelectedItem.ToString();
+
+                roomService.UpdateRoomType(roomNo, newRoomType);
+                MessageBox.Show("Đã cập nhật loại phòng", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+
+                LoadRoom();
+                txtRoomType1.SelectedIndex = -1; // 👉 Reset ComboBox
+                txtRoomHave.SelectedIndex = 0;   // reset lại chọn phòng
+            }
         }
     }
 }

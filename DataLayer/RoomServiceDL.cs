@@ -61,5 +61,23 @@ namespace DataLayer
             string query = $"UPDATE rooms SET roomType = N'{room.RoomType}', bed = N'{room.Bed}', booked = N'{room.Booked}' WHERE roomNo = '{room.RoomNo}'";
             fn.setData(query, "Đã cập nhật thông tin phòng.");  // Cập nhật cơ sở dữ liệu
         }
+
+        public void UpdateRoomNo(string oldRoomNo, string newRoomNo)
+        {
+            string query = $"UPDATE rooms SET roomNo = '{newRoomNo}' WHERE roomNo = '{oldRoomNo}'";
+            fn.setData(query, "Đã cập nhật số phòng.");
+        }
+
+        public void UpdateRoomBedType(string roomNo, string newBedType)
+        {
+            string query = $"UPDATE rooms SET bed = N'{newBedType}' WHERE roomNo = '{roomNo}'";
+            fn.setData(query, "Đã cập nhật loại giường.");
+        }
+
+        public void UpdateRoomType(string roomNo, string newRoomType)
+        {
+            string query = $"UPDATE rooms SET roomType = N'{newRoomType}' WHERE roomNo = '{roomNo}'";
+            fn.setData(query, "Đã cập nhật loại phòng.");
+        }
     }
 }
