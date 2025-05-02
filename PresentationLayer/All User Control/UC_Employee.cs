@@ -151,7 +151,7 @@ namespace PresentationLayer.All_User_Control
         private void LoadEmployeeNames()
         {
             txtID.Items.Clear();
-            txtID.Items.Add("");
+            txtID.Items.Add("-- Chọn nhân viên --");
 
             DataTable dt = employeeService.GetAllEmployees();
 
