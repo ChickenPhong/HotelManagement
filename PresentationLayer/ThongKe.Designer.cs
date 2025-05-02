@@ -269,7 +269,7 @@
             this.btnExit.Image = ((System.Drawing.Image)(resources.GetObject("btnExit.Image")));
             this.btnExit.ImageSize = new System.Drawing.Size(35, 35);
             this.btnExit.Location = new System.Drawing.Point(0, -2);
-            this.btnExit.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnExit.Margin = new System.Windows.Forms.Padding(2);
             this.btnExit.Name = "btnExit";
             this.btnExit.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
             this.btnExit.Size = new System.Drawing.Size(37, 40);
@@ -278,13 +278,13 @@
             // 
             // groupBox4
             // 
-            this.groupBox4.BackColor = System.Drawing.Color.LightSteelBlue;
+            this.groupBox4.BackColor = System.Drawing.Color.White;
             this.groupBox4.Controls.Add(this.chart2);
             this.groupBox4.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox4.Location = new System.Drawing.Point(539, 387);
-            this.groupBox4.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.groupBox4.Margin = new System.Windows.Forms.Padding(2);
             this.groupBox4.Name = "groupBox4";
-            this.groupBox4.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.groupBox4.Padding = new System.Windows.Forms.Padding(2);
             this.groupBox4.Size = new System.Drawing.Size(730, 328);
             this.groupBox4.TabIndex = 25;
             this.groupBox4.TabStop = false;
@@ -318,7 +318,7 @@
             this.btnMinisize.Image = ((System.Drawing.Image)(resources.GetObject("btnMinisize.Image")));
             this.btnMinisize.ImageSize = new System.Drawing.Size(35, 35);
             this.btnMinisize.Location = new System.Drawing.Point(41, -2);
-            this.btnMinisize.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnMinisize.Margin = new System.Windows.Forms.Padding(2);
             this.btnMinisize.Name = "btnMinisize";
             this.btnMinisize.PressedColor = System.Drawing.Color.SlateBlue;
             this.btnMinisize.Size = new System.Drawing.Size(44, 40);

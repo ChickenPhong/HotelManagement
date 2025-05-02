@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Windows.Forms.DataVisualization.Charting;
 using BusinessLayer;
 
 namespace QuanLyKhachSan
@@ -99,7 +100,12 @@ namespace QuanLyKhachSan
 
         private void LoadChartRevenue()
         {
+            // Xóa dữ liệu cũ trong biểu đồ
             chart2.Series["Series1"].Points.Clear();
+
+            // Chọn loại biểu đồ: Biểu đồ tròn cho doanh thu
+            chart2.Series["Series1"].ChartType = SeriesChartType.Pie;
+
             if (txtThongKe.SelectedItem.ToString() == "Theo năm")
             {
                 List<int> revenueList = statisticService.GetRevenueByYear(dateTimePicker1.Value);
@@ -121,20 +127,29 @@ namespace QuanLyKhachSan
             }
             else
             {
+                // Với báo cáo theo ngày hoặc tháng, hiển thị tổng doanh thu dưới dạng một phần trong biểu đồ tròn
                 chart2.Series["Series1"].Points.AddXY("Doanh thu", totalRevenue);
             }
-            //chart2.Series["Series1"].Points.AddXY("Doanh thu",totalRevenue);
 
-            chart2.Series["Series1"].Points[0].Color = Color.Blue;  // Doanh thu
+            // Tùy chỉnh màu sắc cho phần doanh thu
+            chart2.Series["Series1"].Points[0].Color = Color.Aqua;  // Doanh thu
 
-            // Hiển thị trục Y đẹp
-            chart2.ChartAreas[0].AxisY.LabelStyle.Format = "#,##0";
-            chart2.ChartAreas[0].AxisX.Interval = 1; // Hiện đủ Tháng 1 đến Tháng 12
-            chart2.ChartAreas[0].AxisX.LabelStyle.Angle = -45;
+            // Định dạng nhãn cho biểu đồ tròn
+            foreach (DataPoint point in chart2.Series["Series1"].Points)
+            {
+                point.Label = $"{point.AxisLabel}: {point.YValues[0]:C}";
+            }
 
-            // Tắt Legend nếu muốn
-            chart2.Legends[0].Enabled = false;
+            // Bật Legend và hiển thị tên "Series"
+            chart2.Legends.Clear(); // Xóa legend cũ nếu có
+            chart2.Legends.Add(new Legend()); // Thêm legend mới với tên mặc định
+            chart2.Legends[0].Docking = Docking.Top; // Đặt vị trí của Legend (ở trên)
+            chart2.Legends[0].IsDockedInsideChartArea = false;
+
+            // Ẩn Legend (tùy chọn)
+            // chart2.Legends[0].Enabled = false;
         }
+
 
         private void ThongKe_Load(object sender, EventArgs e)
         {
