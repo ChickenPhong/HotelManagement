@@ -49,9 +49,10 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Century Gothic", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(50, 40);
+            this.label1.Location = new System.Drawing.Point(33, 26);
+            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(394, 43);
+            this.label1.Size = new System.Drawing.Size(259, 28);
             this.label1.TabIndex = 4;
             this.label1.Text = "Yêu Cầu Khách Hàng";
             // 
@@ -65,9 +66,10 @@
             this.txtRoomNo.Font = new System.Drawing.Font("Segoe UI", 10F);
             this.txtRoomNo.ForeColor = System.Drawing.Color.Black;
             this.txtRoomNo.ItemHeight = 30;
-            this.txtRoomNo.Location = new System.Drawing.Point(58, 187);
+            this.txtRoomNo.Location = new System.Drawing.Point(39, 122);
+            this.txtRoomNo.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.txtRoomNo.Name = "txtRoomNo";
-            this.txtRoomNo.Size = new System.Drawing.Size(516, 36);
+            this.txtRoomNo.Size = new System.Drawing.Size(345, 36);
             this.txtRoomNo.Style = Guna.UI2.WinForms.Enums.TextBoxStyle.Material;
             this.txtRoomNo.TabIndex = 6;
             this.txtRoomNo.SelectedIndexChanged += new System.EventHandler(this.txtRoomNo_SelectedIndexChanged);
@@ -76,9 +78,10 @@
             // 
             this.label12.AutoSize = true;
             this.label12.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label12.Location = new System.Drawing.Point(53, 142);
+            this.label12.Location = new System.Drawing.Point(35, 92);
+            this.label12.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(68, 28);
+            this.label12.Size = new System.Drawing.Size(49, 19);
             this.label12.TabIndex = 5;
             this.label12.Text = "Phòng";
             // 
@@ -86,9 +89,10 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(53, 275);
+            this.label2.Location = new System.Drawing.Point(35, 179);
+            this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(85, 28);
+            this.label2.Size = new System.Drawing.Size(61, 19);
             this.label2.TabIndex = 5;
             this.label2.Text = "Yêu Cầu";
             // 
@@ -103,17 +107,18 @@
             this.txtRequest.ForeColor = System.Drawing.Color.Black;
             this.txtRequest.ItemHeight = 30;
             this.txtRequest.Items.AddRange(new object[] {
-            "Khan tam",
-            "Ban chai đanh rang",
-            "Dep",
-            "Nuoc ngot",
-            "Ruou",
-            "Dich vu giat ui",
-            "Don phong",
-            "khac..."});
-            this.txtRequest.Location = new System.Drawing.Point(58, 320);
+            "Khăn tắm",
+            "Bàn chải đánh răng",
+            "Dép",
+            "Nước ngọt",
+            "Rượu",
+            "Dịch vụ giặt ủi",
+            "Dọn phòng",
+            "khác..."});
+            this.txtRequest.Location = new System.Drawing.Point(39, 208);
+            this.txtRequest.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.txtRequest.Name = "txtRequest";
-            this.txtRequest.Size = new System.Drawing.Size(516, 36);
+            this.txtRequest.Size = new System.Drawing.Size(345, 36);
             this.txtRequest.Style = Guna.UI2.WinForms.Enums.TextBoxStyle.Material;
             this.txtRequest.TabIndex = 6;
             // 
@@ -121,9 +126,10 @@
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(53, 415);
+            this.label3.Location = new System.Drawing.Point(35, 270);
+            this.label3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(105, 28);
+            this.label3.Size = new System.Drawing.Size(76, 19);
             this.label3.TabIndex = 5;
             this.label3.Text = "Nhân Viên";
             // 
@@ -137,9 +143,10 @@
             this.txtEmployee.Font = new System.Drawing.Font("Segoe UI", 10F);
             this.txtEmployee.ForeColor = System.Drawing.Color.Black;
             this.txtEmployee.ItemHeight = 30;
-            this.txtEmployee.Location = new System.Drawing.Point(58, 460);
+            this.txtEmployee.Location = new System.Drawing.Point(39, 299);
+            this.txtEmployee.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.txtEmployee.Name = "txtEmployee";
-            this.txtEmployee.Size = new System.Drawing.Size(516, 36);
+            this.txtEmployee.Size = new System.Drawing.Size(345, 36);
             this.txtEmployee.Style = Guna.UI2.WinForms.Enums.TextBoxStyle.Material;
             this.txtEmployee.TabIndex = 6;
             // 
@@ -157,9 +164,10 @@
             this.btnAddRequest.FillColor = System.Drawing.Color.Blue;
             this.btnAddRequest.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnAddRequest.ForeColor = System.Drawing.Color.White;
-            this.btnAddRequest.Location = new System.Drawing.Point(171, 581);
+            this.btnAddRequest.Location = new System.Drawing.Point(114, 378);
+            this.btnAddRequest.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnAddRequest.Name = "btnAddRequest";
-            this.btnAddRequest.Size = new System.Drawing.Size(228, 87);
+            this.btnAddRequest.Size = new System.Drawing.Size(152, 57);
             this.btnAddRequest.TabIndex = 7;
             this.btnAddRequest.Text = "Thêm yêu cầu";
             this.btnAddRequest.Click += new System.EventHandler(this.btnAddRequest_Click);
@@ -188,13 +196,14 @@
             dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
             this.dgvRequest.DefaultCellStyle = dataGridViewCellStyle3;
             this.dgvRequest.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            this.dgvRequest.Location = new System.Drawing.Point(657, 173);
+            this.dgvRequest.Location = new System.Drawing.Point(438, 112);
+            this.dgvRequest.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.dgvRequest.Name = "dgvRequest";
             this.dgvRequest.ReadOnly = true;
             this.dgvRequest.RowHeadersVisible = false;
             this.dgvRequest.RowHeadersWidth = 62;
             this.dgvRequest.RowTemplate.Height = 28;
-            this.dgvRequest.Size = new System.Drawing.Size(1122, 622);
+            this.dgvRequest.Size = new System.Drawing.Size(748, 404);
             this.dgvRequest.TabIndex = 8;
             this.dgvRequest.TabStop = false;
             this.dgvRequest.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.White;
@@ -226,7 +235,7 @@
             // 
             // UC_CustomerRequest
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.Controls.Add(this.dgvRequest);
             this.Controls.Add(this.btnAddRequest);
@@ -237,8 +246,9 @@
             this.Controls.Add(this.txtRoomNo);
             this.Controls.Add(this.label12);
             this.Controls.Add(this.label1);
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "UC_CustomerRequest";
-            this.Size = new System.Drawing.Size(1882, 852);
+            this.Size = new System.Drawing.Size(1255, 554);
             this.Load += new System.EventHandler(this.UC_CustomerRequest_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgvRequest)).EndInit();
             this.ResumeLayout(false);

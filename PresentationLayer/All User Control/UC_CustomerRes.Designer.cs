@@ -464,7 +464,7 @@
             this.txtNationality.ForeColor = System.Drawing.Color.Black;
             this.txtNationality.ItemHeight = 30;
             this.txtNationality.Items.AddRange(new object[] {
-            "Việt Nam,",
+            "Việt Nam",
             "Trung Quốc",
             "Hàn Quốc",
             "Nhật Bản",

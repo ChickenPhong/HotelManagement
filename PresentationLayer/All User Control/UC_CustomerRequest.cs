@@ -48,7 +48,7 @@ namespace QuanLyKhachSan.All_User_Control
                 string role = row["role"]?.ToString();
                 string name = row["ename"]?.ToString();
 
-                if (role == "Nhan vien le tan" || role == "Nhan vien don dep")
+                if (role == "Nhân viên lễ tân" || role == "Nhân viên dọn dẹp")
                 {
                     txtEmployee.Items.Add(name);
                 }

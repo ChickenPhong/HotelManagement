@@ -98,6 +98,20 @@ namespace PresentationLayer.All_User_Control
             txtRoomHave.SelectedIndex = 0;
             txtRoomHave2.SelectedIndex = 0;
         }
+
+        private void txtRoomHave_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            if (txtRoomHave.SelectedItem != null)
+            {
+                // Lấy số phòng đã chọn từ ComboBox
+                string selectedRoomNo = txtRoomHave.SelectedItem.ToString();
+
+                // Gọi đến BusinessLayer để lấy thông tin phòng
+                var ds = roomService.GetRoomInfo(selectedRoomNo);
+
+            }
+        }
+
         private void txtRoomHave2_SelectedIndexChanged(object sender, EventArgs e)
         {
             if (txtRoomHave2.SelectedItem != null)
@@ -118,33 +132,26 @@ namespace PresentationLayer.All_User_Control
 
         private void btnUpdatePrice_Click(object sender, EventArgs e)
         {
-            if (txtRoomHave.SelectedItem != null)
+            if (txtRoomHave2.SelectedItem != null && !string.IsNullOrWhiteSpace(txtPriceUpdate.Text))
             {
-                string selectedRoomNo = txtRoomHave.SelectedItem.ToString();
-                var ds = roomService.GetRoomInfo(selectedRoomNo);
+                string selectedRoomNo = txtRoomHave2.SelectedItem.ToString();
 
-                if (ds.Tables[0].Rows.Count > 0)
+                if (long.TryParse(txtPriceUpdate.Text.Trim(), out long newPrice))
                 {
-                    txtPricePresent.Text = ds.Tables[0].Rows[0]["price"].ToString();
+                    roomService.UpdateRoomPrice(selectedRoomNo, newPrice);
+                    MessageBox.Show("Đã cập nhật giá phòng", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+
+                    txtPriceUpdate.Clear();
+                    LoadRoom();
                 }
                 else
                 {
-                    txtPricePresent.Text = "Không tìm thấy";
+                    MessageBox.Show("Giá không hợp lệ!", "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 }
             }
-            LoadRoom();
-        }
-
-        private void txtRoomHave_SelectedIndexChanged(object sender, EventArgs e)
-        {
-            if (txtRoomHave.SelectedItem != null)
+            else
             {
-                // Lấy số phòng đã chọn từ ComboBox
-                string selectedRoomNo = txtRoomHave.SelectedItem.ToString();
-
-                // Gọi đến BusinessLayer để lấy thông tin phòng
-                var ds = roomService.GetRoomInfo(selectedRoomNo);
-
+                MessageBox.Show("Vui lòng chọn phòng và nhập giá mới!", "Cảnh báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
             }
         }
 
