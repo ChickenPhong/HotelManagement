@@ -13,10 +13,6 @@ namespace DataLayer
     {
         DataProvider fn = new DataProvider();
 
-        //public DataSet CheckLogin(string query)
-        //{
-        //    return fn.getData(query);
-        //}
         public DataSet CheckLogin(string username, string password)
         {
             string query = $"SELECT username, pass FROM employee " +
@@ -28,6 +24,7 @@ namespace DataLayer
             return fn.getData(query);
         }
 
+        //Form DangNhap
         public string GetRoleByUsername(string username)
         {
             string query = $"SELECT role FROM employee WHERE username = '{username}'";
@@ -37,31 +34,14 @@ namespace DataLayer
             return "";
         }
 
-        public DataSet GetNextEmployeeId()
-        {
-            string query = "SELECT MAX(eid) FROM employee";
-            return fn.getData(query);
-        }
-
-        public void RegisterEmployee(string name, long mobile, string gender, string email, string username, string pass, string role)
-        {
-            string query = $"INSERT INTO employee (ename, mobile, gender, emailid, username, pass, role) VALUES (N'{name}', {mobile}, N'{gender}', N'{email}', N'{username}', N'{pass}', N'{role}')";
-            fn.setData(query, "Đăng ký nhân viên thành công!!");
-        }
-
-        public DataTable GetAllEmployees()
-        {
-            string query = "SELECT * FROM employee";
-            return fn.getData(query).Tables[0];
-        }
-
+        //Form DangNhap
         public EmployeeDTO GetEmployeeByUsername(string username)
         {
             string query = $"SELECT * FROM employee WHERE username = @username";
             List<SqlParameter> parameters = new List<SqlParameter>
-    {
-        new SqlParameter("@username", username)
-    };
+            {
+                new SqlParameter("@username", username)
+            };
 
             DataSet ds = fn.getData(query, parameters); // đảm bảo bạn có overload getData(query, params)
 
@@ -82,12 +62,38 @@ namespace DataLayer
 
             return null;
         }
+
+        //UC_Employee
+        public DataSet GetNextEmployeeId()
+        {
+            string query = "SELECT MAX(eid) FROM employee";
+            return fn.getData(query);
+        }
+
+        //UC_Employee
+        public void RegisterEmployee(string name, long mobile, string gender, string email, string username, string pass, string role)
+        {
+            string query = $"INSERT INTO employee (ename, mobile, gender, emailid, username, pass, role) VALUES (N'{name}', {mobile}, N'{gender}', N'{email}', N'{username}', N'{pass}', N'{role}')";
+            fn.setData(query, "Đăng ký nhân viên thành công!!");
+        }
+
+        //UC_CustomerRequest
+        //UC_Employee
+        public DataTable GetAllEmployees()
+        {
+            string query = "SELECT * FROM employee";
+            return fn.getData(query).Tables[0];
+        }
+
+
+        //UC_Employee
         public void DeleteEmployeeByName(string name)
         {
             string query = $"DELETE FROM employee WHERE ename = N'{name}'";
             fn.setData(query, "Xóa nhân viên thành công!");
         }
 
+        //Form ThayMatKhau
         public bool CheckPassword(string username, string password)
         {
             string query = $"SELECT * FROM employee WHERE username = N'{username}' AND pass = N'{password}'";
@@ -95,6 +101,7 @@ namespace DataLayer
             return ds.Tables[0].Rows.Count > 0;
         }
 
+        //Form ThayMatKhau
         public bool UpdatePassword(string username, string newPassword)
         {
             string query = $"UPDATE employee SET pass = N'{newPassword}' WHERE username = N'{username}'";

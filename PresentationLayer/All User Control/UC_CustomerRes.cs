@@ -70,12 +70,19 @@ namespace PresentationLayer.All_User_Control
             if (dgvCustomerList.SelectedRows.Count > 0)
             {
                 string roomId = dgvCustomerList.SelectedRows[0].Cells["roomid"].Value.ToString();
+                string chekout = dgvCustomerList.SelectedRows[0].Cells["chekout"].Value.ToString(); // Lấy trạng thái trả phòng
+
+                if (chekout == "YES") // Kiểm tra nếu khách hàng đã trả phòng
+                {
+                    MessageBox.Show("Khách hàng đã trả phòng, không thể hủy!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    return;
+                }
 
                 var result = MessageBox.Show("Bạn có chắc muốn hủy khách hàng và trả phòng này?", "Xác nhận", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
 
                 if (result == DialogResult.Yes)
                 {
-                    customerService.CancelCustomerByRoomId(roomId); // viết theo roomid
+                    customerService.CancelCustomerByRoomId(roomId); // Hủy khách hàng theo room id
                     MessageBox.Show("Đã hủy khách hàng và cập nhật trạng thái phòng", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
                     LoadCustomerList();
                 }

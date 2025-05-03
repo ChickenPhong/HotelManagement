@@ -12,6 +12,7 @@ namespace DataLayer
         DataProvider fn = new DataProvider();
 
         // Lấy toàn bộ danh sách khách hàng
+        //UC_CustomerRes
         public DataTable GetAllCustomers()
         {
             string query = "SELECT * FROM customer";
@@ -41,6 +42,7 @@ namespace DataLayer
         }
 
         // Đăng ký khách vào phòng
+        //UC_CustomerRes
         public void AllotCustomer(string name, long mobile, string nationality, string gender, string dob,
                                   string idproof, string address, string checkin, int roomId, string roomNo)
         {
@@ -61,6 +63,7 @@ namespace DataLayer
             fn.setData(updateRoom, "Đã cập nhật trạng thái phòng");
         }
 
+        //UC_CustomerRes
         public void CancelCustomerByRoomId(string roomId)
         {
             string deleteQuery = $"DELETE FROM customer WHERE roomid = {roomId}";
@@ -71,6 +74,7 @@ namespace DataLayer
         }
 
         // Lấy danh sách phòng trống theo loại giường và loại phòng
+        //UC_CustomerRes
         public DataTable GetAvailableRooms(string bed, string roomType)
         {
             string query = $"SELECT roomNo FROM rooms WHERE bed = N'{bed}' AND roomType = N'{roomType}' AND booked = 'NO'";
@@ -78,12 +82,15 @@ namespace DataLayer
         }
 
         // Lấy giá tiền và roomid theo roomNo
+        //UC_CustomerRequest
+        //UC_CustomerRes
         public DataSet GetRoomInfo(string roomNo)
         {
             string query = $"SELECT price, roomid FROM rooms WHERE roomNo = '{roomNo}'";
             return fn.getData(query);
         }
 
+        //UC_CustomerDetail
         public DataTable GetCustomerDetails(string filterOption)
         {
             string query;
@@ -109,12 +116,15 @@ namespace DataLayer
             return fn.getData(query).Tables[0];
         }
 
+        //UC_CheckOut
         public DataTable GetActiveCustomerRoomInfo()
         {
             string query = "SELECT customer.cid, customer.cname, customer.mobile, customer.nationality, customer.gender, customer.dob, customer.idproof, customer.address, customer.checkin, rooms.roomid, rooms.roomNo, rooms.roomType, rooms.bed, rooms.price FROM customer INNER JOIN rooms ON customer.roomid = rooms.roomid WHERE chekout = 'NO'";
             return fn.getData(query).Tables[0];
         }
 
+        //UC_CheckOut
+        //UC_CustomerRes
         public DataTable SearchCustomerByName(string name)
         {
             string query = $"SELECT customer.cid, customer.cname, customer.mobile, customer.nationality, customer.gender, customer.dob, customer.idproof, customer.address, customer.checkin, rooms.roomid, rooms.roomNo, rooms.roomType, rooms.bed, rooms.price FROM customer INNER JOIN rooms ON customer.roomid = rooms.roomid WHERE cname LIKE N'{name}%' AND chekout = 'NO'";
@@ -122,6 +132,7 @@ namespace DataLayer
         }
 
         // Trả về số ngày ở của khách
+        //UC_CheckOut
         public int GetTotalDayStay(int cid, DateTime checkoutDate)
         {
             string query = $"SELECT checkin, checkout FROM customer WHERE cid = {cid}";
@@ -147,6 +158,7 @@ namespace DataLayer
         }
 
         // Lấy giá phòng theo roomid
+        //UC_CheckOut
         public long GetRoomPrice(int roomid)
         {
             string query = $"SELECT price FROM rooms WHERE roomid = {roomid}";
@@ -154,6 +166,7 @@ namespace DataLayer
             return Convert.ToInt64(ds.Tables[0].Rows[0][0]);
         }
 
+        //UC_CheckOut
         public void CheckOut(int customerId, string checkoutDate, int roomId)
         {
             string query = $"UPDATE customer SET chekout = 'YES', checkout = '{checkoutDate}' WHERE cid = {customerId}; " +
@@ -162,12 +175,14 @@ namespace DataLayer
             fn.setData(query, "Thanh toán thành công");
         }
 
+        //UC_CustomerRequest
         public void AddCustomerRequest(string roomNo, string request, string employee, string status)
         {
             string query = $"INSERT INTO customerRequest (RoomNo, Request, EmployeeName, Status) VALUES ('{roomNo}', N'{request}', N'{employee}', N'{status}')";
             fn.setData(query, "Yêu cầu đã được thêm vào.");
         }
 
+        //UC_CustomerRequest
         public DataTable GetAllCustomerRequest()
         {
             string query = "SELECT * FROM customerRequest ORDER BY Id DESC";
@@ -175,6 +190,7 @@ namespace DataLayer
         }
 
         // Tìm kiếm phòng khách yêu cầu
+        //UC_CustomerRequest
         public DataTable SearchCustomerRequest()
         {
             string query = "SELECT * FROM rooms WHERE booked = 'YES'";

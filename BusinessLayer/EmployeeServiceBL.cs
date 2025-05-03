@@ -34,11 +34,19 @@ namespace BusinessLayer
             }
         }
 
+        //Form DangNhap
         public string GetRoleByUsername(string username)
         {
             return employeeServiceDL.GetRoleByUsername(username);
         }
 
+        //Form DangNhap
+        public EmployeeDTO GetEmployeeByUsername(string username)
+        {
+            return employeeServiceDL.GetEmployeeByUsername(username);
+        }
+
+        //UC_Employee
         public int GetNextEmployeeId()
         {
             DataSet ds = employeeServiceDL.GetNextEmployeeId();
@@ -51,11 +59,7 @@ namespace BusinessLayer
             return 1;
         }
 
-        //public void RegisterEmployee(string name, long mobile, string gender, string email, string username, string pass)
-        //{
-        //    string query = $"INSERT INTO employee (ename, mobile, gender, emailid, username, pass) VALUES ('{name}', {mobile}, '{gender}', '{email}', '{username}', '{pass}')";
-        //    fn.setData(query, "Đăng ký nhân viên thành công!!");
-        //}
+        //UC_Employee
         public void RegisterEmployee(string name, long mobile, string gender, string email, string username, string pass, string role)
         {
             //employeeServiceDL.RegisterEmployee(name, mobile, gender, email, username, pass, role);
@@ -63,40 +67,28 @@ namespace BusinessLayer
             employeeServiceDL.RegisterEmployee(name, mobile, gender, email, username, hashedPass, role);
         }
 
-        //public DataTable GetAllEmployees()
-        //{
-        //    string query = "SELECT * FROM employee";
-        //    return fn.getData(query).Tables[0];
-        //}
+        //UC_CustomerRequest
+        //UC_Employee
         public DataTable GetAllEmployees()
         {
             return employeeServiceDL.GetAllEmployees();
         }
 
-        public EmployeeDTO GetEmployeeByUsername(string username)
-        {
-            return employeeServiceDL.GetEmployeeByUsername(username);
-        }
 
-        //public void DeleteEmployee(int id)
-        //{
-        //    string query = $"DELETE FROM employee WHERE eid = {id}";
-        //    fn.setData(query, "Nhân viên đã được xóa!!");
-        //}
-
-
+        //UC_Employee
         public void DeleteEmployeeByName(string name)
         {
             employeeServiceDL.DeleteEmployeeByName(name);
         }
 
-
+        //Form ThayMatKhau
         public bool CheckPassword(string username, string password)
         {
             string hashed = HashPassword(password); // Băm mật khẩu cũ
             return employeeServiceDL.CheckPassword(username, hashed);
         }
 
+        //Form ThayMatKhau
         public bool UpdatePassword(string username, string newPassword)
         {
             string hashedNewPass = HashPassword(newPassword); // Băm mật khẩu mới

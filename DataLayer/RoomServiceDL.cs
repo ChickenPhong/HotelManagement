@@ -13,6 +13,7 @@ namespace DataLayer
     {
         DataProvider fn = new DataProvider();
 
+        //UC_AddRoom
         public List<RoomDTO> GetAllRooms()
         {
             var list = new List<RoomDTO>();
@@ -34,18 +35,21 @@ namespace DataLayer
             return list;
         }
 
+        //UC_AddRoom
         public void AddRoom(RoomDTO room)
         {
             string query = $"INSERT INTO rooms (roomNo, roomType, bed, price) VALUES ('{room.RoomNo}', N'{room.RoomType}', N'{room.Bed}', {room.Price})";
             fn.setData(query, "Thêm phòng thành công");
         }
 
+        //UC_AddRoom
         public DataSet GetRoomInfo(string roomNo)
         {
             string query = $"SELECT price FROM rooms WHERE roomNo = '{roomNo}'";
             return fn.getData(query);
         }
 
+        //UC_AddRoom
         public void UpdateRoomPrice(string roomNo, long newPrice)
         {
             string query = $"UPDATE rooms SET price = {newPrice} WHERE roomNo = '{roomNo}'";
@@ -57,18 +61,21 @@ namespace DataLayer
             fn.setData(query, "Đã cập nhật thông tin phòng.");  // Cập nhật cơ sở dữ liệu
         }
 
+        //UC_AddRoom
         public void UpdateRoomNo(string oldRoomNo, string newRoomNo)
         {
             string query = $"UPDATE rooms SET roomNo = '{newRoomNo}' WHERE roomNo = '{oldRoomNo}'";
             fn.setData(query, "Đã cập nhật số phòng.");
         }
 
+        //UC_AddRoom
         public void UpdateRoomBedType(string roomNo, string newBedType)
         {
             string query = $"UPDATE rooms SET bed = N'{newBedType}' WHERE roomNo = '{roomNo}'";
             fn.setData(query, "Đã cập nhật loại giường.");
         }
 
+        //UC_AddRoom
         public void UpdateRoomType(string roomNo, string newRoomType)
         {
             string query = $"UPDATE rooms SET roomType = N'{newRoomType}' WHERE roomNo = '{roomNo}'";

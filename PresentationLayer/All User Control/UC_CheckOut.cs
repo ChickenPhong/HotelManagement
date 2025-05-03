@@ -42,7 +42,7 @@ namespace PresentationLayer.All_User_Control
                 DataGridViewRow row = guna2DataGridView1.Rows[e.RowIndex];
                 id = Convert.ToInt32(row.Cells[0].Value);
                 txtCName.Text = row.Cells[1].Value.ToString();
-                txtRoom.Text = row.Cells[9].Value.ToString(); // roomNo
+                txtRoom.Text = row.Cells["roomNo"].Value.ToString(); // roomNo
 
                 int roomid = Convert.ToInt32(row.Cells["roomid"].Value);
                 DateTime checkoutDate = txtCheckOutDate.Value; // Lấy từ DateTimePicker của bạn
@@ -66,6 +66,9 @@ namespace PresentationLayer.All_User_Control
                     customerService.CheckOut(id, checkoutDate, roomid);
                     LoadCheckOut();
                     clearAll();
+
+                    // Làm trống txtTotalPrice sau khi thanh toán
+                    txtTotalPrice.Clear();
                 }
             }
             else
@@ -86,6 +89,5 @@ namespace PresentationLayer.All_User_Control
         {
             clearAll();
         }
-
     }
 }

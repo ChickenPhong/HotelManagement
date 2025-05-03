@@ -26,19 +26,6 @@ namespace PresentationLayer.All_User_Control
             LoadEmployeeNames();
         }
 
-        // --------------------------------------
-        //public void getMaxID()
-        //{
-        //    query = "select max(eid) from employee";
-        //    DataSet ds = fn.getData(query);
-
-        //    if (ds.Tables[0].Rows[0][0].ToString() != "")
-        //    {
-        //        Int64 num = Int64.Parse(ds.Tables[0].Rows[0][0].ToString());
-        //        labelToSET.Text = (num + 1).ToString();
-        //    }
-        //}
-
         private void btnRegistation_Click(object sender, EventArgs e)
         {
             if(txtName.Text != "" && txtMobile.Text != "" && txtGender.Text != ""&& txtEmail.Text != "" && txtRole.Text != "")
@@ -118,13 +105,6 @@ namespace PresentationLayer.All_User_Control
                 }
             }
         }
-
-        //public void setEmployee(DataGridView dgv)
-        //{
-        //    query = "select * from employee";
-        //    DataSet ds = fn.getData(query);
-        //    dgv.DataSource = ds.Tables[0];
-        //}
 
         private void btnDelete_Click(object sender, EventArgs e)
         {
