@@ -44,10 +44,9 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Century Gothic", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(17, 14);
-            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label1.Location = new System.Drawing.Point(26, 22);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(357, 28);
+            this.label1.Size = new System.Drawing.Size(543, 43);
             this.label1.TabIndex = 2;
             this.label1.Text = "Thông Tin Chi Tiết Khách Hàng";
             // 
@@ -56,10 +55,9 @@
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.Black;
-            this.label2.Location = new System.Drawing.Point(477, 86);
-            this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label2.Location = new System.Drawing.Point(716, 132);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(76, 21);
+            this.label2.Size = new System.Drawing.Size(114, 32);
             this.label2.TabIndex = 3;
             this.label2.Text = "Tìm Kiếm";
             // 
@@ -77,10 +75,9 @@
             "Toàn bộ khách hàng",
             "Trong khách sạn",
             "Đã thanh toán"});
-            this.txtSearchBy.Location = new System.Drawing.Point(565, 86);
-            this.txtSearchBy.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtSearchBy.Location = new System.Drawing.Point(848, 132);
             this.txtSearchBy.Name = "txtSearchBy";
-            this.txtSearchBy.Size = new System.Drawing.Size(211, 36);
+            this.txtSearchBy.Size = new System.Drawing.Size(314, 36);
             this.txtSearchBy.Style = Guna.UI2.WinForms.Enums.TextBoxStyle.Material;
             this.txtSearchBy.TabIndex = 4;
             this.txtSearchBy.SelectedIndexChanged += new System.EventHandler(this.txtSearchBy_SelectedIndexChanged);
@@ -109,14 +106,13 @@
             dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
             this.guna2DataGridView1.DefaultCellStyle = dataGridViewCellStyle3;
             this.guna2DataGridView1.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            this.guna2DataGridView1.Location = new System.Drawing.Point(47, 166);
-            this.guna2DataGridView1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.guna2DataGridView1.Location = new System.Drawing.Point(70, 255);
             this.guna2DataGridView1.Name = "guna2DataGridView1";
             this.guna2DataGridView1.ReadOnly = true;
             this.guna2DataGridView1.RowHeadersVisible = false;
             this.guna2DataGridView1.RowHeadersWidth = 62;
             this.guna2DataGridView1.RowTemplate.Height = 28;
-            this.guna2DataGridView1.Size = new System.Drawing.Size(1175, 318);
+            this.guna2DataGridView1.Size = new System.Drawing.Size(1762, 489);
             this.guna2DataGridView1.TabIndex = 5;
             this.guna2DataGridView1.TabStop = false;
             this.guna2DataGridView1.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.White;
@@ -148,15 +144,14 @@
             // 
             // UC_CustomerDetails
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.Controls.Add(this.guna2DataGridView1);
             this.Controls.Add(this.txtSearchBy);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "UC_CustomerDetails";
-            this.Size = new System.Drawing.Size(1255, 554);
+            this.Size = new System.Drawing.Size(1882, 852);
             ((System.ComponentModel.ISupportInitialize)(this.guna2DataGridView1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
